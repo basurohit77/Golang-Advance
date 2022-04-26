@@ -1,0 +1,41 @@
+#!/usr/bin/groovy
+
+/*
+  IBM Confidential OCO Source Materials
+  (C) Copyright and Licensed by IBM Corp. 2021
+  The source code for this program is not published or otherwise
+  divested of its trade secrets irrespective of what has
+  been deposited with the U.S. Copyright Office.
+*/
+
+@Library(['cloud-platform-sre', 'oss-global-library']) _
+ciPipeline(
+  appName: 'api-iam-authorize',
+  appSquad: 'api',
+  docker: false,
+  dependentJobs: [
+    '/Pipeline/api-subscription-api/master',
+    '/Pipeline/tip-subscription-consumer/master',
+    '/Pipeline/api-api-catalog/master',
+    '/Pipeline/api-incident-management/master',
+    '/Pipeline/api-pnp-status/master',
+    '/Pipeline/api-pnp-subscription/master',
+    '/Pipeline/api-pnp-subscription-consumer/master',
+    '/Pipeline/api-scorecard-backend/master',
+    '/Pipeline/api-issuecreator-backend/master',
+    '/Pipeline/api-pnp-ops-api/master',
+    '/Pipeline/api-bastion-api/master',
+    '/Pipeline/tip-hooks/master',
+    '/Pipeline/api-gcor-api/master',
+    '/Pipeline/api-oss-csd/master',
+    '/Pipeline/api-operations-backend/master',
+    '/Pipeline/api-change-management/master',
+    '/Pipeline/api-oss-auth/master',
+    '/Pipeline/api-pnp-hooks/master'
+  ],
+  makeEnvVars: [
+    'SNURL':'watsontest',
+    'SNToken':'test',
+    'SNOW_BYPASS_FLAG':'true'
+  ]
+)

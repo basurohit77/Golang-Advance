@@ -1,0 +1,2130 @@
+openapi: 3.0.0
+info:
+  version: 0.0.1
+  title: PNP Hooks API
+  description: >
+    The PNP Hooks API is an API for use by very specific clients; namely ServiceNow or GHE.  The hooks are the way ServiceNow or GHE communicates back to OSS.  PNP Hooks are not intended to be called by another component other than ServiceNow or GHE.
+
+    While the API will accept both IAM tokens and IAM API Keys, IBM Cloud security highly recommends the use of IAM tokens. A token may easily be obtained from your API key through a call to IAM. To see how to call the APIs click the "Available Authorizations" lock icon next to each of the endpoints.
+
+tags:
+  - name: ServiceNow Hooks Operations
+    description: Hooks used by ServiceNow
+  - name: GHE Hooks Operations
+    description: Hooks used by Github Enterprise
+  - name: Monitoring
+    description: API Monitoring
+
+paths:
+  /pnphooks/api/v1/snow/incidents:
+    post:
+      operationId: send_incident
+      summary: Post an incident to PNP
+      tags:
+        - ServiceNow Hooks Operations
+      security:
+        - Bearer: []
+        - api_key: []
+      description: >
+        Provides a way for ServiceNow to post an incident to PNP for processing
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Incident"
+            example:
+              cmdb_ci: containers-kubernetes
+              crns:
+                - "crn:v1:bluemix:public:containers-kubernetes:us-east::::"
+                - "crn:v1:bluemix:public:containers-kubernetes:us-south::::"
+              description: "This is an incident description"
+              incident_state: "In Progress"
+              instance: watson
+              number: INC0045220
+              operation: update
+              priority: "Sev - 2"
+              short_description: "Something broke"
+      x-sdk-operations:
+        request-examples:
+          curl:
+            - name: Example request
+              example:
+                - type: code
+                  source:
+                    - >
+                      curl -H "Authorization: Bearer $TOKEN" -d '{"cmdb_ci":"containers-kubernetes","crns":["crn:v1:bluemix:public:containers-kubernetes:us-east::::"],"description":"This is an incident description","incident_state":"In Progress","instance":"watson","number":"INC0045220","operation":"update","priority":"Sev - 2","short_description":"Something broke"}'  -POST "https://oss-platform.test.cloud.ibm.com/pnphooks/api/v1/snow/incidents"
+      responses:
+        "200":
+          description: Successful response. No content is returned with this response.
+        "401":
+          description: Not authorized.
+          headers:
+            WWW-Authenticate:
+              description: Has the value "Bearer". "https://tools.ietf.org/html/rfc6750"
+              schema:
+                type: string
+          content:
+            text/plain:
+              schema:
+                type: string
+              example: "not authorized"
+        "429":
+          description: Too many requests- The API has exceeded the number of requests per
+            second.  Try again later.
+          content:
+            text/plain:
+              schema:
+                type: string
+              example: "api limit hit"
+        "500":
+          description: Internal server error - something unexpected happened in the server
+          content:
+            text/plain:
+              schema:
+                type: string
+              example: "internal server error"
+
+  /pnphooks/api/v1/snow/bspn:
+    post:
+      operationId: send_bspn
+      summary: Post an incident to PNP
+      tags:
+        - ServiceNow Hooks Operations
+      security:
+        - Bearer: []
+        - api_key: []
+      description: >
+        Provides a way for ServiceNow to post a BSPN to PNP for processing
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/BSPN"
+      x-sdk-operations:
+        request-examples:
+          curl:
+            - name: Example request
+              example:
+                - type: code
+                  source:
+                    - >
+                      curl -v -H "Authorization: Bearer $TOKEN" -d '{"type":"incident","crn":["crn:v1:bluemix:public:containers-kubernetes:us-east::::"],"description":"This is an incident description","created_on":"1647545019559", "start_date":"1647545019559", "severity":"1","title":"hello world","id":"BSP0012918"}'  -POST "https://pnp-api-oss.test.cloud.ibm.com/pnphooks/api/v1/snow/bspn"
+      responses:
+        "200":
+          description: Successful response. There is no returned content for this status code.
+        "401":
+          description: Not authorized.
+          headers:
+            WWW-Authenticate:
+              description: Has the value "Bearer". "https://tools.ietf.org/html/rfc6750"
+              schema:
+                type: string
+          content:
+            text/plain:
+              schema:
+                type: string
+              example: "not authorized"
+        "429":
+          description: Too many requests- The API has exceeded the number of requests per
+            second.  Try again later.
+          content:
+            text/plain:
+              schema:
+                type: string
+              example: "api limit hit"
+        "500":
+          description: Internal server error - something unexpected happened in the server
+          content:
+            text/plain:
+              schema:
+                type: string
+              example: "internal server error"
+
+
+  /pnphooks/api/v1/snow/changes:
+    post:
+      operationId: send_change
+      summary: Post an incident to PNP
+      tags:
+        - ServiceNow Hooks Operations
+      security:
+        - Bearer: []
+        - api_key: []
+      description: >
+        Provides a way for ServiceNow to post a maintenance to PNP for processing
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Change"
+      x-sdk-operations:
+        request-examples:
+          curl:
+            - name: Example request
+              example:
+                - type: code
+                  source:
+                    - >
+                      curl -v -H "Authorization: Bearer $TOKEN" -d '{"crn":"crn:v1:bluemix:public:containers-kubernetes:us-east::::", "description":"hello world", "start_date": "2022-03-11 19:34:29", "end_date":"2022-03-12 12:00:00", "sys_created_on": "2022-03-11 19:34:29", "sys_updated_on": "2022-03-11 19:34:29", "number":"CHG2755947"}'  -POST "https://pnp-api-oss.test.cloud.ibm.com/pnphooks/api/v1/snow/changes"
+      responses:
+        "200":
+          description: Successful response. There is no returned content for this status code.
+        "401":
+          description: Not authorized.
+          headers:
+            WWW-Authenticate:
+              description: Has the value "Bearer". "https://tools.ietf.org/html/rfc6750"
+              schema:
+                type: string
+          content:
+            text/plain:
+              schema:
+                type: string
+              example: "not authorized"
+        "429":
+          description: Too many requests- The API has exceeded the number of requests per
+            second.  Try again later.
+          content:
+            text/plain:
+              schema:
+                type: string
+              example: "api limit hit"
+        "500":
+          description: Internal server error - something unexpected happened in the server
+          content:
+            text/plain:
+              schema:
+                type: string
+              example: "internal server error"
+
+
+  /pnphooks/api/v1/ghe/announcements:
+    post:
+      operationId: send_ghe
+      summary: Post an incident to PNP
+      tags:
+        - GHE Hooks Operations
+      security:
+        - Bearer: []
+        - api_key: []
+      description: >
+        Provides a way for Github Enterprise to post an announcement to PNP for processing. This API is to be called only by github enterprise.  The security for this call is provided by GHE.  See "https://docs.github.com/en/enterprise-server@3.1/developers/webhooks-and-events/webhooks/securing-your-webhooks"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Announcement"
+      x-sdk-operations:
+        request-examples:
+          curl:
+            - name: Example request
+              example:
+                - type: code
+                  source:
+                    - >
+                      curl -v -H "Authorization: Bearer $TOKEN" -d '{"action":"labeled", "issue":{"id":25702350, "labels":[{"id":5314292,"node_id":"salfjalasdkjfa","url":"https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-dev/labels/announcement","name":"announcement","color":"000000","default":false,"description":"not a label"}], "created_at":"2022-03-04T12:13:14Z","updated_at":"2022-03-04T13:14:15Z","body","Hello World."}, "label":{"id":5314292,"node_id":"salfjalasdkjfa","url":"https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-dev/labels/announcement","name":"announcement","color":"000000","default":false,"description":"not a label"},"sender":{"login":"jdoe@us.ibm.com"}}'  -POST "https://pnp-api-oss.test.cloud.ibm.com/pnphooks/api/v1/ghe/announcements"
+      responses:
+        "200":
+          description: Successful response. No content is returned on the response. 
+        "401":
+          description: Not authorized.
+          headers:
+            WWW-Authenticate:
+              description: Has the value "Bearer". "https://tools.ietf.org/html/rfc6750"
+              schema:
+                type: string
+          content:
+            text/plain:
+              schema:
+                type: string
+              example: "not authorized"
+        "429":
+          description: Too many requests- The API has exceeded the number of requests per
+            second.  Try again later.
+          content:
+            text/plain:
+              schema:
+                type: string
+              example: "api limit hit"
+        "500":
+          description: Internal server error - something unexpected happened in the server
+          content:
+            text/plain:
+              schema:
+                type: string
+              example: "internal server error"
+
+
+  /pnphooks/api/v1/pnp/hooks/healthz:
+    get: 
+      operationId: healthz
+      summary: Check the API Health
+      tags:
+        - Monitoring
+      description: >
+        This path is allows the API to be monitored.  The healthz API may be
+        called by monitoring systems or clients to determine the health status
+        of the API.  This API may also check that any backend systems upon which
+        it relies. 
+      x-sdk-operations:
+        request-examples:
+          curl:
+            - name: Example request
+              example:
+                - type: code 
+                  source:
+                    - >  
+                      curl -G "https://pnp-api-oss.test.cloud.ibm.com/pnphooks/api/v1/pnp/hooks/healthz"
+                      -H "Authorization: Bearer $TOKEN"
+      responses:
+        "200":
+          description: Successful response. Indicates that the API is available and
+            operational.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthzInfo"
+              example:
+                href: "https://pnp-api-oss.test.cloud.ibm.com/pnphooks/api/v1/pnp/hooks/healthz"
+                code: 0
+                description: "The API is available and operational."
+        "500":
+          description: The API has detected a condition internally that will prevent it
+            from operating normally.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthzInfo"
+
+
+servers:
+  - url: https://pnp-api-oss.cloud.ibm.com
+    description: Production server
+  - url: https://pnp-api-oss.test.cloud.ibm.com
+    description: Test server
+components:
+  securitySchemes:
+    Bearer:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: >
+        IAM tokens are passed in the "Authorization" header.  The token is
+        prefixed with the "Bearer " keyword. For example "Authorization&colon;
+        Bearer 12AB34DE7.FEDCBA987654321.5678ABCD1234EF".  
+    api_key:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: >
+        When passing an API key, specify the API key in a basic auth header
+        where "apikey" is the username and the API key is the password. See
+        https&colon;//cloud.ibm.com/docs/iam?topic=iam-iamapikeysforservices#apikey_auth
+  schemas:
+
+    Incident:
+      type: object
+      description: The incident being sent to PNP
+      properties:
+        cmdb_ci:
+          type: string
+          description: A CRN service name. Corresponds to the ServiceNow configuration item
+          minLength: 1
+          maxLength: 200
+          pattern: ".*"
+          example: "is-load-balancer"
+        comments:
+          type: string
+          description: Incident comments
+          minLength: 1
+          maxLength: 4000
+          pattern: ".*"
+        crns:
+          description: The list crns representing the affected services.  
+          type: array
+          example: 
+            - "crn:v1:bluemix:public:containers-kubernetes:us-east::::"
+            - "crn:v1:bluemix:public:containers-kubernetes:us-south::::"
+          items:
+            type: string
+            description: A CRN represented the affected resource. Affected CRNs must have the same resource type and location as the CRNs in the crns attribute
+            minLength: 1
+            maxLength: 4000
+            pattern: ".*"
+        description:
+          type: string
+          description: Incident description
+          minLength: 1
+          maxLength: 4000
+          pattern: ".*"
+        incident_state:
+          type: string
+          description: State of the incident. This is a label value.
+          minLength: 1
+          maxLength: 50
+          pattern: ".*"
+          example: "In Progress"
+        instance:
+          type: string
+          description: The ServiceNow instance
+          minLength: 1
+          maxLength: 50
+          pattern: "[a-z]*"
+          example: "watson"
+        new_work_notes:
+          type: string
+          description: New work notes
+          minLength: 1
+          maxLength: 4000
+          pattern: ".*"
+        number:
+          description: The ID of the incident
+          type: string
+          example: INC0045220
+          minLength: 10
+          maxLength: 11
+          pattern: "F{0,1}INC[0-9]{7}"
+        operation:
+          type: string
+          description: Indicates the operation of this message
+          minLength: 1
+          maxLength: 50
+          pattern: "[a-z]*"
+          example: "update"
+        parent_incident:
+          description: The ID of the parent incident
+          type: string
+          example: INC0045220
+          minLength: 10
+          maxLength: 11
+          pattern: "F{0,1}INC[0-9]{7}"
+        priority:
+          type: string
+          description: Priority (severity) of the incident. This is a label value.
+          minLength: 1
+          maxLength: 50
+          pattern: ".*"
+          example: "Sev - 2"
+        short_description:
+          type: string
+          description: Short description for the incident
+          minLength: 0
+          maxLength: 160
+          pattern: ".*"
+        sys_created_on:
+          type: string
+          description: Creation time of the incident
+          minLength: 0
+          maxLength: 19
+          pattern: ".*"
+          example: "2021-12-13 19:34:29"
+        sys_domain:
+          type: string
+          description: SysID of domain
+          minLength: 0
+          maxLength: 32
+          pattern: "[a-b0-9]*"
+          example: "f72d95c6dbb87cd43c9d656b4b961956"
+        sys_id:
+          type: string
+          description: SysID of this incident
+          minLength: 0
+          maxLength: 32
+          pattern: "[a-b0-9]*"
+          example: "f72d95c6dbb87cd43c9d656b4b961956"
+        sys_updated_on:
+          type: string
+          description: Update time of the incident
+          minLength: 0
+          maxLength: 19
+          pattern: ".*"
+          example: "2021-12-13 19:34:29"
+        u_affected_activity:
+          type: string
+          description: Affected activity of the incident. This is a label value.
+          minLength: 1
+          maxLength: 50
+          pattern: ".*"
+        u_audience:
+          type: string
+          description: Audience of the incident
+          minLength: 1
+          maxLength: 50
+          pattern: ".*"
+          example: "not set"
+        u_current_status:
+          type: string
+          description: Current status and next steps
+          minLength: 0
+          maxLength: 4000
+          pattern: ".*"
+        u_description_customer_impact:
+          type: string
+          description: Description of customer impact
+          minLength: 0
+          maxLength: 4000
+          pattern: ".*"
+        u_disruption_began:
+          type: string
+          description: Time disruption began
+          minLength: 0
+          maxLength: 19
+          pattern: ".*"
+          example: "2021-12-13 19:34:29"
+        u_disruption_ended:
+          type: string
+          description: Time disruption ended
+          minLength: 0
+          maxLength: 19
+          pattern: ".*"
+          example: "2021-12-13 19:34:29"
+        u_environment:
+          type: string
+          description: Environment. This is a label value.
+          minLength: 1
+          maxLength: 50
+          pattern: ".*"
+          example: "Tokyo REGION"
+        u_operations_slack_channel:
+          type: string
+          description: Slack channel
+          minLength: 1
+          maxLength: 50
+          pattern: ".*"
+          example: "vpc-alerts-sre"
+        u_status:
+          type: string
+          description: Incident status
+          minLength: 1
+          maxLength: 50
+          pattern: ".*"
+          example: "Normal"
+        u_support_slack_channel:
+          type: string
+          description: Slack channel
+          minLength: 1
+          maxLength: 50
+          pattern: ".*"
+          example: "vpc-alerts-sre"
+        u_targeted_notification_url:
+          type: string
+          description: Targeted URL
+          minLength: 1
+          maxLength: 4000
+          pattern: ".*"
+        u_user_feedback:
+          type: string
+          description: User feedback
+          minLength: 1
+          maxLength: 4000
+          pattern: ".*"
+
+
+    BSPN:
+      type: object
+      description: A bluemix status page notification
+      properties:
+        type:
+          type: string
+          description: Type
+          enum:
+            - notification
+          example: "notification"
+        regions:
+          description: The list of region labels
+          type: array
+          example: 
+            - "SoftLayer DAL13 (1854895)"
+            - "SoftLayer DAL10 (1441195)"
+            - "SoftLayer DAL12 (1854795)"
+          items:
+            type: string
+            description: A region label
+            minLength: 1
+            maxLength: 100
+            pattern: ".*"
+        created_on:
+          type: number
+          description: Unix time of creation
+        start_date:
+          type: number
+          description: Unix time of start
+        end_date:
+          type: number
+          description: Unix time of end
+        modified:
+          type: number
+          description: Unix time of update
+        title:
+          type: string
+          description: Title
+          minLength: 1
+          maxLength: 160
+          pattern: ".*"
+        description:
+          type: string
+          description: description
+          minLength: 1
+          maxLength: 4000
+          pattern: ".*"
+        severity:
+          type: string
+          description: Priority (severity) of the incident. This is a label value.
+          minLength: 1
+          maxLength: 50
+          pattern: ".*"
+          example: "Sev - 2"
+        components:
+          description: Identifiers of components. Old style parature ID which is not used much anymore
+          type: array
+          example: 
+            - "cloudoe.sop.enum.paratureCategory.literal.l128"
+          items:
+            type: string
+            description: A parature ID
+            minLength: 1
+            maxLength: 500
+            pattern: ".*"
+        id:
+          type: string
+          description: ID of the BSPN
+          example: "BSP0012635"
+          minLength: 10
+          maxLength: 11
+          pattern: "F{0,1}BSP[0-9]{7}"
+        parent_incident:
+          description: The ID of the parent incident
+          type: string
+          example: INC0045220
+          minLength: 10
+          maxLength: 11
+          pattern: "F{0,1}INC[0-9]{7}"
+        status:
+          type: string
+          description: Status of the BSPN. A label
+          minLength: 1
+          maxLength: 50
+          pattern: ".*"
+          example: "CIE In Progress"
+        affected_activities:
+          type: string
+          description: The incident affected activities
+          minLength: 1
+          maxLength: 50
+          pattern: ".*"
+          example: "Consumption"
+        crn:
+          description: The list crns representing the affected services.  
+          type: array
+          example: 
+            - "crn:v1:bluemix:public:containers-kubernetes:us-east::::"
+            - "crn:v1:bluemix:public:containers-kubernetes:us-south::::"
+          items:
+            type: string
+            description: A CRN represented the affected services.
+            minLength: 1
+            maxLength: 4000
+            pattern: ".*"
+
+
+
+
+
+
+    Change:
+      type: object
+      description: A change record
+      properties:
+        backout_plan:
+          type: string
+          description: plan to backout change
+          minLength: 1
+          maxLength: 4000
+          pattern: ".*"
+        close_code:
+          type: string
+          description: close code such as successful or cancelled
+          minLength: 1
+          maxLength: 20
+          pattern: ".*"
+        crn:
+          description: The list crns representing the affected services.  
+          type: array
+          example: 
+            - "crn:v1:bluemix:public:containers-kubernetes:us-east::::"
+            - "crn:v1:bluemix:public:containers-kubernetes:us-south::::"
+          items:
+            type: string
+            description: A CRN represented the affected services.
+            minLength: 1
+            maxLength: 4000
+            pattern: ".*"
+        description:
+          type: string
+          description: description
+          minLength: 1
+          maxLength: 4000
+          pattern: ".*"
+        end_date:
+          type: string
+          description: Time disruption began
+          minLength: 0
+          maxLength: 19
+          pattern: ".*"
+          example: "2021-12-13 19:34:29"
+        start_date:
+          type: string
+          description: Time disruption began
+          minLength: 0
+          maxLength: 19
+          pattern: ".*"
+          example: "2021-12-13 19:34:29"
+        sys_created_on:
+          type: string
+          description: Time disruption began
+          minLength: 0
+          maxLength: 19
+          pattern: ".*"
+          example: "2021-12-13 19:34:29"
+        sys_updated_on:
+          type: string
+          description: Time disruption began
+          minLength: 0
+          maxLength: 19
+          pattern: ".*"
+          example: "2021-12-13 19:34:29"
+        instance:
+          type: string
+          description: The ServiceNow instance
+          minLength: 1
+          maxLength: 50
+          pattern: "[a-z]*"
+          example: "watson"
+        number:
+          description: The ID of the change
+          type: string
+          example: CHG0045220
+          minLength: 10
+          maxLength: 11
+          pattern: "F{0,1}CHG[0-9]{7}"
+        operation:
+          type: string
+          description: Indicates the operation of this message
+          minLength: 1
+          maxLength: 50
+          pattern: "[a-z]*"
+          example: "update"
+        priority:
+          type: string
+          description: Priority of the change
+          minLength: 1
+          maxLength: 50
+          pattern: ".*"
+          example: "critical"
+        short_description:
+          type: string
+          description: Short description for the incident
+          minLength: 0
+          maxLength: 160
+          pattern: ".*"
+        state:
+          type: string
+          description: State. This is a label value.
+          minLength: 1
+          maxLength: 50
+          pattern: ".*"
+          example: "Scheduled"
+        sys_created_by:
+          type: string
+          description: creator
+          minLength: 1
+          maxLength: 50
+          pattern: ".*"
+          example: "system"
+        sys_domain:
+          type: string
+          description: SysID of domain
+          minLength: 0
+          maxLength: 32
+          pattern: "[a-b0-9]*"
+          example: "global"
+        sys_id:
+          type: string
+          description: SysID of this incident
+          minLength: 0
+          maxLength: 32
+          pattern: "[a-b0-9]*"
+          example: "f72d95c6dbb87cd43c9d656b4b961956"
+        sys_updated_by:
+          type: string
+          description: updater
+          minLength: 1
+          maxLength: 50
+          pattern: ".*"
+          example: "api.user"
+        u_audience:
+          type: string
+          description: Audience of the incident
+          minLength: 1
+          maxLength: 50
+          pattern: ".*"
+          example: "major private"
+        u_outage_duration:
+          type: integer
+          description: number of seconds of outage
+          minimum: 0
+          maximum: 800000
+        u_purpose_goal:
+          type: string
+          description: purpose
+          minLength: 1
+          maxLength: 4000
+          pattern: ".*"
+        u_severity:
+          type: string
+          description: Severity of the change
+          minLength: 1
+          maxLength: 50
+          pattern: ".*"
+        u_targeted_notification_url:
+          type: string
+          description: Targeted URL
+          minLength: 1
+          maxLength: 4000
+          pattern: ".*"
+        work_end:
+          type: string
+          description: time work ended
+          minLength: 0
+          maxLength: 19
+          pattern: ".*"
+          example: "2021-12-13 19:34:29"
+        work_start:
+          type: string
+          description: time work started
+          minLength: 0
+          maxLength: 19
+          pattern: ".*"
+          example: "2021-12-13 19:34:29"
+
+
+
+
+
+
+
+    Announcement:
+      type: object
+      description: a ghe announcement
+      required:
+        - action
+        - issue
+        - label
+        - sender
+      properties:
+        action:
+          type: string
+          description: the action
+          minLength: 1
+          maxLength: 1000
+          pattern: ".*"
+          example: labeled
+        issue:
+          type: object
+          description: a ghe announcement
+          required:
+            - body
+            - updated_at
+            - created_at
+            - id
+            - labels
+          properties:
+            url:
+              type: string
+              description: the url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/issues/1068"
+            repository_url:
+              type: string
+              description: the repository_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production"
+            labels_url:
+              type: string
+              description: the labels_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/issues/1068/labels{/name}"
+            comments_url:
+              type: string
+              description: the comments_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/issues/1068/comments"
+            events_url:
+              type: string
+              description: the events_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/issues/1068/events"
+            html_url:
+              type: string
+              description: the html_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/cloud-sre/pnp-notification-messages-production/issues/1068"
+            id:
+              type: integer
+              description: the id
+              minimum: 1
+              maximum: 100000
+              example: 25702350
+            node_id:
+              type: string
+              description: the node_id
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "MDU6SXNzdWUyNTcwMjM1MA=="
+            number:
+              type: integer
+              description: the number
+              minimum: 1
+              maximum: 100000
+              example: 1068
+            title:
+              type: string
+              description: the title
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "End of support for Cloud Foundry Org-based Continuous Delivery Toolchains"
+            user:
+              type: object
+              description: object describing user
+              properties:
+                login:
+                  type: string
+                  description: the login
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: "johndoe"
+                id:
+                  type: integer
+                  description: the id
+                  minimum: 1
+                  maximum: 1000
+                  example: 2439
+                node_id:
+                  type: string
+                  description: the node_id
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: "MDQ6VXNlcjI0Mzk="
+                avatar_url:
+                  type: string
+                  description: the avatar_url
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: "https://avatars.github.ibm.com/u/2439?"
+                gravatar_id:
+                  type: string
+                  description: the gravatar_id
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: ""
+                url:
+                  type: string
+                  description: the url
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: "https://github.ibm.com/api/v3/users/johndoe"
+                html_url:
+                  type: string
+                  description: the html_url
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: "https://github.ibm.com/johndoe"
+                followers_url:
+                  type: string
+                  description: the followers_url
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: "https://github.ibm.com/api/v3/users/johndoe/followers"
+                following_url:
+                  type: string
+                  description: the following_url
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: "https://github.ibm.com/api/v3/users/johndoe/following{/other_user}"
+                gists_url:
+                  type: string
+                  description: the gists_url
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: "https://github.ibm.com/api/v3/users/johndoe/gists{/gist_id}"
+                starred_url:
+                  type: string
+                  description: the starred_url
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: "https://github.ibm.com/api/v3/users/johndoe/starred{/owner}{/repo}"
+                subscriptions_url:
+                  type: string
+                  description: the subscriptions_url
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: "https://github.ibm.com/api/v3/users/johndoe/subscriptions"
+                organizations_url:
+                  type: string
+                  description: the organizations_url
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: "https://github.ibm.com/api/v3/users/johndoe/orgs"
+                repos_url:
+                  type: string
+                  description: the repos_url
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: "https://github.ibm.com/api/v3/users/johndoe/repos"
+                events_url:
+                  type: string
+                  description: the events_url
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: "https://github.ibm.com/api/v3/users/johndoe/events{/privacy}"
+                received_events_url:
+                  type: string
+                  description: the received_events_url
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: "https://github.ibm.com/api/v3/users/johndoe/received_events"
+                type:
+                  type: string
+                  description: the type
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: "User"
+                site_admin:
+                  type: boolean
+                  description: the site_admin
+                  example: false
+            labels:
+              type: array
+              description: A list of labels
+              items:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                    description: the id
+                    minLength: 1
+                    maxLength: 1000
+                    pattern: ".*"
+                    example: 5314292
+                  node_id:
+                    type: string
+                    description: the node_id
+                    minLength: 1
+                    maxLength: 1000
+                    pattern: ".*"
+                    example: "MDU6TGFiZWw1MzE0Mjky"
+                  url:
+                    type: string
+                    description: the url
+                    minLength: 1
+                    maxLength: 1000
+                    pattern: ".*"
+                    example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/labels/announcement"
+                  name:
+                    type: string
+                    description: the name
+                    minLength: 1
+                    maxLength: 1000
+                    pattern: ".*"
+                    example: "announcement"
+                  color:
+                    type: string
+                    description: the color
+                    minLength: 1
+                    maxLength: 1000
+                    pattern: ".*"
+                    example: "000000"
+                  default:
+                    type: boolean
+                    description: the default
+                    minLength: 1
+                    maxLength: 1000
+                    pattern: ".*"
+                    example: false
+                  description:
+                    type: string
+                    description: the description
+                    minLength: 1
+                    maxLength: 1000
+                    pattern: ".*"
+                    example: "Use to mark issue as an announcement"
+            state:
+              type: string
+              description: the state
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "open"
+            locked:
+              type: boolean
+              description: the locked
+              example: false
+            assignee:
+              type: string
+              description: the assignee
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "null"
+            assignees:
+              type: array
+              description: A list of assignees
+              items:
+                type: string
+                description: the assignee
+                minLength: 1
+                maxLength: 1000
+                pattern: ".*"
+                example: "jdoe@ibm.com"
+            milestone:
+              type: string
+              description: the milestone
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "null"
+            comments:
+              type: integer
+              description: the comments
+              maximum: 10000
+              minimum: 0
+              example: 0
+            created_at:
+              type: string
+              description: the created_at
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "2021-12-13T20:16:54Z"
+            updated_at:
+              type: string
+              description: the updated_at
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "2021-12-13T20:18:00Z"
+            closed_at:
+              type: string
+              description: the closed_at
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "null"
+            author_association:
+              type: string
+              description: the author_association
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "COLLABORATOR"
+            active_lock_reason:
+              type: string
+              description: the active_lock_reason
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "null"
+            body:
+              type: string
+              description: the body
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "** PLEASE READ ** Before creating this announcement/bulletin, you must first..."
+            performed_via_github_app:
+              type: string
+              description: the performed_via_github_app
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "null"
+        label:
+          type: object
+          description: object describing user
+          properties:
+            id:
+              type: integer
+              description: the id
+              minimum: 1
+              maximum: 1000
+              example: 5314302
+            node_id:
+              type: string
+              description: the  node_id
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "MDU6TGFiZWw1MzE0MzAy"
+            url:
+              type: string
+              description: the  url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/labels/publish"
+            name:
+              type: string
+              description: the  name
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "publish"
+            color:
+              type: string
+              description: the  color
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "008000"
+            default:
+              type: boolean
+              description: the  default
+              example: false
+            description:
+              type: string
+              description: the  description
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "Use to publish this issue"
+        repository:
+          type: object
+          description: object describing user
+          properties:
+            id:
+              type: integer
+              description: the id
+              minimum: 1
+              maximum: 1000000
+              example: 626934
+            node_id:
+              type: string
+              description: the node_id
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "MDEwOlJlcG9zaXRvcnk2MjY5MzQ="
+            name:
+              type: string
+              description: the name
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "pnp-notification-messages-production"
+            full_name:
+              type: string
+              description: the full_name
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "cloud-sre/pnp-notification-messages-production"
+            private:
+              type: boolean
+              description: the private
+              example: true
+            owner:
+              type: object
+              description: object describing user
+              properties:
+                login:
+                  type: string
+                  description: the login
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: "cloud-sre"
+                id:
+                  type: integer
+                  description: the id
+                  minimum: 1
+                  maximum: 100000
+                  example: 10240
+                node_id:
+                  type: string
+                  description: the node_id
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: "MDEyOk9yZ2FuaXphdGlvbjEwMjQw"
+                avatar_url:
+                  type: string
+                  description: the avatar_url
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: "https://avatars.github.ibm.com/u/10240?"
+                gravatar_id:
+                  type: string
+                  description: the gravatar_id
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: ""
+                url:
+                  type: string
+                  description: the url
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: "https://github.ibm.com/api/v3/users/cloud-sre"
+                html_url:
+                  type: string
+                  description: the html_url
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: "https://github.ibm.com/cloud-sre"
+                followers_url:
+                  type: string
+                  description: the followers_url
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: "https://github.ibm.com/api/v3/users/cloud-sre/followers"
+                following_url:
+                  type: string
+                  description: the following_url
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: "https://github.ibm.com/api/v3/users/cloud-sre/following{/other_user}"
+                gists_url:
+                  type: string
+                  description: the gists_url
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: "https://github.ibm.com/api/v3/users/cloud-sre/gists{/gist_id}"
+                starred_url:
+                  type: string
+                  description: the starred_url
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: "https://github.ibm.com/api/v3/users/cloud-sre/starred{/owner}{/repo}"
+                subscriptions_url:
+                  type: string
+                  description: the subscriptions_url
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: "https://github.ibm.com/api/v3/users/cloud-sre/subscriptions"
+                organizations_url:
+                  type: string
+                  description: the organizations_url
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: "https://github.ibm.com/api/v3/users/cloud-sre/orgs"
+                repos_url:
+                  type: string
+                  description: the repos_url
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: "https://github.ibm.com/api/v3/users/cloud-sre/repos"
+                events_url:
+                  type: string
+                  description: the events_url
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: "https://github.ibm.com/api/v3/users/cloud-sre/events{/privacy}"
+                received_events_url:
+                  type: string
+                  description: the received_events_url
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: "https://github.ibm.com/api/v3/users/cloud-sre/received_events"
+                type:
+                  type: string
+                  description: the type
+                  minLength: 1
+                  maxLength: 1000
+                  pattern: ".*"
+                  example: "Organization"
+                site_admin:
+                  type: boolean
+                  description: the site_admin
+                  example: false
+            html_url:
+              type: string
+              description: the html_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/cloud-sre/pnp-notification-messages-production"
+            description:
+              type: string
+              description: the description
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "Post Security Notifications and Announcements to the external status"
+            fork:
+              type: boolean
+              description: the fork
+              example: false
+            url:
+              type: string
+              description: the url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production"
+            forks_url:
+              type: string
+              description: the forks_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/forks"
+            keys_url:
+              type: string
+              description: the keys_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/keys{/key_id}"
+            collaborators_url:
+              type: string
+              description: the collaborators_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/collaborators{/collaborator}"
+            teams_url:
+              type: string
+              description: the teams_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/teams"
+            hooks_url:
+              type: string
+              description: the hooks_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/hooks"
+            issue_events_url:
+              type: string
+              description: the issue_events_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/issues/events{/number}"
+            events_url:
+              type: string
+              description: the events_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/events"
+            assignees_url:
+              type: string
+              description: the assignees_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/assignees{/user}"
+            branches_url:
+              type: string
+              description: the branches_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/branches{/branch}"
+            tags_url:
+              type: string
+              description: the tags_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/tags"
+            blobs_url:
+              type: string
+              description: the blobs_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/git/blobs{/sha}"
+            git_tags_url:
+              type: string
+              description: the git_tags_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/git/tags{/sha}"
+            git_refs_url:
+              type: string
+              description: the git_refs_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/git/refs{/sha}"
+            trees_url:
+              type: string
+              description: the trees_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/git/trees{/sha}"
+            statuses_url:
+              type: string
+              description: the statuses_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/statuses/{sha}"
+            languages_url:
+              type: string
+              description: the languages_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/languages"
+            stargazers_url:
+              type: string
+              description: the stargazers_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/stargazers"
+            contributors_url:
+              type: string
+              description: the contributors_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/contributors"
+            subscribers_url:
+              type: string
+              description: the subscribers_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/subscribers"
+            subscription_url:
+              type: string
+              description: the subscription_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/subscription"
+            commits_url:
+              type: string
+              description: the commits_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/commits{/sha}"
+            git_commits_url:
+              type: string
+              description: the git_commits_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/git/commits{/sha}"
+            comments_url:
+              type: string
+              description: the comments_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/comments{/number}"
+            issue_comment_url:
+              type: string
+              description: the issue_comment_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/issues/comments{/number}"
+            contents_url:
+              type: string
+              description: the contents_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/contents/{+path}"
+            compare_url:
+              type: string
+              description: the compare_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/compare/{base}...{head}"
+            merges_url:
+              type: string
+              description: the merges_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/merges"
+            archive_url:
+              type: string
+              description: the archive_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/{archive_format}{/ref}"
+            downloads_url:
+              type: string
+              description: the downloads_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/downloads"
+            issues_url:
+              type: string
+              description: the issues_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/issues{/number}"
+            pulls_url:
+              type: string
+              description: the pulls_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/pulls{/number}"
+            milestones_url:
+              type: string
+              description: the milestones_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/milestones{/number}"
+            notifications_url:
+              type: string
+              description: the notifications_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/notifications{?since,all,participating}"
+            labels_url:
+              type: string
+              description: the labels_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/labels{/name}"
+            releases_url:
+              type: string
+              description: the releases_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/releases{/id}"
+            deployments_url:
+              type: string
+              description: the deployments_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/repos/cloud-sre/pnp-notification-messages-production/deployments"
+            created_at:
+              type: string
+              description: the created_at
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "2019-08-07T18:13:17Z"
+            updated_at:
+              type: string
+              description: the updated_at
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "2021-12-03T14:55:14Z"
+            pushed_at:
+              type: string
+              description: the pushed_at
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "2021-12-03T14:55:12Z"
+            git_url:
+              type: string
+              description: the git_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "git://github.ibm.com/cloud-sre/pnp-notification-messages-production.git"
+            ssh_url:
+              type: string
+              description: the ssh_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "git@github.ibm.com:cloud-sre/pnp-notification-messages-production.git"
+            clone_url:
+              type: string
+              description: the clone_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/cloud-sre/pnp-notification-messages-production.git"
+            svn_url:
+              type: string
+              description: the svn_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/cloud-sre/pnp-notification-messages-production"
+            homepage:
+              type: string
+              description: the homepage
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "null"
+            size:
+              type: integer
+              description: the size
+              minimum: 1
+              maximum: 1000000
+              example: 13633
+            stargazers_count:
+              type: integer
+              description: the stargazers_count
+              minimum: 1
+              maximum: 1000000
+              example: 0
+            watchers_count:
+              type: integer
+              description: the watchers_count
+              minimum: 1
+              maximum: 1000000
+              example: 0
+            language:
+              type: string
+              description: the language
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "null"
+            has_issues:
+              type: boolean
+              description: the has_issues
+              example: true
+            has_projects:
+              type: boolean
+              description: the has_projects
+              example: true
+            has_downloads:
+              type: boolean
+              description: the has_downloads
+              example: true
+            has_wiki:
+              type: boolean
+              description: the has_wiki
+              example: true
+            has_pages:
+              type: boolean
+              description: the has_pages
+              example: false
+            forks_count:
+              type: integer
+              description: the forks_count
+              minimum: 1
+              maximum: 100000
+              example: 0
+            mirror_url:
+              type: string
+              description: the mirror_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "null"
+            archived:
+              type: boolean
+              description: the archived
+              example: false
+            disabled:
+              type: boolean
+              description: the disabled
+              example: false
+            open_issues_count:
+              type: integer
+              description: the open_issues_count
+              minimum: 1
+              maximum: 100000
+              example: 106
+            license:
+              type: string
+              description: the license
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "null"
+            forks:
+              type: integer
+              description: the forks
+              minimum: 1
+              maximum: 100000
+              example: 0
+            open_issues:
+              type: integer
+              description: the open_issues
+              minimum: 1
+              maximum: 100000
+              example: 106
+            watchers:
+              type: integer
+              description: the watchers
+              minimum: 1
+              maximum: 100000
+              example: 0
+            default_branch:
+              type: string
+              description: the default_branch
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "master"
+        organization:
+          type: object
+          description: object describing user
+          properties:
+            login:
+              type: string
+              description: the login
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "cloud-sre"
+            id:
+              type: integer
+              description: the id
+              minimum: 1
+              maximum: 100000
+              example: 10240
+            node_id:
+              type: string
+              description: the node_id
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "MDEyOk9yZ2FuaXphdGlvbjEwMjQw"
+            url:
+              type: string
+              description: the url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/orgs/cloud-sre"
+            repos_url:
+              type: string
+              description: the repos_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/orgs/cloud-sre/repos"
+            events_url:
+              type: string
+              description: the events_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/orgs/cloud-sre/events"
+            hooks_url:
+              type: string
+              description: the hooks_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/orgs/cloud-sre/hooks"
+            issues_url:
+              type: string
+              description: the issues_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/orgs/cloud-sre/issues"
+            members_url:
+              type: string
+              description: the members_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/orgs/cloud-sre/members{/member}"
+            public_members_url:
+              type: string
+              description: the public_members_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/orgs/cloud-sre/public_members{/member}"
+            avatar_url:
+              type: string
+              description: the avatar_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://avatars.github.ibm.com/u/10240?"
+            description:
+              type: string
+              description: the description
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "null"
+        enterprise:
+          type: object
+          description: object describing user
+          properties:
+            id:
+              type: integer
+              description: the id
+              minimum: 1
+              maximum: 100000
+              example: 1
+            slug:
+              type: string
+              description: the slug
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "ibm-office-of-the-cio"
+            name:
+              type: string
+              description: the name
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "IBM - Office of the CIO"
+            node_id:
+              type: string
+              description: the node_id
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "MDEwOkVudGVycHJpc2Ux"
+            avatar_url:
+              type: string
+              description: the avatar_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://avatars.github.ibm.com/b/1?"
+            description:
+              type: string
+              description: the description
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "null"
+            website_url:
+              type: string
+              description: the website_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "null"
+            html_url:
+              type: string
+              description: the html_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/enterprises/ibm-office-of-the-cio"
+            created_at:
+              type: string
+              description: the created_at
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "2019-02-16T21:07:52Z"
+            updated_at:
+              type: string
+              description: the updated_at
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "2021-04-23T15:22:43Z"
+        sender:
+          type: object
+          description: object describing user
+          required:
+            - login
+          properties:
+            login:
+              type: string
+              description: the login
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "johndoe"
+            id:
+              type: integer
+              description: the id
+              minimum: 1
+              maximum: 100000
+              example: 2439
+            node_id:
+              type: string
+              description: the node_id
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "MDQ6VXNlcjI0Mzk="
+            avatar_url:
+              type: string
+              description: the avatar_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://avatars.github.ibm.com/u/2439?"
+            gravatar_id:
+              type: string
+              description: the gravatar_id
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: ""
+            url:
+              type: string
+              description: the url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/users/johndoe"
+            html_url:
+              type: string
+              description: the html_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/johndoe"
+            followers_url:
+              type: string
+              description: the followers_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/users/johndoe/followers"
+            following_url:
+              type: string
+              description: the following_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/users/johndoe/following{/other_user}"
+            gists_url:
+              type: string
+              description: the gists_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/users/johndoe/gists{/gist_id}"
+            starred_url:
+              type: string
+              description: the starred_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/users/johndoe/starred{/owner}{/repo}"
+            subscriptions_url:
+              type: string
+              description: the subscriptions_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/users/johndoe/subscriptions"
+            organizations_url:
+              type: string
+              description: the organizations_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/users/johndoe/orgs"
+            repos_url:
+              type: string
+              description: the repos_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/users/johndoe/repos"
+            events_url:
+              type: string
+              description: the events_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/users/johndoe/events{/privacy}"
+            received_events_url:
+              type: string
+              description: the received_events_url
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "https://github.ibm.com/api/v3/users/johndoe/received_events"
+            type:
+              type: string
+              description: the type
+              minLength: 1
+              maxLength: 1000
+              pattern: ".*"
+              example: "User"
+            site_admin:
+              type: boolean
+              description: the site_admin
+              example: false
+        
+    HealthzInfo:
+      type: object
+      description: Additional information returned by the healthz API. 
+      properties:
+        href:
+          type: string
+          description: The URL to this healthz information.
+        code:
+          type: integer
+          description: The response code to this call.
+        description:
+          type: string
+          description: An optional description of the issue.  For a successful healthz
+            call, this value may simply be "ok".

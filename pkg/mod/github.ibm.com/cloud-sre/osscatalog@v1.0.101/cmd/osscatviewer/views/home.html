@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>OSS Catalog Viewer Home</title>
+    <link rel="stylesheet" href="/osscat-styles.css">
+</head>
+
+<body>
+    <div class="osscat-login-info">{{.LoggedInUser}}</div>
+    <h1>OSS Entries - All Services/Components</h1>
+    <div>
+        <span class="osscat-tab-name">Services/Components</span>
+        <span class="osscat-tab-name"><a href="/segments">Segments</a></span>
+        <span class="osscat-tab-name"><a href="/environments">Environments</a></span>
+    </div>
+    <div>
+        <form class="osscat-home-form" action="?pattern=pattern" method="get">
+            <span class="osscat-home-input-label">Filter Pattern: </span>
+            <input class="osscat-home-input" type="text" name="pattern" value="{{.Pattern}}">
+            <input class="osscat-button" type="submit" value="Search">
+        </form>
+    </div>
+    <table class="osscat-table">
+        <thead>
+            <tr>
+                <th class="osscat-th osscat-th-name">CRN Service Name</th>
+                <th class="osscat-th osscat-th-name">Display Name</th>
+                <th class="osscat-th osscat-th-entry-type">Entry Type</th>
+                <th class="osscat-th osscat-th-operational-status">Operational Status</th>
+                <th class="osscat-th osscat-th-oss-status" colspan="2">OSS Merge Status</th>
+                <th class="osscat-th osscat-th-oss-phase">OSS Onboarding Phase</th>
+                <th class="osscat-th">OSS Tags</th>
+                <th class="osscat-th osscat-th-merge-last-update">Merge Control Update<br/>[Prod-Diff]</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{range .Services}}
+            <tr>
+                <td class="osscat-label">
+                    <a href="/view/{{.ReferenceResourceName}}" target="_blank">{{.ReferenceResourceName}}</a>
+                </td>
+                <td class="osscat-value">{{.ReferenceDisplayName}}</td>
+                <td class="osscat-value">{{.EntryType.ShortString}}</td>
+                <td class="osscat-value">{{.OperationalStatusString}}</td>
+                <td class="osscat-value-status {{.OSSCRNStatus}}">{{.OSSCRNStatus.StringStatusShort}}</td>
+                <td class="osscat-value-status {{.OSSOverallStatus}}">{{.OSSOverallStatus.StringStatusShort}}</td>
+                <td class="osscat-value">{{.OSSOnboardingPhase}}</td>
+                {{if .OSSMergeTagsString}}
+                <td class="osscat-value osscat-merge-tags">{{.OSSMergeTagsString}}</td>
+                {{else}}
+                <td class="osscat-value">{{.OSSTagsString}}</td>
+                {{end}}
+                <td class="osscat-value-merge-last-update">{{.OSSMergeLastUpdate}}
+                    {{if .ProductionDiffID}}
+                    <a class="osscat-difflink" href="/diff/{{.ProductionDiffID}}" target="_blank">[{{.ProductionDiffLabel}}]</a>
+                    {{end}}
+                </td>
+            </tr>
+            {{end}}
+        </tbody>
+    </table>
+    <span class="osscat-merge-timestamp">Last UI Refresh (actual merge data might be older): {{.LastRefresh}}</span>
+</body>

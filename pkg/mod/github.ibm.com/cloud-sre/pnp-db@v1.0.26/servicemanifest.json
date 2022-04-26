@@ -1,0 +1,30 @@
+{
+    "manifest_version": "1.0.0.0",
+    "service_name": "api-pnp-db",
+    "component_name": "api-pnp-db",
+    "cname": "internal",
+    "ctype": "public",
+    "component_instance": "",
+    "scope": "",
+    "region": "us-south",
+    "resource_type" : "dockercontainer",
+    "resource" : "",
+
+    "tenancy" : "shared",
+    "pager_duty" : "",
+    "team_email" : "",
+    "bailey_url" : "",
+    "bailey_project" : "",
+    "repo_url" : "https://github.ibm.com/cloud-sre/pnp-db",
+
+    "softlayer_account": "",
+    "softlayer_account_api_key_id": "RESERVED FOR FUTURE USE",
+    "bluemix_account": "ossTools",
+    "bluemix_account_api_key_id": "RESERVED FOR FUTURE USE",
+
+    "security_status_url": "",
+    "static_sec_analyze_url": "",
+    "customer_ticket_repo_url": "",
+    "runbook_repo_url": "",
+    "continuity_plan_url" : ""
+}

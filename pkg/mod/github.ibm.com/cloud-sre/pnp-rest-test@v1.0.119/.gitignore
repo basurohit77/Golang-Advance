@@ -1,0 +1,12 @@
+.vscode/launch.json
+tests/*.gob
+tests/keys.json
+main
+.DS_Store
+.idea
+coverage.out
+unittest.out
+cover.out
+coverage.xml
+unittest.xml
+coverage-all.out

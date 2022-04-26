@@ -1,0 +1,10 @@
+debug
+main
+.vscode/launch.json
+.idea
+coverage.out
+unittest.out
+cover.out
+coverage.xml
+unittest.xml
+coverage-all.out

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>OSS Catalog Environment: {{.OSSEnvironment.DisplayName}}</title>
+        <link rel="stylesheet" href="/osscat-styles.css">
+</head>
+
+<body>
+        <div class="osscat-login-info">{{.LoggedInUser}}</div>
+        <h1 class="osscat-title">OSS Environment entry for {{ .OSSEnvironment.DisplayName }}</h1>
+        <div class="osscat-page">
+                <div class="osscat-row">
+                        <div class="osscat-section">
+                                <h2 class="osscat-subtitle">General Information</h2>
+                                <table class="osscat-table">
+                                        <tr>
+                                                <td class="osscat-label">DisplayName: </td>
+                                                <td class="osscat-value">{{.OSSEnvironment.DisplayName}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">EnvironmentID: </td>
+                                                <td class="osscat-value">{{.OSSEnvironment.EnvironmentID}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">Type: </td>
+                                                <td class="osscat-value">{{.OSSEnvironment.Type}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">Status: </td>
+                                                <td class="osscat-value">{{.OSSEnvironment.Status}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">OwningSegment: </td>
+                                                <td class="osscat-value">{{.OSSEnvironment.OwningSegment}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">OwningClient: </td>
+                                                <td class="osscat-value">{{.OSSEnvironment.OwningClient}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">ParentID: </td>
+                                                <td class="osscat-value">{{.OSSEnvironment.ParentID}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">ReferenceCatalogID: </td>
+                                                <td class="osscat-value">{{.OSSEnvironment.ReferenceCatalogID}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">ReferenceCatalogPath: </td>
+                                                <td class="osscat-value">{{.OSSEnvironment.ReferenceCatalogPath}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">LegacyIMSID: </td>
+                                                <td class="osscat-value">{{.OSSEnvironment.LegacyIMSID}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">LegacyMCCPID: </td>
+                                                <td class="osscat-value">{{.OSSEnvironment.LegacyMCCPID}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">LegacyDoctorCRN: </td>
+                                                <td class="osscat-value">{{.OSSEnvironment.LegacyDoctorCRN}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">Description: </td>
+                                                <td class="osscat-value">{{.OSSEnvironment.Description}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">OSSTags: </td>
+                                                <td class="osscat-value">{{.OSSEnvironment.OSSTags}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">OSSOnboardingPhase: </td>
+                                                <td class="osscat-value">{{.OSSEnvironment.OSSOnboardingPhase}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">OSSOnboardingApprover: </td>
+                                                <td class="osscat-value">{{.OSSEnvironment.OSSOnboardingApprover}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">OSSOnboardingApprovalDate: </td>
+                                                <td class="osscat-value">{{.OSSEnvironment.OSSOnboardingApprovalDate}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">SchemaVersion: </td>
+                                                <td class="osscat-value">{{.OSSEnvironment.SchemaVersion}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">Record Created: </td>
+                                                <td class="osscat-value">{{.Created}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">Record Updated: </td>
+                                                <td class="osscat-value">{{.Updated}}</td>
+                                        </tr>
+                                </table>
+                                {{if .LinkToOSSRecord}}
+                                <button class="osscat-long-button" onclick=" window.open('{{.LinkToOSSRecord}}','_blank')">Go
+                                        to OSS Record in Global Catalog UI</button>
+                                {{end}}
+                                <button class="osscat-long-button" onclick=" window.open('/diff/{{.ProductionDiffID}}','_blank')">Check
+                                        for Diffs in Production OSS Record</button>
+                        </div>
+                </div>
+                <div class="osscat-row">
+                        <div class="osscat-widesection" id="validation_issues">
+                                <h2 class="osscat-subtitle">Validation Issues</h2>
+                                <table class="osscat-table">
+                                        {{range .OSSValidation.Issues}}
+                                        <tr>
+                                                <td class="osscat-value-validation-severity">{{.Severity}} </td>
+                                                <td class="osscat-value-validation-tags">{{.Tags}} </td>
+                                                <td class="osscat-value">{{.Title}} {{if .Details}}: {{.Details}}{{end}}</td>
+                                        </tr>
+                                        {{end}}
+                                </table>
+                        </div>
+                </div>
+        </div>
+        {{/*
+        <h2>Raw Data</h2>
+        <pre>{{ .OSSEnvironment }}</pre> */}}
+</body>

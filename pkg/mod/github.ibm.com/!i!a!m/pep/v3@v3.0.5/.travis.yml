@@ -1,0 +1,34 @@
+language: go
+go:
+- 1.15.x
+env:
+  global:
+  - secure: WIDogKTFoE9xyAniM+liYRN75Hmcos6ZyUa/EfModR2APPL2AzwaiMCuRfNCoEPATHkKovtB89f3F1o3jXH4oYfAKmFIkp9XtGako05SIhA0C+8LkQlSFGBtT9B/4xj+RfcYWBzIilxAppBMWsyyKlY/fwZ+iCqCXXCcs05V+4TSbCqU3FoSpIE0p67m8WZNkLiHu0I1DztMNNl3xB09WGyOoEUcvvnBl7aj9cgQUOG73rknHSdlDxm3Q3DW2lshv8H9GrFX3PhCxTe/hGiCKBo1TfA1Y+dDnDTF1wjXetSi+C3IaNN2+xVjfPtjzYKUjPkRD0aIg0D0tyCNho337Jd0kWRc4pgS6rApcJJOG/SmW4RTFM4D/kUmGZJcQYyVaiRB7+Muz7ypEFw+luXfkZg7YNKioW6yAVzFOTwDL6z3RtQdqlVpBqMSoWOxglJhvGlW8taA3FEE2upC9bYHegxvWaj1CkI1q4I1rMU2amWMhcGbVttCvdT3q/VKyRNtT6ySOcvHaRG0XwDtdnSszVXsyCvA+OvQIlFhbKroFoa+kRpbIS477r0ng+O64o2LSNfZUZr5tBySKIOBmNfobkMPy5Osy0swMoaZlbPb4B5GYamoSHKEVYfGYXzp7qf4avcMdsoUhqZRGkjjQEsh4SDZ0hgAcNuHVgzzQrAAvew=
+  - secure: jgC4U3eN3+xpG9Hz6Nr8oxBTO6NoLkUshTqScWOm3ZNDN30+sEslW10ItHNY5qy4WBaIlNbxCszpnfvLddV/LkpED14yuZvicpAWtSBLIsuedXccgyA8g5LzcpPDp7fe0pXAe9/KiNWgqjtASKiMvYO+ez96oVqB9gOcbt/C51XFg6QOth05A5tOqZkuFmcfQaXgakoY1lHCqc/lFU9U7agu+1QyZ4wg1ZXilyG7jBBDUW9hfV5lnfNWmix/bbEC0pZvKf3FAuUDoNpdLDrQj2MoTyFF3sSlFKduZ1Tk2u2l0V5lvboqY+B2/RqfNWAhKyWL9J20TrDaCmSj9FgZ6Y+GNPUGRY5EpjfhMsRc1h863bKs8vmVqrUUWSEzZievT12gYrcgSPjWytReE9HYD1SroMCXTIMrm1V2HUMrFkLMT01UgWoJcAGL/igPlc38Q28Mv2C+UXbeCbcHOmkfYGfhxIbMegdpPF6ksCTroyt1pgKYUWUsBwA7fQHojS201ms3NcqJOx4FO2dnJuEkK/hnfg7yo3BKWMYm2k5HQMBW84ov89SKw36HjvJDGA+t+msvUdThOS8uQ/wR8WWn0X12khWaNnUA+9sTz9HBAjidlQIxmkeYHuLoJIf+e7Pj432h6J8IZZqs9jEq1nwjujphtzO0W3JaaoTw67XCcgk=
+  - GONOPROXY: github.ibm.com*
+  - GONOSUMDB: github.ibm.com*
+  - GOPRIVATE: github.ibm.com*
+  - secure: d17paidEhdq9lBleyQJXAkXy577NUB2vgKmwJPZ9LkAuOEWVJOy0JX7Jys/qTjIUqW6YEGQuu6bD5bEx7WzZGncoBNPJurYzhIjos5EvzI+KXZ74cGrSNOmeK0JronwyQgmdRnrajgRKtho+35QKYZ8MWIDv6UBhAh34i3GO4dWlWyTB90vsfh2Q80ejXCt81bE1muynqSw60Tug5CmTrK+IoYbKPfgafx6ZVE9pqUlFLUHxTwpSH9lV2XKzWKCE7mSW+rTCVMc4w5dFoDgleaGbPiqk6IjrcQ4blxLB+TBL6bjdGiH2E9vWm1zGzy41n6Pgi/dEVfxUzQG3SVUTsU1qjfGjp6XoB1sHb6iDz0mEwhHbR+Eq3wBZ1I41hmPKKmnrSK6vaRWveP2KRrhAyFDBpBRDhoMBLij4kGlDiBNRHApLTUQu1hyudLU5pMcxX3UMAv68oo4ADJ6BEDVyax3RdzaeiNEB/MgWpouNadhfKYtZU5caXCmDSU5PW8cyP+aMwbge8NLVHVsQqueHr86SNhSv6w8K5dh8cRqUaiY+pTN7xzT3fC3MhDfHGSw1BTY2GUT7gO17FBtdNcqfH1n5iSAa+SmuH1dgYL8Fa9ULYv1DAgh0QlYNfeYjceuwMOVQUP0lwLpWxAx98Mcic8b0EIiam8JOIDLNN6ycscU=
+  - secure: m6AAJErLfFYl9suNwMK5UoywEafStu02R13OCDfC1CLH81u2b/Xe2JjxsnYRZXR4MLOvxqFyyH7icmnyzGptN33GqzWrP6S9XwmVHfDgODTgY7lXOMXSwnjjb5F1SiFL7vJAcrY0IC9ZoYojJkirYbnDV8IrtuejxxvNe1FciFJJdDGNEUMx1b4Gk+A4/fyVApYw+b6bRH2deezwgBuUW5KQlNVKSVWSwuqpuvmwvgphmkGW9kmEvlgp0TPBRi03wkNcMSe0fCvQLJpnCQ7RY6Z97dNvf5PqkUImuWlBi5bznbhmdPMfF7atnJHjlM0v3KpZWy2+z5PIbsCl7BG0iIduKnP+/U2wern7Gx3TVDMiQwnczQ4X9dXbBcHIZ3ts7u4tdEsmLsH42tURJvbxn1CWOgchYhzrXbOQME1B4pVEC8j5269NqqIBksHsxZ1CvNHZ+OvEAcEcVH8yvrfjL3eZIaSw5AzRRdGVDg/rZ27k+PZ5D/jTCL9ILuTTvHODekDIWw9GJdEOXGhLtfGacqaTyR5LAwMNnta2VXnEmrLyI7JPJdocNGUhtMU1McS27Jq842TnSmzx3T271yOKrvxC2yiJx05YeaJU/pcf3VpwB1Kdw10T2iXSoSYdGZ4W6CbIDESoP4P3HXuOKCKdYWKsi+i3VqWuyz1vc9+IEK8=
+  - TEKTON_PIPELINE_URL: https://devops-api.us-south.devops.cloud.ibm.com/v1/tekton-webhook/17df78b9-6bb2-4198-a7c6-11a34b9d4e99/run/4c315a10-5439-4e35-a720-2789ec4a3a9c
+  - TEKTON_CI_PIPELINE_URL: https://devops-api.us-south.devops.cloud.ibm.com/v1/tekton-webhook/d4336ffc-40b3-4474-bcb6-572cf823d6a4/run/53a6eb5e-5316-4cfc-9493-3ae96bf5c407
+before_script:
+- git config --global url."https://${GITHUB_TOKEN}:x-oauth-basic@github.ibm.com/".insteadOf
+  "https://github.ibm.com/"
+- go version
+- curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh
+  | sh -s -- -b $(go env GOPATH)/bin v1.30.0
+- curl -sfL https://raw.githubusercontent.com/securego/gosec/master/install.sh | sh
+  -s -- -b $(go env GOPATH)/bin v2.5.0
+- go mod download
+script:
+- |
+  export GOPRIVATE="github.ibm.com/IAM"
+  export GOPROXY="https://$ARTIFACTORY_USER:$ARTIFACTORY_PASSWORD@na.artifactory.swg-devops.com/artifactory/api/go/iam-go-virtual"
+  make
+  git clone https://github.ibm.com/IAM/iam-tekton-common-DevOps
+  if [ "$TRAVIS_PULL_REQUEST_SHA" != "" ]; then
+    bash ./iam-tekton-common-DevOps/v2/scripts/start-ci-pr-tekton-pipeline.sh --commit-id ${TRAVIS_COMMIT} --tekton-pr --tekton-url ${TEKTON_PIPELINE_URL} --tekton-token ${TEKTON_TOKEN} --tekton-repository https://github.ibm.com/IAM/pep/ --repo-branch ${TRAVIS_BRANCH} --tekton-git-token ${GITHUB_TOKEN}
+  else
+    bash ./iam-tekton-common-DevOps/v2/scripts/start-ci-pr-tekton-pipeline.sh --commit-id ${TRAVIS_COMMIT} --tekton-cr --tekton-url ${TEKTON_CI_PIPELINE_URL} --tekton-token ${TEKTON_TOKEN} --tekton-apname pep --tekton-repository https://github.ibm.com/IAM/pep/
+  fi

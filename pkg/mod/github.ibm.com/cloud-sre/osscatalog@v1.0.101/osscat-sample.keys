@@ -1,0 +1,69 @@
+{
+        "yp": {
+                "name": "osscatYPPlatformKey1",
+                "key": "***"
+        },
+        "ys1": {
+                "name": "osscatPlatformKey1",
+                "key": "***"
+        },
+        "catalog-yp": {
+                "name": "osscatYPPlatformKey1",
+                "key": "***"
+        },
+        "catalog-ys1": {
+                "name": "osscatPlatformKey1",
+                "key": "***"
+        },
+        "osscat-service-ys1": {
+               "name": "osscatServiceKey1",
+               "id": "ServiceId-***",
+               "key": "***"
+        },
+        "osscat-service-yp": {
+               "name": "osscatYPServiceID1Key1",
+               "id": "ServiceId-***",
+               "key": "***"
+        },
+	"servicenow-watson": {
+		"name": "SN Token - watson (prod)",
+		"token": "***"
+	},
+	"servicenow-watsontest": {
+		"name": "SN Token for watsontest",
+		"token": "***"
+	},
+        "servicenow-watsondev": {
+                "name": "ServiceNow Dev token for dpj",
+                "token": "***"
+        },
+	"servicenow-cloudfed": {
+		"name": "SN Token - cloudfed (prod)",
+		"token": "***"
+	},
+	"servicenow-cloudfedtest": {
+		"name": "SN Token for cloudfedtest",
+		"token": "***"
+	},
+	"servicenow-cloudfeddev": {
+		"name": "SN Token for cloudfeddev",
+		"token": "***"
+	},
+        "oss-apiplatform": {
+                      "name": "API Plaform API Key (Doctor) for dpj",
+                      "key": "***"
+        }
+        "logdna-osscat-ingestion": {
+                "name": "LogDNA ingestion key",
+                "key": "***"
+        },
+        "logdna-osscat-service": {
+                "name": "LogDNA service key",
+                "key": "***"
+        },
+	"clearinghouse": {
+		"name": "OSSCat Client for ClearingHouse",
+		"id": "***",
+		"token": "***"
+	}
+}

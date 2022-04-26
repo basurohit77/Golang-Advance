@@ -1,0 +1,5011 @@
+[
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:aa:dedicated::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "American Airlines POC - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "American Airlines POC - decommissioned\n\n    DoctorRegionID(American Airlines POC - decommissioned[]/mccpid=aa:prod:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "aa:prod:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:acn:dedicated::us-ne::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Accenture - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Accenture - decommissioned\n\n    DoctorRegionID(Accenture - decommissioned[]/mccpid=acn:prod:us-ne)\n",
+    "ims_id": "",
+    "mccp_id": "acn:prod:us-ne"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:airtel:dedicated::in-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Bharti Airtel - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Bharti Airtel - decommissioned\n\n    DoctorRegionID(Bharti Airtel - decommissioned[]/mccpid=airtel:prod:in-south)\n",
+    "ims_id": "",
+    "mccp_id": "airtel:prod:in-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bcbsfl:dedicated::us-ne::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "BCBS Florida POC - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "BCBS Florida POC - decommissioned\n\n    DoctorRegionID(BCBS Florida POC - decommissioned[]/mccpid=bcbsfl:prod:us-ne)\n",
+    "ims_id": "",
+    "mccp_id": "bcbsfl:prod:us-ne"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bitau:dedicated::br-sp::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Banco Itau POC - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Banco Itau POC - decommissioned\n\n    DoctorRegionID(Banco Itau POC - decommissioned[]/mccpid=bitau:prod:br-sp)\n",
+    "ims_id": "",
+    "mccp_id": "bitau:prod:br-sp"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluebox-rc:dedicated::us-ne::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "SoftBank Rochester_Watson - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "SoftBank Rochester_Watson - decommissioned\n\n    DoctorRegionID(SoftBank Rochester_Watson - decommissioned[]/mccpid=bluebox-rc:prod:us-ne)\n",
+    "ims_id": "",
+    "mccp_id": "bluebox-rc:prod:us-ne"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluebox-ucs:dedicated::us-ne::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Bluebox UCS (Denali) - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Bluebox UCS (Denali) - decommissioned\n\n    DoctorRegionID(Bluebox UCS (Denali) - decommissioned[]/mccpid=bluebox-ucs:prod:us-ne)\n",
+    "ims_id": "",
+    "mccp_id": "bluebox-ucs:prod:us-ne"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::ams01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Amsterdam 01",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "ams01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Amsterdam 01\n\n    Catalog{Path:\"/eu/nl/ams/ams01\", Kind:\"dc\", ID:\"ams01\"}\n    DoctorRegionID(SoftLayer AMS01 (265592)[crn:v1:softlayer:public::ams01::::]/mccpid=SoftLayer AMS01 (265592))\n",
+    "ims_id": "265592",
+    "mccp_id": "SoftLayer AMS01 (265592)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::ams02::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Amsterdam 02",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "ams02",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Amsterdam 02\n\n    Catalog{Path:\"/eu/nl/ams/ams02\", Kind:\"pop\", ID:\"ams02\"}\n    DoctorRegionID(SoftLayer AMS02 (221894)[crn:v1:softlayer:public::ams02::::]/mccpid=SoftLayer AMS02 (221894))\n",
+    "ims_id": "221894",
+    "mccp_id": "SoftLayer AMS02 (221894)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::ams03::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Amsterdam 03",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "ams03",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Amsterdam 03\n\n    Catalog{Path:\"/eu/nl/ams/ams03\", Kind:\"dc\", ID:\"ams03\"}\n    DoctorRegionID(SoftLayer AMS03 (814994)[crn:v1:softlayer:public::ams03::::]/mccpid=SoftLayer AMS03 (814994))\n",
+    "ims_id": "814994",
+    "mccp_id": "SoftLayer AMS03 (814994)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::atl01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Atlanta 01",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "atl01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Atlanta 01\n\n    Catalog{Path:\"/na/us/atl/atl01\", Kind:\"pop\", ID:\"atl01\"}\n    DoctorRegionID(SoftLayer ATL01 (133224)[crn:v1:softlayer:public::atl01::::]/mccpid=SoftLayer ATL01 (133224))\n",
+    "ims_id": "133224",
+    "mccp_id": "SoftLayer ATL01 (133224)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::au-syd::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Sydney",
+    "type": "IBMCLOUD_REGION",
+    "status": "ACTIVE",
+    "reference_catalog_id": "au-syd",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Sydney\n\n    Catalog{Path:\"/ap/au/syd/au-syd\", Kind:\"region\", ID:\"au-syd\"}\n    DoctorEnvironment(IBM Public AU-SYD (SYP)/YP_SYDNEY[crn:v1:bluemix:public::au-syd::::]\n    DoctorRegionID(IBM Public AU-SYD (SYP)[crn:v1:bluemix:public::au-syd::::]/mccpid=ibm:yp:au-syd)\n",
+    "ims_id": "",
+    "mccp_id": "ibm:yp:au-syd"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::au-syd-1::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "crn:v1:bluemix:public::au-syd::::",
+    "display_name": "Sydney 1",
+    "type": "IBMCLOUD_ZONE",
+    "status": "ACTIVE",
+    "reference_catalog_id": "au-syd-1",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Sydney 1\n\n    Catalog{Path:\"/ap/au/syd/au-syd/au-syd-1\", Kind:\"zone\", ID:\"au-syd-1\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::au-syd-2::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "crn:v1:bluemix:public::au-syd::::",
+    "display_name": "Sydney 2",
+    "type": "IBMCLOUD_ZONE",
+    "status": "ACTIVE",
+    "reference_catalog_id": "au-syd-2",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Sydney 2\n\n    Catalog{Path:\"/ap/au/syd/au-syd/au-syd-2\", Kind:\"zone\", ID:\"au-syd-2\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::au-syd-3::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "crn:v1:bluemix:public::au-syd::::",
+    "display_name": "Sydney 3",
+    "type": "IBMCLOUD_ZONE",
+    "status": "ACTIVE",
+    "reference_catalog_id": "au-syd-3",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Sydney 3\n\n    Catalog{Path:\"/ap/au/syd/au-syd/au-syd-3\", Kind:\"zone\", ID:\"au-syd-3\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::ch-ctu::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Chengdu",
+    "type": "IBMCLOUD_REGION",
+    "status": "NOTREADY",
+    "reference_catalog_id": "ch-ctu",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Chengdu\n\n    Catalog{Path:\"/ap/cn/ctu/ch-ctu\", Kind:\"region\", ID:\"ch-ctu\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::ch-ctu-1::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "crn:v1:bluemix:public::ch-ctu::::",
+    "display_name": "Chengdu 1",
+    "type": "IBMCLOUD_ZONE",
+    "status": "NOTREADY",
+    "reference_catalog_id": "ch-ctu-1",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Chengdu 1\n\n    Catalog{Path:\"/ap/cn/ctu/ch-ctu/ch-ctu-1\", Kind:\"zone\", ID:\"ch-ctu-1\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::ch-ctu-2::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "crn:v1:bluemix:public::ch-ctu::::",
+    "display_name": "Chengdu 2",
+    "type": "IBMCLOUD_ZONE",
+    "status": "NOTREADY",
+    "reference_catalog_id": "ch-ctu-2",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Chengdu 2\n\n    Catalog{Path:\"/ap/cn/ctu/ch-ctu/ch-ctu-2\", Kind:\"zone\", ID:\"ch-ctu-2\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::ch-ctu-3::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "crn:v1:bluemix:public::ch-ctu::::",
+    "display_name": "Chengdu 3",
+    "type": "IBMCLOUD_ZONE",
+    "status": "NOTREADY",
+    "reference_catalog_id": "ch-ctu-3",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Chengdu 3\n\n    Catalog{Path:\"/ap/cn/ctu/ch-ctu/ch-ctu-3\", Kind:\"zone\", ID:\"ch-ctu-3\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::che01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Chennai 01",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "che01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Chennai 01\n\n    Catalog{Path:\"/ap/in/che/che01\", Kind:\"dc\", ID:\"che01\"}\n    DoctorRegionID(SoftLayer CHE01 (1004997)[crn:v1:softlayer:public::che01::::]/mccpid=SoftLayer CHE01 (1004997))\n",
+    "ims_id": "1004997",
+    "mccp_id": "SoftLayer CHE01 (1004997)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::chi01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Chicago 01",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "chi01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Chicago 01\n\n    Catalog{Path:\"/na/us/chi/chi01\", Kind:\"pop\", ID:\"chi01\"}\n    DoctorRegionID(SoftLayer CHI01 (133274)[crn:v1:softlayer:public::chi01::::]/mccpid=SoftLayer CHI01 (133274))\n",
+    "ims_id": "133274",
+    "mccp_id": "SoftLayer CHI01 (133274)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::ctu01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Chengdu 01",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "NOTREADY",
+    "reference_catalog_id": "ctu01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Chengdu 01\n\n    Catalog{Path:\"/ap/cn/ctu/ctu01\", Kind:\"dc\", ID:\"ctu01\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::ctu02::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Chengdu 02",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "NOTREADY",
+    "reference_catalog_id": "ctu02",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Chengdu 02\n\n    Catalog{Path:\"/ap/cn/ctu/ctu02\", Kind:\"dc\", ID:\"ctu02\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::ctu03::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Chengdu 03",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "NOTREADY",
+    "reference_catalog_id": "ctu03",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Chengdu 03\n\n    Catalog{Path:\"/ap/cn/ctu/ctu03\", Kind:\"dc\", ID:\"ctu03\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::dal01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Dallas 01",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "dal01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Dallas 01\n\n    Catalog{Path:\"/na/us/dal/dal01\", Kind:\"dc\", ID:\"dal01\"}\n    DoctorRegionID(SoftLayer DAL01 (3)[crn:v1:softlayer:public::dal01::::]/mccpid=SoftLayer DAL01 (3))\n",
+    "ims_id": "3",
+    "mccp_id": "SoftLayer DAL01 (3)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::dal02::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "SoftLayer DAL02 (154770)",
+    "type": "<unknown>",
+    "status": "<unknown>",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "SoftLayer DAL02 (154770)\n\n    DoctorRegionID(SoftLayer DAL02 (154770)[crn:v1:softlayer:public::dal02::::]/mccpid=SoftLayer DAL02 (154770))\n",
+    "ims_id": "154770",
+    "mccp_id": "SoftLayer DAL02 (154770)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::dal03::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Dallas 3",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "dal03",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Dallas 3\n\n    Catalog{Path:\"/na/us/dal/dal03\", Kind:\"pop\", ID:\"dal03\"}\n    DoctorRegionID(SoftLayer DAL03 (142720)[crn:v1:softlayer:public::dal03::::]/mccpid=SoftLayer DAL03 (142720))\n",
+    "ims_id": "142720",
+    "mccp_id": "SoftLayer DAL03 (142720)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::dal04::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Dallas 4",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "dal04",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Dallas 4\n\n    Catalog{Path:\"/na/us/dal/dal04\", Kind:\"pop\", ID:\"dal04\"}\n    DoctorRegionID(SoftLayer DAL04 (1929395)[crn:v1:softlayer:public::dal04::::]/mccpid=SoftLayer DAL04 (1929395))\n",
+    "ims_id": "1929395",
+    "mccp_id": "SoftLayer DAL04 (1929395)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::dal05::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Dallas 05",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "dal05",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Dallas 05\n\n    Catalog{Path:\"/na/us/dal/dal05\", Kind:\"dc\", ID:\"dal05\"}\n    DoctorRegionID(SoftLayer DAL05 (138124)[crn:v1:softlayer:public::dal05::::]/mccpid=SoftLayer DAL05 (138124))\n",
+    "ims_id": "138124",
+    "mccp_id": "SoftLayer DAL05 (138124)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::dal06::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Dallas 06",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "dal06",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Dallas 06\n\n    Catalog{Path:\"/na/us/dal/dal06\", Kind:\"dc\", ID:\"dal06\"}\n    DoctorRegionID(SoftLayer DAL06 (154820)[crn:v1:softlayer:public::dal06::::]/mccpid=SoftLayer DAL06 (154820))\n",
+    "ims_id": "154820",
+    "mccp_id": "SoftLayer DAL06 (154820)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::dal07::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Dallas 07",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "dal07",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Dallas 07\n\n    Catalog{Path:\"/na/us/dal/dal07\", Kind:\"dc\", ID:\"dal07\"}\n    DoctorRegionID(SoftLayer DAL07 (142776)[crn:v1:softlayer:public::dal07::::]/mccpid=SoftLayer DAL07 (142776))\n",
+    "ims_id": "142776",
+    "mccp_id": "SoftLayer DAL07 (142776)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::dal08::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Dallas 08",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "NOTREADY",
+    "reference_catalog_id": "dal08",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Dallas 08\n\n    Catalog{Path:\"/na/us/dal/dal08\", Kind:\"dc\", ID:\"dal08\"}\n    DoctorRegionID(SoftLayer DAL08 (352392)[crn:v1:softlayer:public::dal08::::]/mccpid=SoftLayer DAL08 (352392))\n",
+    "ims_id": "352392",
+    "mccp_id": "SoftLayer DAL08 (352392)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::dal09::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Dallas 09",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "dal09",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Dallas 09\n\n    Catalog{Path:\"/na/us/dal/dal09\", Kind:\"dc\", ID:\"dal09\"}\n    DoctorRegionID(SoftLayer DAL09 (449494)[crn:v1:softlayer:public::dal09::::]/mccpid=SoftLayer DAL09 (449494))\n",
+    "ims_id": "449494",
+    "mccp_id": "SoftLayer DAL09 (449494)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::dal10::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Dallas 10",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "dal10",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Dallas 10\n\n    Catalog{Path:\"/na/us/dal/dal10\", Kind:\"dc\", ID:\"dal10\"}\n    DoctorRegionID(SoftLayer DAL10 (1441195)[crn:v1:softlayer:public::dal10::::]/mccpid=SoftLayer DAL10 (1441195))\n",
+    "ims_id": "1441195",
+    "mccp_id": "SoftLayer DAL10 (1441195)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::dal12::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Dallas 12",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "dal12",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Dallas 12\n\n    Catalog{Path:\"/na/us/dal/dal12\", Kind:\"dc\", ID:\"dal12\"}\n    DoctorRegionID(SoftLayer DAL12 (1854795)[crn:v1:softlayer:public::dal12::::]/mccpid=SoftLayer DAL12 (1854795))\n",
+    "ims_id": "1854795",
+    "mccp_id": "SoftLayer DAL12 (1854795)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::dal13::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Dallas 13",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "dal13",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Dallas 13\n\n    Catalog{Path:\"/na/us/dal/dal13\", Kind:\"dc\", ID:\"dal13\"}\n    DoctorRegionID(SoftLayer DAL13 (1854895)[crn:v1:softlayer:public::dal13::::]/mccpid=SoftLayer DAL13 (1854895))\n",
+    "ims_id": "1854895",
+    "mccp_id": "SoftLayer DAL13 (1854895)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::den01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Denver 01",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "den01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Denver 01\n\n    Catalog{Path:\"/na/us/den/den01\", Kind:\"pop\", ID:\"den01\"}\n    DoctorRegionID(SoftLayer DEN01 (133226)[crn:v1:softlayer:public::den01::::]/mccpid=SoftLayer DEN01 (133226))\n",
+    "ims_id": "133226",
+    "mccp_id": "SoftLayer DEN01 (133226)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::eu-de::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Frankfurt",
+    "type": "IBMCLOUD_REGION",
+    "status": "ACTIVE",
+    "reference_catalog_id": "eu-de",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Frankfurt\n\n    Catalog{Path:\"/eu/de/fra/eu-de\", Kind:\"region\", ID:\"eu-de\"}\n    DoctorEnvironment(IBM Public EU-DE (FYP)/YP_FRANKFURT[crn:v1:bluemix:public::eu-de::::]\n    DoctorRegionID(IBM Public EU-DE (FYP)[crn:v1:bluemix:public::eu-de::::]/mccpid=ibm:yp:eu-de)\n",
+    "ims_id": "",
+    "mccp_id": "ibm:yp:eu-de"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::eu-de-1::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "crn:v1:bluemix:public::eu-de::::",
+    "display_name": "Frankfurt 1",
+    "type": "IBMCLOUD_ZONE",
+    "status": "ACTIVE",
+    "reference_catalog_id": "eu-de-1",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Frankfurt 1\n\n    Catalog{Path:\"/eu/de/fra/eu-de/eu-de-1\", Kind:\"zone\", ID:\"eu-de-1\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::eu-de-2::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "crn:v1:bluemix:public::eu-de::::",
+    "display_name": "Frankfurt 2",
+    "type": "IBMCLOUD_ZONE",
+    "status": "ACTIVE",
+    "reference_catalog_id": "eu-de-2",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Frankfurt 2\n\n    Catalog{Path:\"/eu/de/fra/eu-de/eu-de-2\", Kind:\"zone\", ID:\"eu-de-2\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::eu-de-3::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "crn:v1:bluemix:public::eu-de::::",
+    "display_name": "Frankfurt 3",
+    "type": "IBMCLOUD_ZONE",
+    "status": "ACTIVE",
+    "reference_catalog_id": "eu-de-3",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Frankfurt 3\n\n    Catalog{Path:\"/eu/de/fra/eu-de/eu-de-3\", Kind:\"zone\", ID:\"eu-de-3\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "London",
+    "type": "IBMCLOUD_REGION",
+    "status": "ACTIVE",
+    "reference_catalog_id": "eu-gb",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "London\n\n    Catalog{Path:\"/eu/uk/lon/eu-gb\", Kind:\"region\", ID:\"eu-gb\"}\n    DoctorEnvironment(IBM Public EU-GB (LYP)/YP_LONDON[crn:v1:bluemix:public::eu-gb::::]\n    DoctorRegionID(IBM Public EU-GB (LYP)[crn:v1:bluemix:public::eu-gb::::]/mccpid=ibm:yp:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "ibm:yp:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::eu-gb-1::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "crn:v1:bluemix:public::eu-gb::::",
+    "display_name": "London 1",
+    "type": "IBMCLOUD_ZONE",
+    "status": "ACTIVE",
+    "reference_catalog_id": "eu-gb-1",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "London 1\n\n    Catalog{Path:\"/eu/uk/lon/eu-gb/eu-gb-1\", Kind:\"zone\", ID:\"eu-gb-1\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::eu-gb-2::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "crn:v1:bluemix:public::eu-gb::::",
+    "display_name": "London 2",
+    "type": "IBMCLOUD_ZONE",
+    "status": "ACTIVE",
+    "reference_catalog_id": "eu-gb-2",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "London 2\n\n    Catalog{Path:\"/eu/uk/lon/eu-gb/eu-gb-2\", Kind:\"zone\", ID:\"eu-gb-2\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::eu-gb-3::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "crn:v1:bluemix:public::eu-gb::::",
+    "display_name": "London 3",
+    "type": "IBMCLOUD_ZONE",
+    "status": "ACTIVE",
+    "reference_catalog_id": "eu-gb-3",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "London 3\n\n    Catalog{Path:\"/eu/uk/lon/eu-gb/eu-gb-3\", Kind:\"zone\", ID:\"eu-gb-3\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::fra01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Frankfurt 01",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "fra01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Frankfurt 01\n\n    Catalog{Path:\"/eu/de/fra/fra01\", Kind:\"pop\", ID:\"fra01\"}\n    DoctorRegionID(SoftLayer FRA01 (221844)[crn:v1:softlayer:public::fra01::::]/mccpid=SoftLayer FRA01 (221844))\n",
+    "ims_id": "221844",
+    "mccp_id": "SoftLayer FRA01 (221844)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::fra02::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Frankfurt 02",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "fra02",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Frankfurt 02\n\n    Catalog{Path:\"/eu/de/fra/fra02\", Kind:\"dc\", ID:\"fra02\"}\n    DoctorRegionID(SoftLayer FRA02 (449506)[crn:v1:softlayer:public::fra02::::]/mccpid=SoftLayer FRA02 (449506))\n",
+    "ims_id": "449506",
+    "mccp_id": "SoftLayer FRA02 (449506)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::fra03::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Frankfurt 03",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "fra03",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Frankfurt 03\n\n    Catalog{Path:\"/eu/de/fra/fra03\", Kind:\"pop\", ID:\"fra03\"}\n    DoctorRegionID(SoftLayer FRA03 (2408995)[crn:v1:softlayer:public::fra03::::]/mccpid=SoftLayer FRA03 (2408995))\n",
+    "ims_id": "2408995",
+    "mccp_id": "SoftLayer FRA03 (2408995)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::fra04::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Frankfurt 04",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "fra04",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Frankfurt 04\n\n    Catalog{Path:\"/eu/de/fra/fra04\", Kind:\"dc\", ID:\"fra04\"}\n    DoctorRegionID(SoftLayer FRA04 (2434695)[crn:v1:softlayer:public::fra04::::]/mccpid=SoftLayer FRA04 (2434695))\n",
+    "ims_id": "2434695",
+    "mccp_id": "SoftLayer FRA04 (2434695)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::fra05::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Frankfurt 05",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "fra05",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Frankfurt 05\n\n    Catalog{Path:\"/eu/de/fra/fra05\", Kind:\"dc\", ID:\"fra05\"}\n    DoctorRegionID(SoftLayer FRA05 (2417495)[crn:v1:softlayer:public::fra05::::]/mccpid=SoftLayer FRA05 (2417495))\n",
+    "ims_id": "2417495",
+    "mccp_id": "SoftLayer FRA05 (2417495)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::hkg01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Hong Kong 01",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "hkg01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Hong Kong 01\n\n    Catalog{Path:\"/ap/hkg/hkg-mtr/hkg01\", Kind:\"pop\", ID:\"hkg01\"}\n    DoctorRegionID(SoftLayer HKG01 (221845)[crn:v1:softlayer:public::hkg01::::]/mccpid=SoftLayer HKG01 (221845))\n",
+    "ims_id": "221845",
+    "mccp_id": "SoftLayer HKG01 (221845)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::hkg02::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Hong Kong 02",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "hkg02",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Hong Kong 02\n\n    Catalog{Path:\"/ap/hkg/hkg-mtr/hkg02\", Kind:\"dc\", ID:\"hkg02\"}\n    DoctorRegionID(SoftLayer HKG02 (352494)[crn:v1:softlayer:public::hkg02::::]/mccpid=SoftLayer HKG02 (352494))\n",
+    "ims_id": "352494",
+    "mccp_id": "SoftLayer HKG02 (352494)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::hou01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Houston 01",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "hou01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Houston 01\n\n    Catalog{Path:\"/na/us/hou/hou01\", Kind:\"pop\", ID:\"hou01\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::hou02::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Houston 02",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "hou02",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Houston 02\n\n    Catalog{Path:\"/na/us/hou/hou02\", Kind:\"dc\", ID:\"hou02\"}\n    DoctorRegionID(SoftLayer HOU02 (142775)[crn:v1:softlayer:public::hou02::::]/mccpid=SoftLayer HOU02 (142775))\n",
+    "ims_id": "142775",
+    "mccp_id": "SoftLayer HOU02 (142775)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::jp-osa::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Osaka",
+    "type": "IBMCLOUD_REGION",
+    "status": "NOTREADY",
+    "reference_catalog_id": "jp-osa",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Osaka\n\n    Catalog{Path:\"/ap/jp/osa/jp-osa\", Kind:\"region\", ID:\"jp-osa\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::jp-osa-1::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "crn:v1:bluemix:public::jp-osa::::",
+    "display_name": "Osaka 1",
+    "type": "IBMCLOUD_ZONE",
+    "status": "NOTREADY",
+    "reference_catalog_id": "jp-osa-1",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Osaka 1\n\n    Catalog{Path:\"/ap/jp/osa/jp-osa/jp-osa-1\", Kind:\"zone\", ID:\"jp-osa-1\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::jp-osa-2::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "crn:v1:bluemix:public::jp-osa::::",
+    "display_name": "Osaka 2",
+    "type": "IBMCLOUD_ZONE",
+    "status": "NOTREADY",
+    "reference_catalog_id": "jp-osa-2",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Osaka 2\n\n    Catalog{Path:\"/ap/jp/osa/jp-osa/jp-osa-2\", Kind:\"zone\", ID:\"jp-osa-2\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::jp-osa-3::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "crn:v1:bluemix:public::jp-osa::::",
+    "display_name": "Osaka 3",
+    "type": "IBMCLOUD_ZONE",
+    "status": "NOTREADY",
+    "reference_catalog_id": "jp-osa-3",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Osaka 3\n\n    Catalog{Path:\"/ap/jp/osa/jp-osa/jp-osa-3\", Kind:\"zone\", ID:\"jp-osa-3\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::jp-tok::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Tokyo",
+    "type": "IBMCLOUD_REGION",
+    "status": "ACTIVE",
+    "reference_catalog_id": "jp-tok",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Tokyo\n\n    Catalog{Path:\"/ap/jp/tok/jp-tok\", Kind:\"region\", ID:\"jp-tok\"}\n    DoctorEnvironment(/IBM Public AP North (JP-TOK)[crn:v1:bluemix:public::jp-tok::::]\n    DoctorRegionID(IBM Public AP North (JP-TOK)[crn:v1:bluemix:public::jp-tok::::]/mccpid=crn:v1:bluemix:public::jp-tok::::)\n",
+    "ims_id": "",
+    "mccp_id": "ibm:yp:jp-tok"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::jp-tok-1::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "crn:v1:bluemix:public::jp-tok::::",
+    "display_name": "Tokyo 1",
+    "type": "IBMCLOUD_ZONE",
+    "status": "ACTIVE",
+    "reference_catalog_id": "jp-tok-1",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Tokyo 1\n\n    Catalog{Path:\"/ap/jp/tok/jp-tok/jp-tok-1\", Kind:\"zone\", ID:\"jp-tok-1\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::jp-tok-2::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "crn:v1:bluemix:public::jp-tok::::",
+    "display_name": "Tokyo 2",
+    "type": "IBMCLOUD_ZONE",
+    "status": "ACTIVE",
+    "reference_catalog_id": "jp-tok-2",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Tokyo 2\n\n    Catalog{Path:\"/ap/jp/tok/jp-tok/jp-tok-2\", Kind:\"zone\", ID:\"jp-tok-2\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::jp-tok-3::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "crn:v1:bluemix:public::jp-tok::::",
+    "display_name": "Tokyo 3",
+    "type": "IBMCLOUD_ZONE",
+    "status": "ACTIVE",
+    "reference_catalog_id": "jp-tok-3",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Tokyo 3\n\n    Catalog{Path:\"/ap/jp/tok/jp-tok/jp-tok-3\", Kind:\"zone\", ID:\"jp-tok-3\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::lax01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Los Angeles 01",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "lax01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Los Angeles 01\n\n    Catalog{Path:\"/na/us/lax/lax01\", Kind:\"pop\", ID:\"lax01\"}\n    DoctorRegionID(SoftLayer LAX01 (133225)[crn:v1:softlayer:public::lax01::::]/mccpid=SoftLayer LAX01 (133225))\n",
+    "ims_id": "133225",
+    "mccp_id": "SoftLayer LAX01 (133225)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::lon01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "London 01",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "lon01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "London 01\n\n    Catalog{Path:\"/eu/uk/lon/lon01\", Kind:\"pop\", ID:\"lon01\"}\n    DoctorRegionID(SoftLayer LON01 (221893)[crn:v1:softlayer:public::lon01::::]/mccpid=SoftLayer LON01 (221893))\n",
+    "ims_id": "221893",
+    "mccp_id": "SoftLayer LON01 (221893)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::lon02::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "London 02",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "lon02",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "London 02\n\n    Catalog{Path:\"/eu/uk/lon/lon02\", Kind:\"dc\", ID:\"lon02\"}\n    DoctorRegionID(SoftLayer LON02 (358694)[crn:v1:softlayer:public::lon02::::]/mccpid=SoftLayer LON02 (358694))\n",
+    "ims_id": "358694",
+    "mccp_id": "SoftLayer LON02 (358694)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::lon03::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "London 03",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "lon03",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "London 03\n\n    Catalog{Path:\"/eu/uk/lon/lon03\", Kind:\"pop\", ID:\"lon03\"}\n    DoctorRegionID(SoftLayer LON03 (2206695)[crn:v1:softlayer:public::lon03::::]/mccpid=SoftLayer LON03 (2206695))\n",
+    "ims_id": "2206695",
+    "mccp_id": "SoftLayer LON03 (2206695)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::lon04::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "London 04",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "lon04",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "London 04\n\n    Catalog{Path:\"/eu/uk/lon/lon04\", Kind:\"dc\", ID:\"lon04\"}\n    DoctorRegionID(SoftLayer LON04 (2017395)[crn:v1:softlayer:public::lon04::::]/mccpid=SoftLayer LON04 (2017395))\n",
+    "ims_id": "2017395",
+    "mccp_id": "SoftLayer LON04 (2017395)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::lon05::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "London 05",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "lon05",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "London 05\n\n    Catalog{Path:\"/eu/uk/lon/lon05\", Kind:\"dc\", ID:\"lon05\"}\n    DoctorRegionID(SoftLayer LON05 (2123995)[crn:v1:softlayer:public::lon05::::]/mccpid=SoftLayer LON05 (2123995))\n",
+    "ims_id": "2123995",
+    "mccp_id": "SoftLayer LON05 (2123995)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::lon06::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "London 06",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "lon06",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "London 06\n\n    Catalog{Path:\"/eu/uk/lon/lon06\", Kind:\"dc\", ID:\"lon06\"}\n    DoctorRegionID(SoftLayer LON06 (2124095)[crn:v1:softlayer:public::lon06::::]/mccpid=SoftLayer LON06 (2124095))\n",
+    "ims_id": "2124095",
+    "mccp_id": "SoftLayer LON06 (2124095)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::mel01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Melbourne 01",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "mel01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Melbourne 01\n\n    Catalog{Path:\"/ap/au/mel/mel01\", Kind:\"dc\", ID:\"mel01\"}\n    DoctorRegionID(SoftLayer MEL01 (449596)[crn:v1:softlayer:public::mel01::::]/mccpid=SoftLayer MEL01 (449596))\n",
+    "ims_id": "449596",
+    "mccp_id": "SoftLayer MEL01 (449596)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::mel02::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Melbourne 02",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "mel02",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Melbourne 02\n\n    Catalog{Path:\"/ap/au/mel/mel02\", Kind:\"pop\", ID:\"mel02\"}\n    DoctorRegionID(SoftLayer MEL02 (449518)[crn:v1:softlayer:public::mel02::::]/mccpid=SoftLayer MEL02 (449518))\n",
+    "ims_id": "449518",
+    "mccp_id": "SoftLayer MEL02 (449518)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::mel03::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "SoftLayer MEL03 (2013215)",
+    "type": "<unknown>",
+    "status": "<unknown>",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "SoftLayer MEL03 (2013215)\n\n    DoctorRegionID(SoftLayer MEL03 (2013215)[crn:v1:softlayer:public::mel03::::]/mccpid=SoftLayer MEL03 (2013215))\n",
+    "ims_id": "2013215",
+    "mccp_id": "SoftLayer MEL03 (2013215)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::mex01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Mexico 01",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "mex01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Mexico 01\n\n    Catalog{Path:\"/na/mex/mex-cty/mex01\", Kind:\"dc\", ID:\"mex01\"}\n    DoctorRegionID(SoftLayer MEX01 (449600)[crn:v1:softlayer:public::mex01::::]/mccpid=SoftLayer MEX01 (449600))\n",
+    "ims_id": "449600",
+    "mccp_id": "SoftLayer MEX01 (449600)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::mia01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Miami 01",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "mia01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Miami 01\n\n    Catalog{Path:\"/na/us/mia/mia01\", Kind:\"pop\", ID:\"mia01\"}\n    DoctorRegionID(SoftLayer MIA01 (133228)[crn:v1:softlayer:public::mia01::::]/mccpid=SoftLayer MIA01 (133228))\n",
+    "ims_id": "133228",
+    "mccp_id": "SoftLayer MIA01 (133228)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::mil01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Milan 01",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "mil01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Milan 01\n\n    Catalog{Path:\"/eu/it/mil/mil01\", Kind:\"dc\", ID:\"mil01\"}\n    DoctorRegionID(SoftLayer MIL01 (815394)[crn:v1:softlayer:public::mil01::::]/mccpid=SoftLayer MIL01 (815394))\n",
+    "ims_id": "815394",
+    "mccp_id": "SoftLayer MIL01 (815394)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::mil02::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Milan 01",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "mil02",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Milan 01\n\n    Catalog{Path:\"/eu/it/mil/mil02\", Kind:\"pop\", ID:\"mil02\"}\n    DoctorRegionID(SoftLayer MIL02 (912595)[crn:v1:softlayer:public::mil02::::]/mccpid=SoftLayer MIL02 (912595))\n",
+    "ims_id": "912595",
+    "mccp_id": "SoftLayer MIL02 (912595)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::mon01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Montreal 01",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "mon01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Montreal 01\n\n    Catalog{Path:\"/na/ca/mon/mon01\", Kind:\"dc\", ID:\"mon01\"}\n    DoctorRegionID(SoftLayer MON01 (449610)[crn:v1:softlayer:public::mon01::::]/mccpid=SoftLayer MON01 (449610))\n",
+    "ims_id": "449610",
+    "mccp_id": "SoftLayer MON01 (449610)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::mon02::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Montreal 02",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "mon02",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Montreal 02\n\n    Catalog{Path:\"/na/ca/mon/mon02\", Kind:\"pop\", ID:\"mon02\"}\n    DoctorRegionID(SoftLayer MON02 (449618)[crn:v1:softlayer:public::mon02::::]/mccpid=SoftLayer MON02 (449618))\n",
+    "ims_id": "449618",
+    "mccp_id": "SoftLayer MON02 (449618)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::nyc01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "New York City 01",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "nyc01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "New York City 01\n\n    Catalog{Path:\"/na/us/nyc/nyc01\", Kind:\"pop\", ID:\"nyc01\"}\n    DoctorRegionID(SoftLayer NYC01 (133227)[crn:v1:softlayer:public::nyc01::::]/mccpid=SoftLayer NYC01 (133227))\n",
+    "ims_id": "133227",
+    "mccp_id": "SoftLayer NYC01 (133227)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::nyc02::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "New York City 02",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "nyc02",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "New York City 02\n\n    Catalog{Path:\"/na/us/nyc/nyc02\", Kind:\"pop\", ID:\"nyc02\"}\n    DoctorRegionID(SoftLayer NYC02 (2408295)[crn:v1:softlayer:public::nyc02::::]/mccpid=SoftLayer NYC02 (2408295))\n",
+    "ims_id": "2408295",
+    "mccp_id": "SoftLayer NYC02 (2408295)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::nyc03::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "New York City 03",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "nyc03",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "New York City 03\n\n    Catalog{Path:\"/na/us/nyc/nyc03\", Kind:\"pop\", ID:\"nyc03\"}\n    DoctorRegionID(SoftLayer NYC03 (2408395)[crn:v1:softlayer:public::nyc03::::]/mccpid=SoftLayer NYC03 (2408395))\n",
+    "ims_id": "2408395",
+    "mccp_id": "SoftLayer NYC03 (2408395)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::osa01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Osaka 01",
+    "type": "IBMCLOUD_POP",
+    "status": "NOTREADY",
+    "reference_catalog_id": "osa01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Osaka 01\n\n    Catalog{Path:\"/ap/jp/osa/osa01\", Kind:\"pop\", ID:\"osa01\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::osa21::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Osaka 21",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "NOTREADY",
+    "reference_catalog_id": "osa21",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Osaka 21\n\n    Catalog{Path:\"/ap/jp/osa/osa21\", Kind:\"dc\", ID:\"osa21\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::osa22::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Osaka 22",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "NOTREADY",
+    "reference_catalog_id": "osa22",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Osaka 22\n\n    Catalog{Path:\"/ap/jp/osa/osa22\", Kind:\"dc\", ID:\"osa22\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::osa23::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Osaka 23",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "NOTREADY",
+    "reference_catalog_id": "osa23",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Osaka 23\n\n    Catalog{Path:\"/ap/jp/osa/osa23\", Kind:\"dc\", ID:\"osa23\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::osl01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Oslo 01",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "osl01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Oslo 01\n\n    Catalog{Path:\"/eu/no/osl/osl01\", Kind:\"dc\", ID:\"osl01\"}\n    DoctorRegionID(SoftLayer OSL01 (1541257)[crn:v1:softlayer:public::osl01::::]/mccpid=SoftLayer OSL01 (1541257))\n",
+    "ims_id": "1541257",
+    "mccp_id": "SoftLayer OSL01 (1541257)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::osl02::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Oslo 02",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "osl02",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Oslo 02\n\n    Catalog{Path:\"/eu/no/osl/osl02\", Kind:\"pop\", ID:\"osl02\"}\n    DoctorRegionID(SoftLayer OSL02 (1440597)[crn:v1:softlayer:public::osl02::::]/mccpid=SoftLayer OSL02 (1440597))\n",
+    "ims_id": "1440597",
+    "mccp_id": "SoftLayer OSL02 (1440597)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::pal01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "SoftLayer PAL01 (277442)",
+    "type": "<unknown>",
+    "status": "<unknown>",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "SoftLayer PAL01 (277442)\n\n    DoctorRegionID(SoftLayer PAL01 (277442)[crn:v1:softlayer:public::pal01::::]/mccpid=SoftLayer PAL01 (277442))\n",
+    "ims_id": "277442",
+    "mccp_id": "SoftLayer PAL01 (277442)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::par01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Paris 01",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "par01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Paris 01\n\n    Catalog{Path:\"/eu/fr/par/par01\", Kind:\"dc\", ID:\"par01\"}\n    DoctorRegionID(SoftLayer PAR01 (449500)[crn:v1:softlayer:public::par01::::]/mccpid=SoftLayer PAR01 (449500))\n",
+    "ims_id": "449500",
+    "mccp_id": "SoftLayer PAR01 (449500)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::par02::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Paris 02",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "par02",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Paris 02\n\n    Catalog{Path:\"/eu/fr/par/par02\", Kind:\"pop\", ID:\"par02\"}\n    DoctorRegionID(SoftLayer PAR02 (449520)[crn:v1:softlayer:public::par02::::]/mccpid=SoftLayer PAR02 (449520))\n",
+    "ims_id": "449520",
+    "mccp_id": "SoftLayer PAR02 (449520)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::per01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Perth 02",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "per01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Perth 02\n\n    Catalog{Path:\"/ap/au/per/per01\", Kind:\"pop\", ID:\"per01\"}\n    DoctorRegionID(SoftLayer PER01 (956395)[crn:v1:softlayer:public::per01::::]/mccpid=SoftLayer PER01 (956395))\n",
+    "ims_id": "956395",
+    "mccp_id": "SoftLayer PER01 (956395)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::sao01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Sao Paulo 01",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "sao01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Sao Paulo 01\n\n    Catalog{Path:\"/sa/br/sao/sao01\", Kind:\"dc\", ID:\"sao01\"}\n    DoctorRegionID(SoftLayer SAO01 (983497)[crn:v1:softlayer:public::sao01::::]/mccpid=SoftLayer SAO01 (983497))\n",
+    "ims_id": "983497",
+    "mccp_id": "SoftLayer SAO01 (983497)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::sao02::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Sao Paulo 02",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "sao02",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Sao Paulo 02\n\n    Catalog{Path:\"/sa/br/sao/sao02\", Kind:\"pop\", ID:\"sao02\"}\n    DoctorRegionID(SoftLayer SAO02 (1062795)[crn:v1:softlayer:public::sao02::::]/mccpid=SoftLayer SAO02 (1062795))\n",
+    "ims_id": "1062795",
+    "mccp_id": "SoftLayer SAO02 (1062795)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::sea01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Seattle 01",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "sea01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Seattle 01\n\n    Catalog{Path:\"/na/us/sea/sea01\", Kind:\"dc\", ID:\"sea01\"}\n    DoctorRegionID(SoftLayer SEA01 (18171)[crn:v1:softlayer:public::sea01::::]/mccpid=SoftLayer SEA01 (18171))\n",
+    "ims_id": "18171",
+    "mccp_id": "SoftLayer SEA01 (18171)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::sea02::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Seattle 02",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "sea02",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Seattle 02\n\n    Catalog{Path:\"/na/us/sea/sea02\", Kind:\"dc\", ID:\"sea02\"}\n    DoctorRegionID(SoftLayer SEA02 (142727)[crn:v1:softlayer:public::sea02::::]/mccpid=SoftLayer SEA02 (142727))\n",
+    "ims_id": "142727",
+    "mccp_id": "SoftLayer SEA02 (142727)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::seo01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Seoul 01",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "seo01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Seoul 01\n\n    Catalog{Path:\"/ap/ko/seo/seo01\", Kind:\"dc\", ID:\"seo01\"}\n    DoctorRegionID(SoftLayer SEO01 (1555995)[crn:v1:softlayer:public::seo01::::]/mccpid=SoftLayer SEO01 (1555995))\n",
+    "ims_id": "1555995",
+    "mccp_id": "SoftLayer SEO01 (1555995)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::seo02::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Seoul 02",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "seo02",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Seoul 02\n\n    Catalog{Path:\"/ap/ko/seo/seo02\", Kind:\"pop\", ID:\"seo02\"}\n    DoctorRegionID(SoftLayer SEO02 (1691895)[crn:v1:softlayer:public::seo02::::]/mccpid=SoftLayer SEO02 (1691895))\n",
+    "ims_id": "1691895",
+    "mccp_id": "SoftLayer SEO02 (1691895)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::sjc01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "San Jose 01",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "sjc01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "San Jose 01\n\n    Catalog{Path:\"/na/us/sjc/sjc01\", Kind:\"dc\", ID:\"sjc01\"}\n    DoctorRegionID(SoftLayer SJC01 (168642)[crn:v1:softlayer:public::sjc01::::]/mccpid=SoftLayer SJC01 (168642))\n",
+    "ims_id": "168642",
+    "mccp_id": "SoftLayer SJC01 (168642)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::sjc02::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "San Jose 02",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "sjc02",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "San Jose 02\n\n    Catalog{Path:\"/na/us/sjc/sjc02\", Kind:\"pop\", ID:\"sjc02\"}\n    DoctorRegionID(SoftLayer SJC02 (133181)[crn:v1:softlayer:public::sjc02::::]/mccpid=SoftLayer SJC02 (133181))\n",
+    "ims_id": "133181",
+    "mccp_id": "SoftLayer SJC02 (133181)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::sjc03::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "San Jose 03",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "sjc03",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "San Jose 03\n\n    Catalog{Path:\"/na/us/sjc/sjc03\", Kind:\"dc\", ID:\"sjc03\"}\n    DoctorRegionID(SoftLayer SJC03 (1004995)[crn:v1:softlayer:public::sjc03::::]/mccpid=SoftLayer SJC03 (1004995))\n",
+    "ims_id": "1004995",
+    "mccp_id": "SoftLayer SJC03 (1004995)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::sjc04::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "San Jose 04",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "sjc04",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "San Jose 04\n\n    Catalog{Path:\"/na/us/sjc/sjc04\", Kind:\"dc\", ID:\"sjc04\"}\n    DoctorRegionID(SoftLayer SJC04 (2178495)[crn:v1:softlayer:public::sjc04::::]/mccpid=SoftLayer SJC04 (2178495))\n",
+    "ims_id": "2178495",
+    "mccp_id": "SoftLayer SJC04 (2178495)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::sng01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Singapore 01",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "sng01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Singapore 01\n\n    Catalog{Path:\"/ap/sng/sng-mtr/sng01\", Kind:\"dc\", ID:\"sng01\"}\n    DoctorRegionID(SoftLayer SNG01 (224092)[crn:v1:softlayer:public::sng01::::]/mccpid=SoftLayer SNG01 (224092))\n",
+    "ims_id": "224092",
+    "mccp_id": "SoftLayer SNG01 (224092)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::sng02::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Singapore 02",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "sng02",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Singapore 02\n\n    Catalog{Path:\"/ap/sng/sng-mtr/sng02\", Kind:\"pop\", ID:\"sng02\"}\n    DoctorRegionID(SoftLayer SNG02 (221843)[crn:v1:softlayer:public::sng02::::]/mccpid=SoftLayer SNG02 (221843))\n",
+    "ims_id": "221843",
+    "mccp_id": "SoftLayer SNG02 (221843)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::sto01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Stockholm 01",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "sto01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Stockholm 01\n\n    Catalog{Path:\"/eu/se/sto/sto01\", Kind:\"pop\", ID:\"sto01\"}\n    DoctorRegionID(SoftLayer STO01 (1732395)[crn:v1:softlayer:public::sto01::::]/mccpid=SoftLayer STO01 (1732395))\n",
+    "ims_id": "1732395",
+    "mccp_id": "SoftLayer STO01 (1732395)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::syd01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Sydney 01",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "syd01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Sydney 01\n\n    Catalog{Path:\"/ap/au/syd/syd01\", Kind:\"dc\", ID:\"syd01\"}\n    DoctorRegionID(SoftLayer SYD01 (449612)[crn:v1:softlayer:public::syd01::::]/mccpid=SoftLayer SYD01 (449612))\n",
+    "ims_id": "449612",
+    "mccp_id": "SoftLayer SYD01 (449612)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::syd02::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Sydney 02",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "syd02",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Sydney 02\n\n    Catalog{Path:\"/ap/au/syd/syd02\", Kind:\"pop\", ID:\"syd02\"}\n    DoctorRegionID(SoftLayer SYD02 (449522)[crn:v1:softlayer:public::syd02::::]/mccpid=SoftLayer SYD02 (449522))\n",
+    "ims_id": "449522",
+    "mccp_id": "SoftLayer SYD02 (449522)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::syd03::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Sydney 03",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "syd03",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Sydney 03\n\n    Catalog{Path:\"/ap/au/syd/syd03\", Kind:\"pop\", ID:\"syd03\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::syd04::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Sydney 04",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "syd04",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Sydney 04\n\n    Catalog{Path:\"/ap/au/syd/syd04\", Kind:\"dc\", ID:\"syd04\"}\n    DoctorRegionID(SoftLayer SYD04 (2013295)[crn:v1:softlayer:public::syd04::::]/mccpid=SoftLayer SYD04 (2013295))\n",
+    "ims_id": "2013295",
+    "mccp_id": "SoftLayer SYD04 (2013295)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::syd05::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Sydney 05",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "syd05",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Sydney 05\n\n    Catalog{Path:\"/ap/au/syd/syd05\", Kind:\"dc\", ID:\"syd05\"}\n    DoctorRegionID(SoftLayer SYD05 (2408595)[crn:v1:softlayer:public::syd05::::]/mccpid=SoftLayer SYD05 (2408595))\n",
+    "ims_id": "2408595",
+    "mccp_id": "SoftLayer SYD05 (2408595)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::syd3::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "SoftLayer SYD3 (2344095)",
+    "type": "<unknown>",
+    "status": "<unknown>",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "SoftLayer SYD3 (2344095)\n\n    DoctorRegionID(SoftLayer SYD3 (2344095)[crn:v1:softlayer:public::syd3::::]/mccpid=SoftLayer SYD3 (2344095))\n",
+    "ims_id": "2344095",
+    "mccp_id": "SoftLayer SYD3 (2344095)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::tok01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Tokyo 01",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "tok01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Tokyo 01\n\n    Catalog{Path:\"/ap/jp/tok/tok01\", Kind:\"pop\", ID:\"tok01\"}\n    DoctorRegionID(SoftLayer TOK01 (221842)[crn:v1:softlayer:public::tok01::::]/mccpid=SoftLayer TOK01 (221842))\n",
+    "ims_id": "221842",
+    "mccp_id": "SoftLayer TOK01 (221842)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::tok02::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Tokyo 02",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "tok02",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Tokyo 02\n\n    Catalog{Path:\"/ap/jp/tok/tok02\", Kind:\"dc\", ID:\"tok02\"}\n    DoctorRegionID(SoftLayer TOK02 (449604)[crn:v1:softlayer:public::tok02::::]/mccpid=SoftLayer TOK02 (449604))\n",
+    "ims_id": "449604",
+    "mccp_id": "SoftLayer TOK02 (449604)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::tok03::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Tokyo 03",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "tok03",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Tokyo 03\n\n    Catalog{Path:\"/ap/jp/tok/tok03\", Kind:\"pop\", ID:\"tok03\"}\n    DoctorRegionID(SoftLayer TOK03 (2519138)[crn:v1:softlayer:public::tok03::::]/mccpid=SoftLayer TOK03 (2519138))\n",
+    "ims_id": "2519138",
+    "mccp_id": "SoftLayer TOK03 (2519138)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::tok04::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Tokyo 04",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "tok04",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Tokyo 04\n\n    Catalog{Path:\"/ap/jp/tok/tok04\", Kind:\"dc\", ID:\"tok04\"}\n    DoctorRegionID(SoftLayer TOK04 (2344395)[crn:v1:softlayer:public::tok04::::]/mccpid=SoftLayer TOK04 (2344395))\n",
+    "ims_id": "2344395",
+    "mccp_id": "SoftLayer TOK04 (2344395)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::tok05::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Tokyo 05",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "tok05",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Tokyo 05\n\n    Catalog{Path:\"/ap/jp/tok/tok05\", Kind:\"dc\", ID:\"tok05\"}\n    DoctorRegionID(SoftLayer TOK05 (2344397)[crn:v1:softlayer:public::tok05::::]/mccpid=SoftLayer TOK05 (2344397))\n",
+    "ims_id": "2344397",
+    "mccp_id": "SoftLayer TOK05 (2344397)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::tor01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Toronto 01",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "tor01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Toronto 01\n\n    Catalog{Path:\"/na/ca/tor/tor01\", Kind:\"dc\", ID:\"tor01\"}\n    DoctorRegionID(SoftLayer TOR01 (448994)[crn:v1:softlayer:public::tor01::::]/mccpid=SoftLayer TOR01 (448994))\n",
+    "ims_id": "448994",
+    "mccp_id": "SoftLayer TOR01 (448994)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::tor02::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Toronto 02",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "tor02",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Toronto 02\n\n    Catalog{Path:\"/na/ca/tor/tor02\", Kind:\"pop\", ID:\"tor02\"}\n    DoctorRegionID(SoftLayer TOR02 (350993)[crn:v1:softlayer:public::tor02::::]/mccpid=SoftLayer TOR02 (350993))\n",
+    "ims_id": "350993",
+    "mccp_id": "SoftLayer TOR02 (350993)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::us-east::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Washington DC",
+    "type": "IBMCLOUD_REGION",
+    "status": "ACTIVE",
+    "reference_catalog_id": "us-east",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Washington DC\n\n    Catalog{Path:\"/na/us/wdc/us-east\", Kind:\"region\", ID:\"us-east\"}\n    DoctorEnvironment(IBM Public US-EAST (WDC)/YP_WASHINGTON[crn:v1:bluemix:public::us-east::::]\n    DoctorRegionID(IBM Public US-EAST (WDC)[crn:v1:bluemix:public::us-east::::]/mccpid=ibm:yp:us-east)\n",
+    "ims_id": "",
+    "mccp_id": "ibm:yp:us-east"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::us-east-1::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "crn:v1:bluemix:public::us-east::::",
+    "display_name": "Washington DC 1",
+    "type": "IBMCLOUD_ZONE",
+    "status": "ACTIVE",
+    "reference_catalog_id": "us-east-1",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Washington DC 1\n\n    Catalog{Path:\"/na/us/wdc/us-east/us-east-1\", Kind:\"zone\", ID:\"us-east-1\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::us-east-2::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "crn:v1:bluemix:public::us-east::::",
+    "display_name": "Washington DC 2",
+    "type": "IBMCLOUD_ZONE",
+    "status": "ACTIVE",
+    "reference_catalog_id": "us-east-2",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Washington DC 2\n\n    Catalog{Path:\"/na/us/wdc/us-east/us-east-2\", Kind:\"zone\", ID:\"us-east-2\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::us-east-3::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "crn:v1:bluemix:public::us-east::::",
+    "display_name": "Washington DC 3",
+    "type": "IBMCLOUD_ZONE",
+    "status": "ACTIVE",
+    "reference_catalog_id": "us-east-3",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Washington DC 3\n\n    Catalog{Path:\"/na/us/wdc/us-east/us-east-3\", Kind:\"zone\", ID:\"us-east-3\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Dallas",
+    "type": "IBMCLOUD_REGION",
+    "status": "ACTIVE",
+    "reference_catalog_id": "us-south",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Dallas\n\n    Catalog{Path:\"/na/us/dal/us-south\", Kind:\"region\", ID:\"us-south\"}\n    DoctorEnvironment(IBM Public US-SOUTH (YP)/YP_DALLAS[crn:v1:bluemix:public::us-south::::]\n    DoctorRegionID(IBM Public US-SOUTH (YP)[crn:v1:bluemix:public::us-south::::]/mccpid=ibm:yp:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "ibm:yp:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::us-south-1::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "crn:v1:bluemix:public::us-south::::",
+    "display_name": "Dallas 1",
+    "type": "IBMCLOUD_ZONE",
+    "status": "ACTIVE",
+    "reference_catalog_id": "us-south-1",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Dallas 1\n\n    Catalog{Path:\"/na/us/dal/us-south/us-south-1\", Kind:\"zone\", ID:\"us-south-1\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::us-south-2::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "crn:v1:bluemix:public::us-south::::",
+    "display_name": "Dallas 2",
+    "type": "IBMCLOUD_ZONE",
+    "status": "ACTIVE",
+    "reference_catalog_id": "us-south-2",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Dallas 2\n\n    Catalog{Path:\"/na/us/dal/us-south/us-south-2\", Kind:\"zone\", ID:\"us-south-2\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::us-south-3::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "crn:v1:bluemix:public::us-south::::",
+    "display_name": "Dallas 3",
+    "type": "IBMCLOUD_ZONE",
+    "status": "ACTIVE",
+    "reference_catalog_id": "us-south-3",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Dallas 3\n\n    Catalog{Path:\"/na/us/dal/us-south/us-south-3\", Kind:\"zone\", ID:\"us-south-3\"}\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::wdc01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Washington DC 01",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "wdc01",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Washington DC 01\n\n    Catalog{Path:\"/na/us/wdc/wdc01\", Kind:\"dc\", ID:\"wdc01\"}\n    DoctorRegionID(SoftLayer WDC01 (37473)[crn:v1:softlayer:public::wdc01::::]/mccpid=SoftLayer WDC01 (37473))\n",
+    "ims_id": "37473",
+    "mccp_id": "SoftLayer WDC01 (37473)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::wdc02::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Washington DC 02",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "wdc02",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Washington DC 02\n\n    Catalog{Path:\"/na/us/wdc/wdc02\", Kind:\"pop\", ID:\"wdc02\"}\n    DoctorRegionID(SoftLayer WDC02 (142773)[crn:v1:softlayer:public::wdc02::::]/mccpid=SoftLayer WDC02 (142773))\n",
+    "ims_id": "142773",
+    "mccp_id": "SoftLayer WDC02 (142773)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::wdc03::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Washington DC 03",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "NOTREADY",
+    "reference_catalog_id": "wdc03",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Washington DC 03\n\n    Catalog{Path:\"/na/us/wdc/wdc03\", Kind:\"dc\", ID:\"wdc03\"}\n    DoctorRegionID(SoftLayer WDC03 (358698)[crn:v1:softlayer:public::wdc03::::]/mccpid=SoftLayer WDC03 (358698))\n",
+    "ims_id": "358698",
+    "mccp_id": "SoftLayer WDC03 (358698)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::wdc04::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Washington DC 04",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "wdc04",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Washington DC 04\n\n    Catalog{Path:\"/na/us/wdc/wdc04\", Kind:\"dc\", ID:\"wdc04\"}\n    DoctorRegionID(SoftLayer WDC04 (957095)[crn:v1:softlayer:public::wdc04::::]/mccpid=SoftLayer WDC04 (957095))\n",
+    "ims_id": "957095",
+    "mccp_id": "SoftLayer WDC04 (957095)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::wdc05::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Washington DC 05",
+    "type": "IBMCLOUD_POP",
+    "status": "ACTIVE",
+    "reference_catalog_id": "wdc05",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Washington DC 05\n\n    Catalog{Path:\"/na/us/wdc/wdc05\", Kind:\"pop\", ID:\"wdc05\"}\n    DoctorRegionID(SoftLayer WDC05 (2017595)[crn:v1:softlayer:public::wdc05::::]/mccpid=SoftLayer WDC05 (2017595))\n",
+    "ims_id": "2017595",
+    "mccp_id": "SoftLayer WDC05 (2017595)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::wdc06::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Washington DC 06",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "wdc06",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Washington DC 06\n\n    Catalog{Path:\"/na/us/wdc/wdc06\", Kind:\"dc\", ID:\"wdc06\"}\n    DoctorRegionID(SoftLayer WDC06 (2017695)[crn:v1:softlayer:public::wdc06::::]/mccpid=SoftLayer WDC06 (2017695))\n",
+    "ims_id": "2017695",
+    "mccp_id": "SoftLayer WDC06 (2017695)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bluemix:public::wdc07::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Washington DC 07",
+    "type": "IBMCLOUD_DATACENTER",
+    "status": "ACTIVE",
+    "reference_catalog_id": "wdc07",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Washington DC 07\n\n    Catalog{Path:\"/na/us/wdc/wdc07\", Kind:\"dc\", ID:\"wdc07\"}\n    DoctorRegionID(SoftLayer WDC07 (2017603)[crn:v1:softlayer:public::wdc07::::]/mccpid=SoftLayer WDC07 (2017603))\n",
+    "ims_id": "2017603",
+    "mccp_id": "SoftLayer WDC07 (2017603)"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:bpi:dedicated::as-hk::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "BPI - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "BPI - decommissioned\n\n    DoctorRegionID(BPI - decommissioned[]/mccpid=bpi:prod:as-hk)\n",
+    "ims_id": "",
+    "mccp_id": "bpi:prod:as-hk"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:case1:dedicated::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "CASE 1 - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "CASE 1 - decommissioned\n\n    DoctorRegionID(CASE 1 - decommissioned[]/mccpid=case1:prod:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "case1:prod:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:case2:dedicated::eu-nl::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "CASE 2 - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "CASE 2 - decommissioned\n\n    DoctorRegionID(CASE 2 - decommissioned[]/mccpid=case2:prod:eu-nl)\n",
+    "ims_id": "",
+    "mccp_id": "case2:prod:eu-nl"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:ciobb:dedicated::us-ne::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Blue Box_CIO - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Blue Box_CIO - decommissioned\n\n    DoctorRegionID(Blue Box_CIO - decommissioned[]/mccpid=ciobb:prod:us-ne)\n",
+    "ims_id": "",
+    "mccp_id": "ciobb:prod:us-ne"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:cloudsoft-local:dedicated::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Cloudsoft - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Cloudsoft - decommissioned\n\n    DoctorRegionID(Cloudsoft - decommissioned[]/mccpid=cloudsoft-local:prod:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "cloudsoft-local:prod:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:cognizant:dedicated::as-sg::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Cognizant - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Cognizant - decommissioned\n\n    DoctorRegionID(Cognizant - decommissioned[]/mccpid=cognizant:prod:as-sg)\n",
+    "ims_id": "",
+    "mccp_id": "cognizant:prod:as-sg"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:csc:dedicated::us-ne::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "CSC - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "CSC - decommissioned\n\n    DoctorRegionID(CSC - decommissioned[]/mccpid=csc:prod:us-ne)\n",
+    "ims_id": "",
+    "mccp_id": "csc:prod:us-ne"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:cummins:dedicated::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Cummins (CloudOne) - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Cummins (CloudOne) - decommissioned\n\n    DoctorRegionID(Cummins (CloudOne) - decommissioned[]/mccpid=cummins:prod:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "cummins:prod:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-aa1:dedicated::us-east::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "American Airlines 1",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "American Airlines 1\n\n    DoctorEnvironment(American Airlines 1/D_AA1[crn:v1:d-aa1:dedicated::us-east::::]\n    DoctorRegionID(American Airlines 1[crn:v1:d-aa1:dedicated::us-east::::]/mccpid=aa1:prod:us-ne)\n",
+    "ims_id": "",
+    "mccp_id": "aa1:prod:us-ne"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-aa2:dedicated::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "American Airlines 2",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "American Airlines 2\n\n    DoctorEnvironment(American Airlines 2/D_AA2[crn:v1:d-aa2:dedicated::us-south::::]\n    DoctorRegionID(American Airlines 2[crn:v1:d-aa2:dedicated::us-south::::]/mccpid=aa2:prod:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "aa2:prod:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-abnamro:dedicated::ams03::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "ABN AMRO - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "ABN AMRO - decommissioned\n\n    DoctorEnvironment(ABN AMRO - decommissioned/D_ABNAMRO[crn:v1:d-abnamro:dedicated::ams03::::]\n    DoctorRegionID(ABN AMRO - decommissioned[crn:v1:d-abnamro:dedicated::ams03::::]/mccpid=abnamro:prod:eu-nl)\n",
+    "ims_id": "",
+    "mccp_id": "abnamro:prod:eu-nl"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-alfaevolution:dedicated::mil01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "AlfaEvolution",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "AlfaEvolution\n\n    DoctorEnvironment(AlfaEvolution/D_ALFAEVOLUTION[crn:v1:d-alfaevolution:dedicated::mil01::::]\n    DoctorRegionID(AlfaEvolution[crn:v1:d-alfaevolution:dedicated::mil01::::]/mccpid=alfaevolution:prod:eu-it)\n",
+    "ims_id": "",
+    "mccp_id": "alfaevolution:prod:eu-it"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-anthem1:dedicated::us-east::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Anthem 1",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Anthem 1\n\n    DoctorEnvironment(Anthem 1/D_ANTHEM1[crn:v1:d-anthem1:dedicated::us-east::::]\n    DoctorRegionID(Anthem 1[crn:v1:d-anthem1:dedicated::us-east::::]/mccpid=anthem1:prod:us-ne)\n",
+    "ims_id": "",
+    "mccp_id": "anthem1:prod:us-ne"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-anthem2:dedicated::us-east::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Anthem 2",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Anthem 2\n\n    DoctorEnvironment(Anthem 2/D_ANTHEM2[crn:v1:d-anthem2:dedicated::us-east::::]\n    DoctorRegionID(Anthem 2[crn:v1:d-anthem2:dedicated::us-east::::]/mccpid=anthem2:prod:us-ne)\n",
+    "ims_id": "",
+    "mccp_id": "anthem2:prod:us-ne"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-anz:dedicated::mel01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "ANZ Bank - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "ANZ Bank - decommissioned\n\n    DoctorEnvironment(ANZ Bank - decommissioned/D_ANZ[crn:v1:d-anz:dedicated::mel01::::]\n    DoctorRegionID(ANZ Bank - decommissioned[crn:v1:d-anz:dedicated::mel01::::]/mccpid=anz-blue-art-lab:prod:au-south)\n",
+    "ims_id": "",
+    "mccp_id": "anz-blue-art-lab:prod:au-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-anz2:dedicated::mel01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "ANZ 2 - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "ANZ 2 - decommissioned\n\n    DoctorEnvironment(ANZ 2 - decommissioned/D_ANZ2[crn:v1:d-anz2:dedicated::mel01::::]\n    DoctorRegionID(ANZ 2 - decommissioned[crn:v1:d-anz2:dedicated::mel01::::]/mccpid=anz2:prod:au-south)\n",
+    "ims_id": "",
+    "mccp_id": "anz2:prod:au-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-anz3:dedicated::mel01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "ANZ 3 - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "ANZ 3 - decommissioned\n\n    DoctorEnvironment(ANZ 3 - decommissioned/D_ANZ3[crn:v1:d-anz3:dedicated::mel01::::]\n    DoctorRegionID(ANZ 3 - decommissioned[crn:v1:d-anz3:dedicated::mel01::::]/mccpid=anz3:prod:au-south)\n",
+    "ims_id": "",
+    "mccp_id": "anz3:prod:au-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-bancocbss:dedicated::sao01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Banco CBSS - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Banco CBSS - decommissioned\n\n    DoctorEnvironment(Banco CBSS - decommissioned/D_BANCOCBSS[crn:v1:d-bancocbss:dedicated::sao01::::]\n    DoctorRegionID(Banco CBSS - decommissioned[crn:v1:d-bancocbss:dedicated::sao01::::]/mccpid=bancocbss:prod:br-sp)\n",
+    "ims_id": "",
+    "mccp_id": "bancocbss:prod:br-sp"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-bendigo:dedicated::mel01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Bendigo",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Bendigo\n\n    DoctorEnvironment(Bendigo/D_BENDIGO[crn:v1:d-bendigo:dedicated::mel01::::]\n    DoctorRegionID(Bendigo[crn:v1:d-bendigo:dedicated::mel01::::]/mccpid=ben:prod:au-south)\n",
+    "ims_id": "",
+    "mccp_id": "ben:prod:au-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-bendigo2:dedicated::au-syd::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Bendigo 2",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Bendigo 2\n\n    DoctorEnvironment(Bendigo 2/D_BENDIGO2[crn:v1:d-bendigo2:dedicated::au-syd::::]\n    DoctorRegionID(Bendigo 2[crn:v1:d-bendigo2:dedicated::au-syd::::]/mccpid=bendigo2:prod:au-syd)\n",
+    "ims_id": "",
+    "mccp_id": "bendigo2:prod:au-syd"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-blueberry1:dedicated::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Blueberry 1 - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Blueberry 1 - decommissioned\n\n    DoctorEnvironment(Blueberry 1 - decommissioned/D_BLUEBERRY1[crn:v1:d-blueberry1:dedicated::us-south::::]\n    DoctorRegionID(Blueberry 1 - decommissioned[crn:v1:d-blueberry1:dedicated::us-south::::]/mccpid=blueberry1:prod:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "blueberry1:prod:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-blueberry2:dedicated::us-east::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Blueberry 2 - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Blueberry 2 - decommissioned\n\n    DoctorEnvironment(Blueberry 2 - decommissioned/D_BLUEBERRY2[crn:v1:d-blueberry2:dedicated::us-east::::]\n    DoctorRegionID(Blueberry 2 - decommissioned[crn:v1:d-blueberry2:dedicated::us-east::::]/mccpid=blueberry2:prod:us-ne)\n",
+    "ims_id": "",
+    "mccp_id": "blueberry2:prod:us-ne"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-bnsf:dedicated::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "BNSF - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "BNSF - decommissioned\n\n    DoctorEnvironment(BNSF - decommissioned/D_BNSF[crn:v1:d-bnsf:dedicated::us-south::::]\n    DoctorRegionID(BNSF - decommissioned[crn:v1:d-bnsf:dedicated::us-south::::]/mccpid=bnsf:prod:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "bnsf:prod:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-cdph:dedicated::sjc03::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "CDPH",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "CDPH\n\n    DoctorEnvironment(CDPH/D_CDPH[crn:v1:d-cdph:dedicated::sjc03::::]\n    DoctorRegionID(CDPH[crn:v1:d-cdph:dedicated::sjc03::::]/mccpid=cdph:prod:us-west)\n",
+    "ims_id": "",
+    "mccp_id": "cdph:prod:us-west"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-cedacri:dedicated::mil01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Cedacri - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Cedacri - decommissioned\n\n    DoctorEnvironment(Cedacri - decommissioned/D_CEDACRI[crn:v1:d-cedacri:dedicated::mil01::::]\n    DoctorRegionID(Cedacri - decommissioned[crn:v1:d-cedacri:dedicated::mil01::::]/mccpid=cedacri:prod:eu-it)\n",
+    "ims_id": "",
+    "mccp_id": "cedacri:prod:eu-it"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-cfs2:dedicated::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "CFS2",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "CFS2\n\n    DoctorEnvironment(CFS2/D_CFS2[crn:v1:d-cfs2:dedicated::eu-gb::::]\n    DoctorRegionID(CFS2[crn:v1:d-cfs2:dedicated::eu-gb::::]/mccpid=cfs2:prod:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "cfs2:prod:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-cisco-1:dedicated::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Cisco 1 - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Cisco 1 - decommissioned\n\n    DoctorEnvironment(Cisco 1 - decommissioned/D_CISCO_1[crn:v1:d-cisco-1:dedicated::us-south::::]\n    DoctorRegionID(Cisco 1 - decommissioned[crn:v1:d-cisco-1:dedicated::us-south::::]/mccpid=cisco1:prod:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "cisco1:prod:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-cisco-2:dedicated::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Cisco 2 - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Cisco 2 - decommissioned\n\n    DoctorEnvironment(Cisco 2 - decommissioned/D_CISCO_2[crn:v1:d-cisco-2:dedicated::us-south::::]\n    DoctorRegionID(Cisco 2 - decommissioned[crn:v1:d-cisco-2:dedicated::us-south::::]/mccpid=cisco2:prod:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "cisco2:prod:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-citco:dedicated::us-east::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Citco - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Citco - decommissioned\n\n    DoctorEnvironment(Citco - decommissioned/D_CITCO[crn:v1:d-citco:dedicated::us-east::::]\n    DoctorRegionID(Citco - decommissioned[crn:v1:d-citco:dedicated::us-east::::]/mccpid=citco:prod:us-ne)\n",
+    "ims_id": "",
+    "mccp_id": "citco:prod:us-ne"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-credmutuel:dedicated::par01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Credit Mutuel",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Credit Mutuel\n\n    DoctorEnvironment(Credit Mutuel/D_CREDMUTUEL[crn:v1:d-credmutuel:dedicated::par01::::]\n    DoctorRegionID(Credit Mutuel[crn:v1:d-credmutuel:dedicated::par01::::]/mccpid=credmutuel:prod:eu-fr)\n",
+    "ims_id": "",
+    "mccp_id": "credmutuel:prod:eu-fr"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-credmutuel2:dedicated::eu-de::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Credit Mutuel 2",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Credit Mutuel 2\n\n    DoctorEnvironment(Credit Mutuel 2/D_CREDMUTUEL2[crn:v1:d-credmutuel2:dedicated::eu-de::::]\n    DoctorRegionID(Credit Mutuel 2[crn:v1:d-credmutuel2:dedicated::eu-de::::]/mccpid=credmut2:prod:eu-de)\n",
+    "ims_id": "",
+    "mccp_id": "credmut2:prod:eu-de"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-davita:dedicated::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Davita",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Davita\n\n    DoctorEnvironment(Davita/D_DAVITA[crn:v1:d-davita:dedicated::us-south::::]\n    DoctorRegionID(Davita[crn:v1:d-davita:dedicated::us-south::::]/mccpid=davita:prod:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "davita:prod:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-dednext:dedicated::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "[crn:v1:d-dednext:dedicated::us-south::::]",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "[crn:v1:d-dednext:dedicated::us-south::::]\n\n    DoctorEnvironment(/D_DEDNEXT[crn:v1:d-dednext:dedicated::us-south::::]\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-dhs:dedicated::au-syd::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "DHS - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "DHS - decommissioned\n\n    DoctorEnvironment(DHS - decommissioned/D_DHS[crn:v1:d-dhs:dedicated::au-syd::::]\n    DoctorRegionID(DHS - decommissioned[crn:v1:d-dhs:dedicated::au-syd::::]/mccpid=dhs:prod:au-syd)\n",
+    "ims_id": "",
+    "mccp_id": "dhs:prod:au-syd"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-dixons:dedicated::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Dixons Carphone - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Dixons Carphone - decommissioned\n\n    DoctorEnvironment(Dixons Carphone - decommissioned/D_DIXONS[crn:v1:d-dixons:dedicated::eu-gb::::]\n    DoctorRegionID(Dixons Carphone - decommissioned[crn:v1:d-dixons:dedicated::eu-gb::::]/mccpid=dixons:prod:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "dixons:prod:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-dsvt0:dedicated::us-east::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "DSVT0",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "DSVT0\n\n    DoctorEnvironment(DSVT0/D_DSVT0[crn:v1:d-dsvt0:dedicated::us-east::::]\n    DoctorRegionID(DSVT0[crn:v1:d-dsvt0:dedicated::us-east::::]/mccpid=dsvt0:prod:us-ne)\n",
+    "ims_id": "",
+    "mccp_id": "dsvt0:prod:us-ne"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-dxc:dedicated::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "DXC - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "DXC - decommissioned\n\n    DoctorEnvironment(DXC - decommissioned/D_DXC[crn:v1:d-dxc:dedicated::eu-gb::::]\n    DoctorRegionID(DXC - decommissioned[crn:v1:d-dxc:dedicated::eu-gb::::]/mccpid=dxc:prod:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "dxc:prod:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-dys1:dedicated::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Dedicated YS1",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Dedicated YS1\n\n    DoctorEnvironment(Dedicated YS1/D_DYS1[crn:v1:d-dys1:dedicated::eu-gb::::]\n    DoctorRegionID(Dedicated YS1[crn:v1:d-dys1:dedicated::eu-gb::::]/mccpid=ibm:dys1:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "ibm:dys1:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-dysa:dedicated::tor01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "DYSA - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "DYSA - decommissioned\n\n    DoctorEnvironment(DYSA - decommissioned/D_DYSA[crn:v1:d-dysa:dedicated::tor01::::]\n    DoctorRegionID(DYSA - decommissioned[crn:v1:d-dysa:dedicated::tor01::::]/mccpid=dysa:prod:ca-east)\n",
+    "ims_id": "",
+    "mccp_id": "dysa:prod:ca-east"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-dysb:dedicated::mil01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "DYSB",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "DYSB\n\n    DoctorEnvironment(DYSB/D_DYSB[crn:v1:d-dysb:dedicated::mil01::::]\n    DoctorRegionID(DYSB[crn:v1:d-dysb:dedicated::mil01::::]/mccpid=dysb:prod:eu-it)\n",
+    "ims_id": "",
+    "mccp_id": "dysb:prod:eu-it"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-ehealth:dedicated::tor01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "eHealth - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "eHealth - decommissioned\n\n    DoctorEnvironment(eHealth - decommissioned/D_EHEALTH[crn:v1:d-ehealth:dedicated::tor01::::]\n    DoctorRegionID(eHealth - decommissioned[crn:v1:d-ehealth:dedicated::tor01::::]/mccpid=ehealth:prod:ca-east)\n",
+    "ims_id": "",
+    "mccp_id": "ehealth:prod:ca-east"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-evry:dedicated::osl01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "EVRY",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "EVRY\n\n    DoctorEnvironment(EVRY/D_EVRY[crn:v1:d-evry:dedicated::osl01::::]\n    DoctorRegionID(EVRY[crn:v1:d-evry:dedicated::osl01::::]/mccpid=evry:prod:eu-no)\n",
+    "ims_id": "",
+    "mccp_id": "evry:prod:eu-no"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-gcloud:dedicated::eu-de::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "GCloud - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "GCloud - decommissioned\n\n    DoctorEnvironment(GCloud - decommissioned/D_GCLOUD[crn:v1:d-gcloud:dedicated::eu-de::::]\n    DoctorRegionID(GCloud - decommissioned[crn:v1:d-gcloud:dedicated::eu-de::::]/mccpid=gcloud:prod:eu-de)\n",
+    "ims_id": "",
+    "mccp_id": "gcloud:prod:eu-de"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-groupama:dedicated::mil01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Groupama",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Groupama\n\n    DoctorEnvironment(Groupama/D_GROUPAMA[crn:v1:d-groupama:dedicated::mil01::::]\n    DoctorRegionID(Groupama[crn:v1:d-groupama:dedicated::mil01::::]/mccpid=groupama:prod:eu-it)\n",
+    "ims_id": "",
+    "mccp_id": "groupama:prod:eu-it"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-gtsxaas:dedicated::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "GTS XaaS Management Service - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "GTS XaaS Management Service - decommissioned\n\n    DoctorEnvironment(GTS XaaS Management Service - decommissioned/D_GTSXAAS[crn:v1:d-gtsxaas:dedicated::us-south::::]\n    DoctorRegionID(GTS XaaS Management Service - decommissioned[crn:v1:d-gtsxaas:dedicated::us-south::::]/mccpid=gtsxaas:prod:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "gtsxaas:prod:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-hcl:dedicated::che01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "HCL",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "HCL\n\n    DoctorEnvironment(HCL/D_HCL[crn:v1:d-hcl:dedicated::che01::::]\n    DoctorRegionID(HCL[crn:v1:d-hcl:dedicated::che01::::]/mccpid=hcl:prod:in-south)\n",
+    "ims_id": "",
+    "mccp_id": "hcl:prod:in-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-hertz1w:dedicated::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Hertz 1w",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Hertz 1w\n\n    DoctorEnvironment(Hertz 1w/D_HERTZ1W[crn:v1:d-hertz1w:dedicated::us-south::::]\n    DoctorRegionID(Hertz 1w[crn:v1:d-hertz1w:dedicated::us-south::::]/mccpid=hertz1w:prod:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "hertz1w:prod:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-hertz2w:dedicated::sjc03::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Hertz 2w",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Hertz 2w\n\n    DoctorEnvironment(Hertz 2w/D_HERTZ2W[crn:v1:d-hertz2w:dedicated::sjc03::::]\n    DoctorRegionID(Hertz 2w[crn:v1:d-hertz2w:dedicated::sjc03::::]/mccpid=hertz2w:prod:us-west)\n",
+    "ims_id": "",
+    "mccp_id": "hertz2w:prod:us-west"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-hrb1:dedicated::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "HR Block 1 - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "HR Block 1 - decommissioned\n\n    DoctorEnvironment(HR Block 1 - decommissioned/D_HRB1[crn:v1:d-hrb1:dedicated::us-south::::]\n    DoctorRegionID(HR Block 1 - decommissioned[crn:v1:d-hrb1:dedicated::us-south::::]/mccpid=hrb1:prod:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "hrb1:prod:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-hrb2:dedicated::us-east::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "HR Block 2 - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "HR Block 2 - decommissioned\n\n    DoctorEnvironment(HR Block 2 - decommissioned/D_HRB2[crn:v1:d-hrb2:dedicated::us-east::::]\n    DoctorRegionID(HR Block 2 - decommissioned[crn:v1:d-hrb2:dedicated::us-east::::]/mccpid=hrb2:prod:us-ne)\n",
+    "ims_id": "",
+    "mccp_id": "hrb2:prod:us-ne"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-iberdrola:dedicated::par01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Iberdrola",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Iberdrola\n\n    DoctorEnvironment(Iberdrola/D_IBERDROLA[crn:v1:d-iberdrola:dedicated::par01::::]\n    DoctorRegionID(Iberdrola[crn:v1:d-iberdrola:dedicated::par01::::]/mccpid=iberdrola:prod:eu-fr)\n",
+    "ims_id": "",
+    "mccp_id": "iberdrola:prod:eu-fr"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-ibmcfs1:dedicated::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "IBM CFS1 - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "IBM CFS1 - decommissioned\n\n    DoctorEnvironment(IBM CFS1 - decommissioned/D_IBMCFS1[crn:v1:d-ibmcfs1:dedicated::us-south::::]\n    DoctorRegionID(IBM CFS1 - decommissioned[crn:v1:d-ibmcfs1:dedicated::us-south::::]/mccpid=cfs1:prod:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "cfs1:prod:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-iccrea:dedicated::mil01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "ICCREA - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "ICCREA - decommissioned\n\n    DoctorEnvironment(ICCREA - decommissioned/D_ICCREA[crn:v1:d-iccrea:dedicated::mil01::::]\n    DoctorRegionID(ICCREA - decommissioned[crn:v1:d-iccrea:dedicated::mil01::::]/mccpid=iccrea:prod:eu-it)\n",
+    "ims_id": "",
+    "mccp_id": "iccrea:prod:eu-it"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-issglobal1:dedicated::eu-de::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "ISS World Services - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "ISS World Services - decommissioned\n\n    DoctorEnvironment(ISS World Services - decommissioned/D_ISSGLOBAL1[crn:v1:d-issglobal1:dedicated::eu-de::::]\n    DoctorRegionID(ISS World Services - decommissioned[crn:v1:d-issglobal1:dedicated::eu-de::::]/mccpid=issglobal1:prod:eu-de)\n",
+    "ims_id": "",
+    "mccp_id": "issglobal1:prod:eu-de"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-kaiser-1:dedicated::sjc01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Kaiser 1 - dev/test",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Kaiser 1 - dev/test\n\n    DoctorEnvironment(Kaiser 1 - dev/test/D_KAISER_1[crn:v1:d-kaiser-1:dedicated::sjc01::::]\n    DoctorRegionID(Kaiser 1 - dev/test[crn:v1:d-kaiser-1:dedicated::sjc01::::]/mccpid=kp1:prod:us-west)\n",
+    "ims_id": "",
+    "mccp_id": "kp1:prod:us-west"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-kaiser-3:dedicated::sjc03::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Kaiser 3",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Kaiser 3\n\n    DoctorEnvironment(Kaiser 3/D_KAISER_3[crn:v1:d-kaiser-3:dedicated::sjc03::::]\n    DoctorRegionID(Kaiser 3[crn:v1:d-kaiser-3:dedicated::sjc03::::]/mccpid=kp3:prod:us-west)\n",
+    "ims_id": "",
+    "mccp_id": "kp3:prod:us-west"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-kp3dal:dedicated::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "KP3DAL",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "KP3DAL\n\n    DoctorEnvironment(KP3DAL/D_KP3DAL[crn:v1:d-kp3dal:dedicated::us-south::::]\n    DoctorRegionID(KP3DAL[crn:v1:d-kp3dal:dedicated::us-south::::]/mccpid=kp3dal:prod:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "kp3dal:prod:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-kp4:dedicated::sjc01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Kaiser 4 (KP4) - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Kaiser 4 (KP4) - decommissioned\n\n    DoctorEnvironment(Kaiser 4 (KP4) - decommissioned/D_KP4[crn:v1:d-kp4:dedicated::sjc01::::]\n    DoctorRegionID(Kaiser 4 (KP4) - decommissioned[crn:v1:d-kp4:dedicated::sjc01::::]/mccpid=kp4:prod:us-west)\n",
+    "ims_id": "",
+    "mccp_id": "kp4:prod:us-west"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-lloyds:dedicated::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Lloyds Bank",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Lloyds Bank\n\n    DoctorEnvironment(Lloyds Bank/D_LLOYDS[crn:v1:d-lloyds:dedicated::eu-gb::::]\n    DoctorRegionID(Lloyds Bank[crn:v1:d-lloyds:dedicated::eu-gb::::]/mccpid=lbg:lbg:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "lbg:lbg:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-lloyds2:dedicated::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Lloyds 2 - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Lloyds 2 - decommissioned\n\n    DoctorEnvironment(Lloyds 2 - decommissioned/D_LLOYDS2[crn:v1:d-lloyds2:dedicated::eu-gb::::]\n    DoctorRegionID(Lloyds 2 - decommissioned[crn:v1:d-lloyds2:dedicated::eu-gb::::]/mccpid=lloyds2:prod:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "lloyds2:prod:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-lloyds3:dedicated::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Lloyds 3 - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Lloyds 3 - decommissioned\n\n    DoctorEnvironment(Lloyds 3 - decommissioned/D_LLOYDS3[crn:v1:d-lloyds3:dedicated::eu-gb::::]\n    DoctorRegionID(Lloyds 3 - decommissioned[crn:v1:d-lloyds3:dedicated::eu-gb::::]/mccpid=lloyds3:prod:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "lloyds3:prod:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-lloyds4:dedicated::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Lloyds 4 - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Lloyds 4 - decommissioned\n\n    DoctorEnvironment(Lloyds 4 - decommissioned/D_LLOYDS4[crn:v1:d-lloyds4:dedicated::eu-gb::::]\n    DoctorRegionID(Lloyds 4 - decommissioned[crn:v1:d-lloyds4:dedicated::eu-gb::::]/mccpid=lloyds4:prod:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "lloyds4:prod:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-maersk1:dedicated::ams03::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Maersk 1",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Maersk 1\n\n    DoctorEnvironment(Maersk 1/D_MAERSK1[crn:v1:d-maersk1:dedicated::ams03::::]\n    DoctorRegionID(Maersk 1[crn:v1:d-maersk1:dedicated::ams03::::]/mccpid=maersk1:prod:eu-nl)\n",
+    "ims_id": "",
+    "mccp_id": "maersk1:prod:eu-nl"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-maersk2:dedicated::us-east::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Maersk 2",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Maersk 2\n\n    DoctorEnvironment(Maersk 2/D_MAERSK2[crn:v1:d-maersk2:dedicated::us-east::::]\n    DoctorRegionID(Maersk 2[crn:v1:d-maersk2:dedicated::us-east::::]/mccpid=maersk2:prod:us-ne)\n",
+    "ims_id": "",
+    "mccp_id": "maersk2:prod:us-ne"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-maersk3:dedicated::sng01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Maersk 3",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Maersk 3\n\n    DoctorEnvironment(Maersk 3/D_MAERSK3[crn:v1:d-maersk3:dedicated::sng01::::]\n    DoctorRegionID(Maersk 3[crn:v1:d-maersk3:dedicated::sng01::::]/mccpid=maersk3:prod:as-sg)\n",
+    "ims_id": "",
+    "mccp_id": "maersk3:prod:as-sg"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-malairline:dedicated::sng01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Malaysia Airlines - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Malaysia Airlines - decommissioned\n\n    DoctorEnvironment(Malaysia Airlines - decommissioned/D_MALAIRLINE[crn:v1:d-malairline:dedicated::sng01::::]\n    DoctorRegionID(Malaysia Airlines - decommissioned[crn:v1:d-malairline:dedicated::sng01::::]/mccpid=malairline:prod:as-sg)\n",
+    "ims_id": "",
+    "mccp_id": "malairline:prod:as-sg"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-mhi:dedicated::jp-tok::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "MHI",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "MHI\n\n    DoctorEnvironment(MHI/D_MHI[crn:v1:d-mhi:dedicated::jp-tok::::]\n    DoctorRegionID(MHI[crn:v1:d-mhi:dedicated::jp-tok::::]/mccpid=mhi:prod:as-jp)\n",
+    "ims_id": "",
+    "mccp_id": "mhi:prod:as-jp"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-mhi2:dedicated::jp-tok::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "MHI 2 - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "MHI 2 - decommissioned\n\n    DoctorEnvironment(MHI 2 - decommissioned/D_MHI2[crn:v1:d-mhi2:dedicated::jp-tok::::]\n    DoctorRegionID(MHI 2 - decommissioned[crn:v1:d-mhi2:dedicated::jp-tok::::]/mccpid=mhi2:prod:as-jp)\n",
+    "ims_id": "",
+    "mccp_id": "mhi2:prod:as-jp"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-mizuho1:dedicated::jp-tok::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Mizuho 1 - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Mizuho 1 - decommissioned\n\n    DoctorEnvironment(Mizuho 1 - decommissioned/D_MIZUHO1[crn:v1:d-mizuho1:dedicated::jp-tok::::]\n    DoctorRegionID(Mizuho 1 - decommissioned[crn:v1:d-mizuho1:dedicated::jp-tok::::]/mccpid=mizuho1:prod:as-jp)\n",
+    "ims_id": "",
+    "mccp_id": "mizuho1:prod:as-jp"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-mizuho2:dedicated::jp-tok::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Mizuho 2 - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Mizuho 2 - decommissioned\n\n    DoctorEnvironment(Mizuho 2 - decommissioned/D_MIZUHO2[crn:v1:d-mizuho2:dedicated::jp-tok::::]\n    DoctorRegionID(Mizuho 2 - decommissioned[crn:v1:d-mizuho2:dedicated::jp-tok::::]/mccpid=mizuho2:prod:as-jp)\n",
+    "ims_id": "",
+    "mccp_id": "mizuho2:prod:as-jp"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-mtb:dedicated::us-east::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "M&T Bank",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "M&T Bank\n\n    DoctorEnvironment(M&T Bank/D_MTB[crn:v1:d-mtb:dedicated::us-east::::]\n    DoctorRegionID(M&T Bank[crn:v1:d-mtb:dedicated::us-east::::]/mccpid=mtb:prod:us-ne)\n",
+    "ims_id": "",
+    "mccp_id": "mtb:prod:us-ne"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-mufg:dedicated::jp-tok::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "MUFG - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "MUFG - decommissioned\n\n    DoctorEnvironment(MUFG - decommissioned/D_MUFG[crn:v1:d-mufg:dedicated::jp-tok::::]\n    DoctorRegionID(MUFG - decommissioned[crn:v1:d-mufg:dedicated::jp-tok::::]/mccpid=mufg:prod:as-jp)\n",
+    "ims_id": "",
+    "mccp_id": "mufg:prod:as-jp"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-mutua:dedicated::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Mutua - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Mutua - decommissioned\n\n    DoctorEnvironment(Mutua - decommissioned/D_MUTUA[crn:v1:d-mutua:dedicated::eu-gb::::]\n    DoctorRegionID(Mutua - decommissioned[crn:v1:d-mutua:dedicated::eu-gb::::]/mccpid=mutua:prod:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "mutua:prod:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-nc-awhs:dedicated::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "NC-AWHS",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "NC-AWHS\n\n    DoctorEnvironment(NC-AWHS/D_NC-AWHS[crn:v1:d-nc-awhs:dedicated::us-south::::]\n    DoctorRegionID(NC-AWHS[crn:v1:d-nc-awhs:dedicated::us-south::::]/mccpid=nc-awhs:prod:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "nc-awhs:prod:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-nedbank:dedicated::eu-de::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Nedbank - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Nedbank - decommissioned\n\n    DoctorEnvironment(Nedbank - decommissioned/D_NEDBANK[crn:v1:d-nedbank:dedicated::eu-de::::]\n    DoctorRegionID(Nedbank - decommissioned[crn:v1:d-nedbank:dedicated::eu-de::::]/mccpid=nedbank:prod:eu-de)\n",
+    "ims_id": "",
+    "mccp_id": "nedbank:prod:eu-de"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-niandc:dedicated::jp-tok::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "NI and C",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "NI and C\n\n    DoctorEnvironment(NI and C/D_NIANDC[crn:v1:d-niandc:dedicated::jp-tok::::]\n    DoctorRegionID(NI and C[crn:v1:d-niandc:dedicated::jp-tok::::]/mccpid=niandc:prod:as-jp)\n",
+    "ims_id": "",
+    "mccp_id": "niandc:prod:as-jp"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-ontariogov-ops1:dedicated::tor01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Ontario Government - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Ontario Government - decommissioned\n\n    DoctorEnvironment(Ontario Government - decommissioned/D_ONTARIOGOV_OPS1[crn:v1:d-ontariogov-ops1:dedicated::tor01::::]\n    DoctorRegionID(Ontario Government - decommissioned[crn:v1:d-ontariogov-ops1:dedicated::tor01::::]/mccpid=ops1:prod:ca-east)\n",
+    "ims_id": "",
+    "mccp_id": "ops1:prod:ca-east"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-prodesp:dedicated::sao01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Prodesp - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Prodesp - decommissioned\n\n    DoctorEnvironment(Prodesp - decommissioned/D_PRODESP[crn:v1:d-prodesp:dedicated::sao01::::]\n    DoctorRegionID(Prodesp - decommissioned[crn:v1:d-prodesp:dedicated::sao01::::]/mccpid=prodesp:prod:br-sp)\n",
+    "ims_id": "",
+    "mccp_id": "prodesp:prod:br-sp"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-produban:dedicated::eu-de::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Produban",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Produban\n\n    DoctorEnvironment(Produban/D_PRODUBAN[crn:v1:d-produban:dedicated::eu-de::::]\n    DoctorRegionID(Produban[crn:v1:d-produban:dedicated::eu-de::::]/mccpid=produban:prod:eu-de)\n",
+    "ims_id": "",
+    "mccp_id": "produban:prod:eu-de"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-rbc:dedicated::tor01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "RBC",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "RBC\n\n    DoctorEnvironment(RBC/D_RBC[crn:v1:d-rbc:dedicated::tor01::::]\n    DoctorRegionID(RBC[crn:v1:d-rbc:dedicated::tor01::::]/mccpid=rbc:prod:ca-east)\n",
+    "ims_id": "",
+    "mccp_id": "rbc:prod:ca-east"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-resona:dedicated::jp-tok::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Resona Bank - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Resona Bank - decommissioned\n\n    DoctorEnvironment(Resona Bank - decommissioned/D_RESONA[crn:v1:d-resona:dedicated::jp-tok::::]\n    DoctorRegionID(Resona Bank - decommissioned[crn:v1:d-resona:dedicated::jp-tok::::]/mccpid=resona:prod:as-jp)\n",
+    "ims_id": "",
+    "mccp_id": "resona:prod:as-jp"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-rmg1:dedicated::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Royal Mail Group (RMG) 1",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Royal Mail Group (RMG) 1\n\n    DoctorEnvironment(Royal Mail Group (RMG) 1/D_RMG1[crn:v1:d-rmg1:dedicated::eu-gb::::]\n    DoctorRegionID(Royal Mail Group (RMG) 1[crn:v1:d-rmg1:dedicated::eu-gb::::]/mccpid=rmg1:prod:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "rmg1:prod:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-rmg2:dedicated::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Royal Mail Group (RMG) 2",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Royal Mail Group (RMG) 2\n\n    DoctorEnvironment(Royal Mail Group (RMG) 2/D_RMG2[crn:v1:d-rmg2:dedicated::eu-gb::::]\n    DoctorRegionID(Royal Mail Group (RMG) 2[crn:v1:d-rmg2:dedicated::eu-gb::::]/mccpid=rmg2:prod:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "rmg2:prod:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-showroom-3:dedicated::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Showroom 3 (NC GDAC)",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Showroom 3 (NC GDAC)\n\n    DoctorEnvironment(Showroom 3 (NC GDAC)/D_SHOWROOM_3[crn:v1:d-showroom-3:dedicated::us-south::::]\n    DoctorRegionID(Showroom 3 - decommissioned[crn:v1:d-showroom-3:dedicated::us-south::::]/mccpid=sr3:prod:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "sr3:prod:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-showroom-5:dedicated::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Showroom 5 (Daimler)",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Showroom 5 (Daimler)\n\n    DoctorEnvironment(Showroom 5 (Daimler)/D_SHOWROOM_5[crn:v1:d-showroom-5:dedicated::eu-gb::::]\n    DoctorRegionID(Showroom 5 - decommissioned[crn:v1:d-showroom-5:dedicated::eu-gb::::]/mccpid=sr5:prod:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "sr5:prod:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-showroom-6:dedicated::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Showroom 6 (Manulife)",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Showroom 6 (Manulife)\n\n    DoctorEnvironment(Showroom 6 (Manulife)/D_SHOWROOM_6[crn:v1:d-showroom-6:dedicated::us-south::::]\n    DoctorRegionID(Showroom 6 - decommissioned[crn:v1:d-showroom-6:dedicated::us-south::::]/mccpid=sr6:prod:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "sr6:prod:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-sia:dedicated::mil01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "SIA S.p.A - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "SIA S.p.A - decommissioned\n\n    DoctorEnvironment(SIA S.p.A - decommissioned/D_SIA[crn:v1:d-sia:dedicated::mil01::::]\n    DoctorRegionID(SIA S.p.A - decommissioned[crn:v1:d-sia:dedicated::mil01::::]/mccpid=sia:prod:eu-it)\n",
+    "ims_id": "",
+    "mccp_id": "sia:prod:eu-it"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-skbg2:dedicated::se01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "SK Broadband - G2",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "SK Broadband - G2\n\n    DoctorEnvironment(SK Broadband - G2/D_SKBG2[crn:v1:d-skbg2:dedicated::se01::::]\n    DoctorRegionID(SK Broadband - G2[crn:v1:d-skbg2:dedicated::se01::::]/mccpid=skbg2:prod:as-kr)\n",
+    "ims_id": "",
+    "mccp_id": "skbg2:prod:as-kr"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-skcc:dedicated::se01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "SK C&C",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "SK C&C\n\n    DoctorEnvironment(SK C&C/D_SKCC[crn:v1:d-skcc:dedicated::se01::::]\n    DoctorRegionID(SK C&C[crn:v1:d-skcc:dedicated::se01::::]/mccpid=skcc:prod:as-kr)\n",
+    "ims_id": "",
+    "mccp_id": "skcc:prod:as-kr"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-skccdep:dedicated::se01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "SK DEP - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "SK DEP - decommissioned\n\n    DoctorEnvironment(SK DEP - decommissioned/D_SKCCDEP[crn:v1:d-skccdep:dedicated::se01::::]\n    DoctorRegionID(SK DEP - decommissioned[crn:v1:d-skccdep:dedicated::se01::::]/mccpid=skccdep:prod:as-kr)\n",
+    "ims_id": "",
+    "mccp_id": "skccdep:prod:as-kr"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-skholdmis:dedicated::se01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "SK Holdings - MIS",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "SK Holdings - MIS\n\n    DoctorEnvironment(SK Holdings - MIS/D_SKHOLDMIS[crn:v1:d-skholdmis:dedicated::se01::::]\n    DoctorRegionID(SK Holdings - MIS[crn:v1:d-skholdmis:dedicated::se01::::]/mccpid=skholdmis:prod:as-kr)\n",
+    "ims_id": "",
+    "mccp_id": "skholdmis:prod:as-kr"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-skinnomis:dedicated::se01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "SK Innovation - MIS - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "SK Innovation - MIS - decommissioned\n\n    DoctorEnvironment(SK Innovation - MIS - decommissioned/D_SKINNOMIS[crn:v1:d-skinnomis:dedicated::se01::::]\n    DoctorRegionID(SK Innovation - MIS - decommissioned[crn:v1:d-skinnomis:dedicated::se01::::]/mccpid=skinnomis:prod:as-kr)\n",
+    "ims_id": "",
+    "mccp_id": "skinnomis:prod:as-kr"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-sncf-2:dedicated::par01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "SNCF 2 - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "SNCF 2 - decommissioned\n\n    DoctorEnvironment(SNCF 2 - decommissioned/D_SNCF_2[crn:v1:d-sncf-2:dedicated::par01::::]\n    DoctorRegionID(SNCF 2 - decommissioned[crn:v1:d-sncf-2:dedicated::par01::::]/mccpid=sncf2:prod:eu-fr)\n",
+    "ims_id": "",
+    "mccp_id": "sncf2:prod:eu-fr"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-sncf:dedicated::par01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "SNCF 1 - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "SNCF 1 - decommissioned\n\n    DoctorEnvironment(SNCF 1 - decommissioned/D_SNCF[crn:v1:d-sncf:dedicated::par01::::]\n    DoctorRegionID(SNCF 1 - decommissioned[crn:v1:d-sncf:dedicated::par01::::]/mccpid=sncf-eva:prod:eu-fr)\n",
+    "ims_id": "",
+    "mccp_id": "sncf-eva:prod:eu-fr"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-softbank:dedicated::jp-tok::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "SoftBank - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "SoftBank - decommissioned\n\n    DoctorEnvironment(SoftBank - decommissioned/D_SOFTBANK[crn:v1:d-softbank:dedicated::jp-tok::::]\n    DoctorRegionID(SoftBank - decommissioned[crn:v1:d-softbank:dedicated::jp-tok::::]/mccpid=softbank:prod:as-jp)\n",
+    "ims_id": "",
+    "mccp_id": "softbank:prod:as-jp"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-sr7:dedicated::tor01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Showroom 7 - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Showroom 7 - decommissioned\n\n    DoctorEnvironment(/D_SR7[crn:v1:d-sr7:dedicated::tor01::::]\n    DoctorRegionID(Showroom 7 - decommissioned[]/mccpid=sr7:prod:ca-east)\n",
+    "ims_id": "",
+    "mccp_id": "sr7:prod:ca-east"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-techmahindra:dedicated::sng01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Tech Mahindra - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Tech Mahindra - decommissioned\n\n    DoctorEnvironment(Tech Mahindra - decommissioned/D_TECHMAHINDRA[crn:v1:d-techmahindra:dedicated::sng01::::]\n    DoctorRegionID(Tech Mahindra - decommissioned[crn:v1:d-techmahindra:dedicated::sng01::::]/mccpid=techmahindra:ibm t:as-sg)\n",
+    "ims_id": "",
+    "mccp_id": "techmahindra:ibm t:as-sg"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-thomson-reuters:dedicated::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Thomson Reuters",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Thomson Reuters\n\n    DoctorEnvironment(Thomson Reuters/D_THOMSON_REUTERS[crn:v1:d-thomson-reuters:dedicated::us-south::::]\n    DoctorRegionID(Thomson Reuters[crn:v1:d-thomson-reuters:dedicated::us-south::::]/mccpid=tr:prod:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "tr:prod:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-tr2:dedicated::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Thomson Reuters 2 (TR2)",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Thomson Reuters 2 (TR2)\n\n    DoctorEnvironment(Thomson Reuters 2 (TR2)/D_TR2[crn:v1:d-tr2:dedicated::us-south::::]\n    DoctorRegionID(Thomson Reuters 2 (TR2)[crn:v1:d-tr2:dedicated::us-south::::]/mccpid=tr2:prod:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "tr2:prod:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-virginmoney1:dedicated::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Virgin Money 1",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Virgin Money 1\n\n    DoctorEnvironment(Virgin Money 1/D_VIRGINMONEY1[crn:v1:d-virginmoney1:dedicated::eu-gb::::]\n    DoctorRegionID(Virgin Money 1[crn:v1:d-virginmoney1:dedicated::eu-gb::::]/mccpid=virginmoney1:prod:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "virginmoney1:prod:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-virginmoney2:dedicated::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Virgin Money 2",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Virgin Money 2\n\n    DoctorEnvironment(Virgin Money 2/D_VIRGINMONEY2[crn:v1:d-virginmoney2:dedicated::eu-gb::::]\n    DoctorRegionID(Virgin Money 2[crn:v1:d-virginmoney2:dedicated::eu-gb::::]/mccpid=virginmoney2:prod:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "virginmoney2:prod:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-wbmdibm:dedicated::se01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Watson Korea (WBMDIBM) - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Watson Korea (WBMDIBM) - decommissioned\n\n    DoctorEnvironment(Watson Korea (WBMDIBM) - decommissioned/D_WBMDIBM[crn:v1:d-wbmdibm:dedicated::se01::::]\n    DoctorRegionID(Watson Korea (WBMDIBM) - decommissioned[crn:v1:d-wbmdibm:dedicated::se01::::]/mccpid=wbmdibm:prod:as-kr)\n",
+    "ims_id": "",
+    "mccp_id": "wbmdibm:prod:as-kr"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-wbmdn-28801:dedicated::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "AT&T 1 (deployed as WBMDN-28801)",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "AT&T 1 (deployed as WBMDN-28801)\n\n    DoctorEnvironment(AT&T 1 (deployed as WBMDN-28801)/D_WBMDN-28801[crn:v1:d-wbmdn-28801:dedicated::us-south::::]\n    DoctorRegionID(AT&T 1 (deployed as WBMDN-28801)[crn:v1:d-wbmdn-28801:dedicated::us-south::::]/mccpid=wbmdn-28801:prod:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "wbmdn-28801:prod:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-wipro:dedicated::sng01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Wipro - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Wipro - decommissioned\n\n    DoctorEnvironment(Wipro - decommissioned/D_WIPRO[crn:v1:d-wipro:dedicated::sng01::::]\n    DoctorRegionID(Wipro - decommissioned[crn:v1:d-wipro:dedicated::sng01::::]/mccpid=wipro:prod:as-sg)\n",
+    "ims_id": "",
+    "mccp_id": "wipro:prod:as-sg"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-woodside:dedicated::mel01::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Woodside - decommissioned",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Woodside - decommissioned\n\n    DoctorEnvironment(Woodside - decommissioned/D_WOODSIDE[crn:v1:d-woodside:dedicated::mel01::::]\n    DoctorRegionID(Woodside - decommissioned[crn:v1:d-woodside:dedicated::mel01::::]/mccpid=woodside:prod:au-south)\n",
+    "ims_id": "",
+    "mccp_id": "woodside:prod:au-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:d-ys0:dedicated::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Dedicated YS0",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Dedicated YS0\n\n    DoctorEnvironment(Dedicated YS0/D_YS0[crn:v1:d-ys0:dedicated::us-south::::]\n    DoctorRegionID(Dedicated YS0[crn:v1:d-ys0:dedicated::us-south::::]/mccpid=ibm:dys0:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "ibm:dys0:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:dal09-local-bluemix-dev:dedicated::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "VMWare Softlayer",
+    "type": "<unknown>",
+    "status": "<unknown>",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "VMWare Softlayer\n\n    DoctorRegionID(VMWare Softlayer[]/mccpid=dal09-local-bluemix-dev:prod:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "dal09-local-bluemix-dev:prod:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:dgt:dedicated::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "DGT - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "DGT - decommissioned\n\n    DoctorRegionID(DGT - decommissioned[]/mccpid=dgt:prod:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "dgt:prod:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:dvla:dedicated::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "DVLA - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "DVLA - decommissioned\n\n    DoctorRegionID(DVLA - decommissioned[]/mccpid=dvla:prod:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "dvla:prod:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:gemalto1:dedicated::eu-fr::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Gemalto 1 - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Gemalto 1 - decommissioned\n\n    DoctorRegionID(Gemalto 1 - decommissioned[]/mccpid=gemalto1:prod:eu-fr)\n",
+    "ims_id": "",
+    "mccp_id": "gemalto1:prod:eu-fr"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:gemalto2:dedicated::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Gemalto 2 - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Gemalto 2 - decommissioned\n\n    DoctorRegionID(Gemalto 2 - decommissioned[]/mccpid=gemalto2:prod:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "gemalto2:prod:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:gm:dedicated::us-ne::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "GBS - GM - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "GBS - GM - decommissioned\n\n    DoctorRegionID(GBS - GM - decommissioned[]/mccpid=gm:prod:us-ne)\n",
+    "ims_id": "",
+    "mccp_id": "gm:prod:us-ne"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:ibm:dedicated::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "CGEY (Capgemini) - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "CGEY (Capgemini) - decommissioned\n\n    DoctorRegionID(CGEY (Capgemini) - decommissioned[]/mccpid=ibm:capgemini:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "ibm:capgemini:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:ibmgbs:dedicated::in-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "IBMGBS (project liberty) - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "IBMGBS (project liberty) - decommissioned\n\n    DoctorRegionID(IBMGBS (project liberty) - decommissioned[]/mccpid=ibmgbs:prod:in-south)\n",
+    "ims_id": "",
+    "mccp_id": "ibmgbs:prod:in-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:ibmtalentinsights:dedicated::ca-east::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "IBM Talent Insights - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "IBM Talent Insights - decommissioned\n\n    DoctorRegionID(IBM Talent Insights - decommissioned[]/mccpid=ibmtalentinsights:prod:ca-east)\n",
+    "ims_id": "",
+    "mccp_id": "ibmtalentinsights:prod:ca-east"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:internal:dedicated::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "IBM CIO",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "IBM CIO\n\n    DoctorEnvironment(IBM CIO/D_CIO[crn:v1:internal:dedicated::us-south::::]\n    DoctorRegionID(IBM CIO[crn:v1:internal:dedicated::us-south::::]/mccpid=w3ibm:prod:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "w3ibm:prod:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:jri:dedicated::as-jp::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "JRI (Japan Research Institute) - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "JRI (Japan Research Institute) - decommissioned\n\n    DoctorRegionID(JRI (Japan Research Institute) - decommissioned[]/mccpid=jri:prod:as-jp)\n",
+    "ims_id": "",
+    "mccp_id": "jri:prod:as-jp"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:kmd01:dedicated::eu-de::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "KMD - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "KMD - decommissioned\n\n    DoctorRegionID(KMD - decommissioned[]/mccpid=kmd01:prod:eu-de)\n",
+    "ims_id": "",
+    "mccp_id": "kmd01:prod:eu-de"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:kpsj002:dedicated::us-west::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Kaiser 2 - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Kaiser 2 - decommissioned\n\n    DoctorRegionID(Kaiser 2 - decommissioned[]/mccpid=kpsj002:prod:us-west)\n",
+    "ims_id": "",
+    "mccp_id": "kpsj002:prod:us-west"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:l-bnpp-02:local::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "BNPP 2 - decommissioned",
+    "type": "IBMCLOUD_LOCAL",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "BNPP 2 - decommissioned\n\n    DoctorEnvironment(BNPP 2 - decommissioned/L_BNPP_02[crn:v1:l-bnpp-02:local::eu-gb::::]\n    DoctorRegionID(BNPP 2 - decommissioned[crn:v1:l-bnpp-02:local::eu-gb::::]/mccpid=bnpp02:prod:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "bnpp02:prod:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:l-bnpp:local::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "BNPP - decommissioned",
+    "type": "IBMCLOUD_LOCAL",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "BNPP - decommissioned\n\n    DoctorEnvironment(BNPP - decommissioned/L_BNPP[crn:v1:l-bnpp:local::eu-gb::::]\n    DoctorRegionID(BNPP - decommissioned[crn:v1:l-bnpp:local::eu-gb::::]/mccpid=bnpp:proxy:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "bnpp:proxy:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:l-bnsf-001:local::us-ne::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "BNSF_001 - decommissioned",
+    "type": "IBMCLOUD_LOCAL",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "BNSF_001 - decommissioned\n\n    DoctorEnvironment(BNSF_001 - decommissioned/L_BNSF_001[crn:v1:l-bnsf-001:local::us-ne::::]\n    DoctorRegionID(BNSF_001 - decommissioned[crn:v1:l-bnsf-001:local::us-ne::::]/mccpid=bnsf-001:prod:us-ne)\n",
+    "ims_id": "",
+    "mccp_id": "bnsf-001:prod:us-ne"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:l-bnsf-002:local::us-ne::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "BNSF_002 - decommissioned",
+    "type": "IBMCLOUD_LOCAL",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "BNSF_002 - decommissioned\n\n    DoctorEnvironment(BNSF_002 - decommissioned/L_BNSF_002[crn:v1:l-bnsf-002:local::us-ne::::]\n    DoctorRegionID(BNSF_002 - decommissioned[crn:v1:l-bnsf-002:local::us-ne::::]/mccpid=bnsf-002:prod:us-ne)\n",
+    "ims_id": "",
+    "mccp_id": "bnsf-002:prod:us-ne"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:l-dev01:local::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Vmware_Dev01 - decommissioned",
+    "type": "IBMCLOUD_LOCAL",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Vmware_Dev01 - decommissioned\n\n    DoctorEnvironment(Vmware_Dev01 - decommissioned/L_DEV01[crn:v1:l-dev01:local::us-south::::]\n    DoctorRegionID(Vmware_Dev01 - decommissioned[crn:v1:l-dev01:local::us-south::::]/mccpid=dev01:prod:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "dev01:prod:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:l-dev02:local::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Vmware_Dev02 - decommissioned",
+    "type": "IBMCLOUD_LOCAL",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Vmware_Dev02 - decommissioned\n\n    DoctorEnvironment(Vmware_Dev02 - decommissioned/L_DEV02[crn:v1:l-dev02:local::us-south::::]\n    DoctorRegionID(Vmware_Dev02 - decommissioned[crn:v1:l-dev02:local::us-south::::]/mccpid=dev02:prod:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "dev02:prod:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:l-dev03:local::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Vmware_Dev03 - decommissioned",
+    "type": "IBMCLOUD_LOCAL",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Vmware_Dev03 - decommissioned\n\n    DoctorEnvironment(Vmware_Dev03 - decommissioned/L_DEV03[crn:v1:l-dev03:local::us-south::::]\n    DoctorRegionID(Vmware_Dev03 - decommissioned[crn:v1:l-dev03:local::us-south::::]/mccpid=dev03:proxy:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "dev03:proxy:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:l-dev04:local::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Dev04",
+    "type": "IBMCLOUD_LOCAL",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Dev04\n\n    DoctorEnvironment(Dev04/L_DEV04[crn:v1:l-dev04:local::us-south::::]\n    DoctorRegionID(Dev04[crn:v1:l-dev04:local::us-south::::]/mccpid=dev04:prod:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "dev04:ys1:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:l-dev05:local::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Vmware_Dev05",
+    "type": "IBMCLOUD_LOCAL",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Vmware_Dev05\n\n    DoctorEnvironment(Vmware_Dev05/L_DEV05[crn:v1:l-dev05:local::us-south::::]\n    DoctorRegionID(Vmware_Dev05[crn:v1:l-dev05:local::us-south::::]/mccpid=dev05:prod:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "dev05:prod:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:l-dev06:local::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Vmware_Dev06",
+    "type": "IBMCLOUD_LOCAL",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Vmware_Dev06\n\n    DoctorEnvironment(Vmware_Dev06/L_DEV06[crn:v1:l-dev06:local::us-south::::]\n    DoctorRegionID(Vmware_Dev06[crn:v1:l-dev06:local::us-south::::]/mccpid=dev06:prod:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "dev06:prod:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:l-fpl:local::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Florida Power & Light",
+    "type": "IBMCLOUD_LOCAL",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Florida Power & Light\n\n    DoctorEnvironment(Florida Power & Light/L_FPL[crn:v1:l-fpl:local::us-south::::]\n    DoctorRegionID(Florida Power & Light[crn:v1:l-fpl:local::us-south::::]/mccpid=fpl:prod:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "fpl:prod:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:l-l-sltn:local::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "SLTN - decommissioned",
+    "type": "IBMCLOUD_LOCAL",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "SLTN - decommissioned\n\n    DoctorEnvironment(SLTN - decommissioned/L_L_SLTN[crn:v1:l-l-sltn:local::eu-gb::::]\n",
+    "ims_id": "",
+    "mccp_id": "l_sltn:prod:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:l-lacaixa-2:local::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "La Caixa_002",
+    "type": "IBMCLOUD_LOCAL",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "La Caixa_002\n\n    DoctorEnvironment(La Caixa_002/L_LACAIXA_2[crn:v1:l-lacaixa-2:local::eu-gb::::]\n    DoctorRegionID(La Caixa_002[crn:v1:l-lacaixa-2:local::eu-gb::::]/mccpid=lacaixa0102:prod:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "lacaixa0102:prod:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:l-lacaixa-3:local::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Caixa 3",
+    "type": "IBMCLOUD_LOCAL",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Caixa 3\n\n    DoctorEnvironment(Caixa 3/L_LACAIXA_3[crn:v1:l-lacaixa-3:local::eu-gb::::]\n    DoctorRegionID(Caixa 3[crn:v1:l-lacaixa-3:local::eu-gb::::]/mccpid=lacaixa0103:prod:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "lacaixa0103:prod:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:l-lacaixa-4:local::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Caixa 4",
+    "type": "IBMCLOUD_LOCAL",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Caixa 4\n\n    DoctorEnvironment(Caixa 4/L_LACAIXA_4[crn:v1:l-lacaixa-4:local::eu-gb::::]\n    DoctorRegionID(Caixa 4[crn:v1:l-lacaixa-4:local::eu-gb::::]/mccpid=lacaixa0104:prod:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "lacaixa0104:prod:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:l-lacaixa-5:local::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Caixa 5",
+    "type": "IBMCLOUD_LOCAL",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Caixa 5\n\n    DoctorEnvironment(Caixa 5/L_LACAIXA_5[crn:v1:l-lacaixa-5:local::eu-gb::::]\n    DoctorRegionID(Caixa 5[crn:v1:l-lacaixa-5:local::eu-gb::::]/mccpid=lacaixa0105:prod:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "lacaixa0105:prod:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:l-lacaixa:local::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "La Caixa",
+    "type": "IBMCLOUD_LOCAL",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "La Caixa\n\n    DoctorEnvironment(La Caixa/L_LACAIXA[crn:v1:l-lacaixa:local::eu-gb::::]\n    DoctorRegionID(La Caixa[crn:v1:l-lacaixa:local::eu-gb::::]/mccpid=lacaixa:prod:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "lacaixa:prod:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:l-lintasarta:local::as-id::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Lintasarta - decommissioned",
+    "type": "IBMCLOUD_LOCAL",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Lintasarta - decommissioned\n\n    DoctorEnvironment(Lintasarta - decommissioned/L_LINTASARTA[crn:v1:l-lintasarta:local::as-id::::]\n    DoctorRegionID(Lintasarta - decommissioned[crn:v1:l-lintasarta:local::as-id::::]/mccpid=lintasarta:prod:as-id)\n",
+    "ims_id": "",
+    "mccp_id": "lintasarta:prod:as-id"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:l-lufthansa:local::eu-de::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Lufthansa - decommissioned",
+    "type": "IBMCLOUD_LOCAL",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Lufthansa - decommissioned\n\n    DoctorEnvironment(Lufthansa - decommissioned/L_LUFTHANSA[crn:v1:l-lufthansa:local::eu-de::::]\n    DoctorRegionID(Lufthansa - decommissioned[crn:v1:l-lufthansa:local::eu-de::::]/mccpid=portal-lufthansa:prod:eu-de)\n",
+    "ims_id": "",
+    "mccp_id": "portal-lufthansa:prod:eu-de"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:l-produban:local::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Produban - decommissioned",
+    "type": "IBMCLOUD_LOCAL",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Produban - decommissioned\n\n    DoctorEnvironment(Produban - decommissioned/L_PRODUBAN[crn:v1:l-produban:local::eu-gb::::]\n    DoctorRegionID(Produban - decommissioned[crn:v1:l-produban:local::eu-gb::::]/mccpid=produban:prod:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "produban:prod:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:l-rbcgcc:local::ca-east::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "RBC_GCC",
+    "type": "IBMCLOUD_LOCAL",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "RBC_GCC\n\n    DoctorEnvironment(RBC_GCC/L_RBCGCC[crn:v1:l-rbcgcc:local::ca-east::::]\n    DoctorRegionID(RBC_GCC[crn:v1:l-rbcgcc:local::ca-east::::]/mccpid=rbc-gcc:prod:ca-east)\n",
+    "ims_id": "",
+    "mccp_id": "rbc-gcc:prod:ca-east"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:l-rbcscc:local::ca-east::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "RBC_SCC",
+    "type": "IBMCLOUD_LOCAL",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "RBC_SCC\n\n    DoctorEnvironment(RBC_SCC/L_RBCSCC[crn:v1:l-rbcscc:local::ca-east::::]\n    DoctorRegionID(RBC_SCC[crn:v1:l-rbcscc:local::ca-east::::]/mccpid=rbc-scc:prod:ca-east)\n",
+    "ims_id": "",
+    "mccp_id": "rbc-scc:prod:ca-east"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:l-skbdojdev1-local:local::as-kr::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "SKBdev 1 relocation",
+    "type": "IBMCLOUD_LOCAL",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "SKBdev 1 relocation\n\n    DoctorEnvironment(SKBdev 1 relocation/L_SKBDOJDEV1-LOCAL[crn:v1:l-skbdojdev1-local:local::as-kr::::]\n    DoctorRegionID(SKBdev 1 relocation[crn:v1:l-skbdojdev1-local:local::as-kr::::]/mccpid=skbdojdev1:prod:as-kr)\n",
+    "ims_id": "",
+    "mccp_id": "skbdojdev1:prod:as-kr"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:l-skbssuprd2:local::as-kr::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "SKBprd 2",
+    "type": "IBMCLOUD_LOCAL",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "SKBprd 2\n\n    DoctorEnvironment(SKBprd 2/L_SKBSSUPRD2[crn:v1:l-skbssuprd2:local::as-kr::::]\n    DoctorRegionID(SKBprd 2[crn:v1:l-skbssuprd2:local::as-kr::::]/mccpid=skbssuprd2:prod:as-kr)\n",
+    "ims_id": "",
+    "mccp_id": "skbssuprd2:prod:as-kr"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:l-skbsuydev1:local::as-kr::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "SKBdev 1 (skbsuydev1) - decommissioned",
+    "type": "IBMCLOUD_LOCAL",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "SKBdev 1 (skbsuydev1) - decommissioned\n\n    DoctorEnvironment(SKBdev 1 (skbsuydev1) - decommissioned/L_SKBSUYDEV1[crn:v1:l-skbsuydev1:local::as-kr::::]\n    DoctorRegionID(SKBdev 1 (skbsuydev1) - decommissioned[crn:v1:l-skbsuydev1:local::as-kr::::]/mccpid=skbsuydev1:prod:as-kr)\n",
+    "ims_id": "",
+    "mccp_id": "skbsuydev1:prod:as-kr"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:l-skbsuyprd1:local::as-kr::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "SKBprd 1",
+    "type": "IBMCLOUD_LOCAL",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "SKBprd 1\n\n    DoctorEnvironment(SKBprd 1/L_SKBSUYPRD1[crn:v1:l-skbsuyprd1:local::as-kr::::]\n    DoctorRegionID(SKBprd 1[crn:v1:l-skbsuyprd1:local::as-kr::::]/mccpid=skbsuyprd1:prod:as-kr)\n",
+    "ims_id": "",
+    "mccp_id": "skbsuyprd1:prod:as-kr"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:l-vmware-46-chrisahl:local::us-ne::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Rack46 - decommissioned",
+    "type": "IBMCLOUD_LOCAL",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Rack46 - decommissioned\n\n    DoctorEnvironment(Rack46 - decommissioned/L_VMWARE-46-CHRISAHL[crn:v1:l-vmware-46-chrisahl:local::us-ne::::]\n    DoctorRegionID(Rack46 - decommissioned[crn:v1:l-vmware-46-chrisahl:local::us-ne::::]/mccpid=vmware-46-chrisahl:prod:us-ne)\n",
+    "ims_id": "",
+    "mccp_id": "vmware-rack46-i1-local:prod:us-ne"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:learninfy:dedicated::as-sg::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Infosys - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Infosys - decommissioned\n\n    DoctorRegionID(Infosys - decommissioned[]/mccpid=learninfy:prod:as-sg)\n",
+    "ims_id": "",
+    "mccp_id": "learninfy:prod:as-sg"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:loc_bci:dedicated::cl-st::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "BCi Chile - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "BCi Chile - decommissioned\n\n    DoctorRegionID(BCi Chile - decommissioned[]/mccpid=loc_bci:prod:cl-st)\n",
+    "ims_id": "",
+    "mccp_id": "loc_bci:prod:cl-st"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:loc_bpi:dedicated::as-hk::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "BPI - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "BPI - decommissioned\n\n    DoctorRegionID(BPI - decommissioned[]/mccpid=loc_bpi:prod:as-hk)\n",
+    "ims_id": "",
+    "mccp_id": "loc_bpi:prod:as-hk"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:local-sby-pure:dedicated::us-ne::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Southbury (SBY) - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Southbury (SBY) - decommissioned\n\n    DoctorRegionID(Southbury (SBY) - decommissioned[]/mccpid=local-sby-pure:prod:us-ne)\n",
+    "ims_id": "",
+    "mccp_id": "local-sby-pure:prod:us-ne"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:lsr1:dedicated::cn-bj::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Local Showroom 1 - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Local Showroom 1 - decommissioned\n\n    DoctorRegionID(Local Showroom 1 - decommissioned[]/mccpid=lsr1:prod:cn-bj)\n",
+    "ims_id": "",
+    "mccp_id": "lsr1:prod:cn-bj"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:lysa:dedicated::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Vmware_LYSA - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Vmware_LYSA - decommissioned\n\n    DoctorRegionID(Vmware_LYSA - decommissioned[]/mccpid=lysa:prod:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "lysa:prod:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:moni2:dedicated::eu-nl::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Monitise 2 - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Monitise 2 - decommissioned\n\n    DoctorRegionID(Monitise 2 - decommissioned[]/mccpid=moni2:prod:eu-nl)\n",
+    "ims_id": "",
+    "mccp_id": "moni2:prod:eu-nl"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:monitise:dedicated::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Monitise 1 - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Monitise 1 - decommissioned\n\n    DoctorRegionID(Monitise 1 - decommissioned[]/mccpid=monitise:moni:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "monitise:moni:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:ms1:dedicated::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "MS 1 - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "MS 1 - decommissioned\n\n    DoctorRegionID(MS 1 - decommissioned[]/mccpid=ms1:prod:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "ms1:prod:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:ms2:dedicated::eu-de::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "MS 2 - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "MS 2 - decommissioned\n\n    DoctorRegionID(MS 2 - decommissioned[]/mccpid=ms2:prod:eu-de)\n",
+    "ims_id": "",
+    "mccp_id": "ms2:prod:eu-de"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:nab:dedicated::au-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "NAB - National Australia Bank - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "NAB - National Australia Bank - decommissioned\n\n    DoctorRegionID(NAB - National Australia Bank - decommissioned[]/mccpid=nab:prod:au-south)\n",
+    "ims_id": "",
+    "mccp_id": "nab:prod:au-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:postofficefot:dedicated::eu-fr::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "UK Post Office 2 - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "UK Post Office 2 - decommissioned\n\n    DoctorRegionID(UK Post Office 2 - decommissioned[]/mccpid=postofficefot:prod:eu-fr)\n",
+    "ims_id": "",
+    "mccp_id": "postofficefot:prod:eu-fr"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:pwc1:dedicated::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "PWC 1 - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "PWC 1 - decommissioned\n\n    DoctorRegionID(PWC 1 - decommissioned[]/mccpid=pwc1:prod:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "pwc1:prod:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:rack46-giri-instance3-local:dedicated::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Rack46 3 - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Rack46 3 - decommissioned\n\n    DoctorRegionID(Rack46 3 - decommissioned[]/mccpid=rack46-giri-instance3-local:prod:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "rack46-giri-instance3-local:prod:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:sap-cloud-poc:dedicated::dal13::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "[crn:v1:sap-cloud-poc:dedicated::dal13::::]",
+    "type": "IBMCLOUD_DEDICATED",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "[crn:v1:sap-cloud-poc:dedicated::dal13::::]\n\n    DoctorEnvironment(/SAP_CLOUD_POC[crn:v1:sap-cloud-poc:dedicated::dal13::::]\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:serpro:dedicated::br-df::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "SERPRO - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "SERPRO - decommissioned\n\n    DoctorRegionID(SERPRO - decommissioned[]/mccpid=serpro:prod:br-df)\n",
+    "ims_id": "",
+    "mccp_id": "serpro:prod:br-df"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:sncf-eva2:dedicated::eu-de::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "SNCF-EVA2 - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "SNCF-EVA2 - decommissioned\n\n    DoctorRegionID(SNCF-EVA2 - decommissioned[]/mccpid=sncf-eva2:prod:eu-de)\n",
+    "ims_id": "",
+    "mccp_id": "sncf-eva2:prod:eu-de"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:softbank-jp:dedicated::us-ne::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "SoftBank Tokyo - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "SoftBank Tokyo - decommissioned\n\n    DoctorRegionID(SoftBank Tokyo - decommissioned[]/mccpid=softbank-jp:prod:us-ne)\n",
+    "ims_id": "",
+    "mccp_id": "softbank-jp:prod:us-ne"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:sogeti:dedicated::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Sogeti - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Sogeti - decommissioned\n\n    DoctorRegionID(Sogeti - decommissioned[]/mccpid=sogeti:prod:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "sogeti:prod:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:sr2:dedicated::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Showroom 2  - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Showroom 2  - decommissioned\n\n    DoctorRegionID(Showroom 2  - decommissioned[]/mccpid=sr2:prod:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "sr2:prod:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:sr4:dedicated::as-jp::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Showroom 4 - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Showroom 4 - decommissioned\n\n    DoctorRegionID(Showroom 4 - decommissioned[]/mccpid=sr4:prod:as-jp)\n",
+    "ims_id": "",
+    "mccp_id": "sr4:prod:as-jp"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:staging:public::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "IBM Yellow Staging 1 - London (LYS1)",
+    "type": "IBMCLOUD_STAGING",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "IBM Yellow Staging 1 - London (LYS1)\n\n    DoctorEnvironment(IBM Yellow Staging 1 - London (LYS1)/YS1_LONDON[crn:v1:staging:public::eu-gb::::]\n    DoctorRegionID(IBM Yellow Staging 1 - London (LYS1)[crn:v1:staging:public::eu-gb::::]/mccpid=ibm:ys1:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "ibm:ys1:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:staging:public::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "IBM Yellow Staging 1 (YS1)",
+    "type": "IBMCLOUD_STAGING",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "IBM Yellow Staging 1 (YS1)\n\n    DoctorEnvironment(IBM Yellow Staging 1 (YS1)/YS1_DALLAS[crn:v1:staging:public::us-south::::]\n    DoctorRegionID(IBM Yellow Staging 1 (YS1)[crn:v1:staging:public::us-south::::]/mccpid=ibm:ys1:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "ibm:ys1:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:sykehus:dedicated::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Sykehuspartner - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Sykehuspartner - decommissioned\n\n    DoctorRegionID(Sykehuspartner - decommissioned[]/mccpid=sykehus:prod:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "sykehus:prod:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:talent3:dedicated::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Talent Insights 3 (US DR) - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Talent Insights 3 (US DR) - decommissioned\n\n    DoctorRegionID(Talent Insights 3 (US DR) - decommissioned[]/mccpid=talent3:prod:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "talent3:prod:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:tcs:dedicated::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "TCS - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "TCS - decommissioned\n\n    DoctorRegionID(TCS - decommissioned[]/mccpid=tcs:prod:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "tcs:prod:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:td:dedicated::ca-east::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "TD Bank - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "TD Bank - decommissioned\n\n    DoctorRegionID(TD Bank - decommissioned[]/mccpid=td:prod:ca-east)\n",
+    "ims_id": "",
+    "mccp_id": "td:prod:ca-east"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:td2:dedicated::ca-mtl::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "TD Bank 2 - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "TD Bank 2 - decommissioned\n\n    DoctorRegionID(TD Bank 2 - decommissioned[]/mccpid=td2:prod:ca-mtl)\n",
+    "ims_id": "",
+    "mccp_id": "td2:prod:ca-mtl"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:vmware-46-chrisahl2:dedicated::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Rack46 2 - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Rack46 2 - decommissioned\n\n    DoctorRegionID(Rack46 2 - decommissioned[]/mccpid=vmware-46-chrisahl2:prod:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "vmware-46-chrisahl2:prod:eu-gb"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:watsonsjc:dedicated::us-west::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "Blue Box_Watson - decommissioned",
+    "type": "<unknown>",
+    "status": "DECOMMISSIONED",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "Blue Box_Watson - decommissioned\n\n    DoctorRegionID(Blue Box_Watson - decommissioned[]/mccpid=watsonsjc:prod:us-west)\n",
+    "ims_id": "",
+    "mccp_id": "watsonsjc:prod:us-west"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:wfss-saas:gaas::global::::",
+    "oss_tags": [
+      "ibmcloud_default_segment",
+      "oss_only_placeholder"
+    ],
+    "parent_id": "",
+    "display_name": "WFSS SaaS",
+    "type": "GAAS",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "WFSS SaaS\n\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:yf-dallas:public::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "YF DALLAS",
+    "type": "<unknown>",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "YF DALLAS\n\n    DoctorEnvironment(YF DALLAS/YF_DALLAS[crn:v1:yf-dallas:public::us-south::::]\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:yf-london:public::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "YF LONDON",
+    "type": "<unknown>",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "YF LONDON\n\n    DoctorEnvironment(YF LONDON/YF_LONDON[crn:v1:yf-london:public::eu-gb::::]\n",
+    "ims_id": "",
+    "mccp_id": ""
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:ys0-dallas:public::us-south::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "IBM Yellow Staging 0 (YS0)",
+    "type": "<unknown>",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "IBM Yellow Staging 0 (YS0)\n\n    DoctorEnvironment(IBM Yellow Staging 0 (YS0)/YS0_DALLAS[crn:v1:ys0-dallas:public::us-south::::]\n    DoctorRegionID(IBM Yellow Staging 0 (YS0)[crn:v1:ys0-dallas:public::us-south::::]/mccpid=ibm:ys0:us-south)\n",
+    "ims_id": "",
+    "mccp_id": "ibm:ys0:us-south"
+  },
+  {
+    "schema_version": "1.0.9",
+    "id": "crn:v1:ys0-london:public::eu-gb::::",
+    "oss_tags": [
+      "ibmcloud_default_segment"
+    ],
+    "parent_id": "",
+    "display_name": "IBM Yellow Staging 0 - London (LYS0)",
+    "type": "<unknown>",
+    "status": "ACTIVE",
+    "reference_catalog_id": "",
+    "owning_segment": "58eda55b9babda00075a50da",
+    "description": "IBM Yellow Staging 0 - London (LYS0)\n\n    DoctorEnvironment(IBM Yellow Staging 0 - London (LYS0)/YS0_LONDON[crn:v1:ys0-london:public::eu-gb::::]\n    DoctorRegionID(IBM Yellow Staging 0 - London (LYS0)[crn:v1:ys0-london:public::eu-gb::::]/mccpid=ibm:ys0:eu-gb)\n",
+    "ims_id": "",
+    "mccp_id": "ibm:ys0:eu-gb"
+  }
+]

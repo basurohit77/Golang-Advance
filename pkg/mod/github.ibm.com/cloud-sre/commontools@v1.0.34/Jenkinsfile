@@ -1,0 +1,21 @@
+#!/usr/bin/groovy
+
+/*
+  IBM Confidential OCO Source Materials
+  (C) Copyright and Licensed by IBM Corp. 2021
+
+  The source code for this program is not published or otherwise
+  divested of its trade secrets irrespective of what has
+  been deposited with the U.S. Copyright Office.
+*/
+
+@Library(['cloud-platform-sre', 'oss-global-library']) _
+ciPipeline(
+  appName: 'commontools',
+  appSquad: 'api',
+  docker: false,
+  dependentJobs: [
+    '/Pipeline/api-edb-adapter-actiontracker/master',
+    '/Pipeline/api-gcor-api/master'
+  ]
+)

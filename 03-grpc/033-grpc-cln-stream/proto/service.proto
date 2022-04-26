@@ -1,0 +1,22 @@
+syntax="proto3";
+
+package proto;
+
+option go_package="/proto";
+
+/* Client Stream */
+/* message contract */
+message AverageRequest{
+    int32 no = 1;
+}
+
+message AverageResponse{
+    int32 result = 1;
+}
+
+/* service contract */
+service AppService{
+    /* operation contract */
+    rpc CalculateAverage (stream AverageRequest) returns (AverageResponse);
+
+}

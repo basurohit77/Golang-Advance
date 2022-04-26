@@ -1,0 +1,7 @@
+[
+  {
+    "cve": "CVE-2020-9283",
+    "expiration": "2022-05-15T12:00:00+00:00",
+    "comment": "https://github.ibm.com/cloud-sre/ToolsPlatform/issues/14602"
+  }
+]

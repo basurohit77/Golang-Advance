@@ -1,0 +1,13 @@
+**/debug.test
+.vscode
+debug
+.DS_Store
+.project
+.idea
+main
+unittest.out
+coverage.out
+nohup.out
+pnp-hooks
+bom-report.json
+vuln-scan.json

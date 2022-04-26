@@ -1,0 +1,6 @@
+---
+applications:
+- name: osscatviewer
+  host: osscatviewer
+  memory: 512M
+  buildpack: https://github.com/cloudfoundry/go-buildpack/releases/download/v1.9.1/go-buildpack-cflinuxfs3-v1.9.1.zip

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>OSS Catalog Segment: {{.OSSSegment.DisplayName}}</title>
+        <link rel="stylesheet" href="/osscat-styles.css">
+</head>
+
+<body>
+        <div class="osscat-login-info">{{.LoggedInUser}}</div>
+        <h1 class="osscat-title">OSS Segment entry for {{ .OSSSegment.DisplayName }}</h1>
+        <div class="osscat-page">
+                <div class="osscat-row">
+                        <div class="osscat-section">
+                                <h2 class="osscat-subtitle">General Information</h2>
+                                <table class="osscat-table">
+                                        <tr>
+                                                <td class="osscat-label">DisplayName: </td>
+                                                <td class="osscat-value">{{.OSSSegment.DisplayName}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">SegmentID: </td>
+                                                <td class="osscat-value">{{.OSSSegment.SegmentID}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">SegmentType: </td>
+                                                <td class="osscat-value">{{.OSSSegment.SegmentType}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">Owner: </td>
+                                                <td class="osscat-value">{{.OSSSegment.Owner}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">TechnicalContact: </td>
+                                                <td class="osscat-value">{{.OSSSegment.TechnicalContact}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">OSSTags: </td>
+                                                <td class="osscat-value">{{.OSSSegment.OSSTags}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">OSSOnboardingPhase: </td>
+                                                <td class="osscat-value">{{.OSSSegment.OSSOnboardingPhase}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">OSSOnboardingApprover: </td>
+                                                <td class="osscat-value">{{.OSSSegment.OSSOnboardingApprover}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">OSSOnboardingApprovalDate: </td>
+                                                <td class="osscat-value">{{.OSSSegment.OSSOnboardingApprovalDate}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">SchemaVersion: </td>
+                                                <td class="osscat-value">{{.OSSSegment.SchemaVersion}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">Record Created: </td>
+                                                <td class="osscat-value">{{.Created}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">Record Updated: </td>
+                                                <td class="osscat-value">{{.Updated}}</td>
+                                        </tr>
+                                </table>
+                                {{if .LinkToOSSRecord}}
+                                <button class="osscat-long-button" onclick=" window.open('{{.LinkToOSSRecord}}','_blank')">Go
+                                        to OSS Record in Global Catalog UI</button>
+                                {{end}}
+                                <button class="osscat-long-button" onclick=" window.open('/diff/{{.ProductionDiffID}}','_blank')">Check
+                                        for Diffs in Production OSS Record</button>
+                        </div>
+                        <div class="osscat-section">
+                                <h2 class="osscat-subtitle">ERCA Approvers</h2>
+                                <table class="osscat-table">
+                                        {{range .OSSSegment.ERCAApprovers}}
+                                        <tr>
+                                                <td class="osscat-value">{{.Member}}</td>
+                                                <td class="osscat-value">{{.Tags}}</td>
+                                        </tr>
+                                        {{end}}
+                                </table>
+                                <h2 class="osscat-subtitle">Change Comm Approvers</h2>
+                                <table class="osscat-table">
+                                        {{range .OSSSegment.ChangeCommApprovers}}
+                                        <tr>
+                                                <td class="osscat-value">{{.Member}}</td>
+                                                <td class="osscat-value">{{.Tags}}</td>
+                                        </tr>
+                                        {{end}}
+                                </table>
+                        </div>
+                </div>
+                <div class="osscat-row">
+                        <div class="osscat-widesection">
+                                <h2 class="osscat-subtitle">Tribes belonging to this Segment</h2>
+                                <span class="osscat-lastrefresh-tag">Last Refresh: {{.LastRefresh}}</span>
+                                <table class="osscat-table">
+                                        <thead>
+                                                <tr>
+                                                        <th class="osscat-th">Tribe Name</th>
+                                                        <th class="osscat-th">Number of Services/Components</th>
+                                                        <th class="osscat-th">OSS Onboarding Phase</th>
+                                                        <th class="osscat-th">OSS Tags</th>
+                                                </tr>
+                                        </thead>
+                                        <tbody>
+                                                {{range .Tribes}}
+                                                <tr>
+                                                        <td class="osscat-label">
+                                                                <a href="/tribe/{{.TribeID}}" target="_blank">{{.DisplayName}}</a>
+                                                        </td>
+                                                        <td class="osscat-value-nowrap">{{len .Services}}</td>
+                                                        <td class="osscat-value-nowrap">{{.OSSOnboardingPhase}}</td>
+                                                        <td class="osscat-value-nowrap">{{.OSSTagsString}}
+                                                            {{if .ProductionDiffID}}
+                                                            <a class="osscat-difflink" href="/diff/{{.ProductionDiffID}}" target="_blank">[{{.ProductionDiffLabel}}]</a>
+                                                            {{end}}
+                                                        </td>
+                                                </tr>
+                                                {{end}}
+                                        </tbody>
+                                </table>
+                        </div>
+                </div>
+                {{if .OSSValidation}}
+                <div class="osscat-row">
+                        <div class="osscat-widesection" id="validation_issues">
+                                <h2 class="osscat-subtitle">Validation Issues</h2>
+                                <table class="osscat-table">
+                                        {{range .OSSValidation.Issues}}
+                                        <tr>
+                                                <td class="osscat-value-validation-severity">{{.Severity}} </td>
+                                                <td class="osscat-value-validation-tags">{{.Tags}} </td>
+                                                <td class="osscat-value">{{.Title}} {{if .Details}}: {{.Details}}{{end}}</td>
+                                        </tr>
+                                        {{end}}
+                                </table>
+                        </div>
+                </div>
+                {{end}}
+        </div>
+        {{/*
+        <h2>Raw Data</h2>
+        <pre>{{ .OSSSegment }}</pre> */}}
+</body>

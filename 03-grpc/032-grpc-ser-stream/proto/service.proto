@@ -1,0 +1,24 @@
+syntax="proto3";
+
+package proto;
+
+option go_package="/proto";
+
+/* Server Stream */
+/* message contract */
+
+message PrimeRequest{
+    int32 start = 1;
+    int32 end = 2;
+}
+
+message PrimeResponse{
+    int32 primeNo = 1;
+}
+
+/* service contract */
+service AppService{
+    /* operation contract */
+    rpc GeneratePrimes (PrimeRequest) returns (stream PrimeResponse);
+
+}

@@ -1,0 +1,24 @@
+# github.com/davecgh/go-spew v1.1.0
+github.com/davecgh/go-spew/spew
+# github.com/golang-jwt/jwt/v4 v4.0.0
+## explicit
+github.com/golang-jwt/jwt/v4
+# github.com/google/uuid v1.2.0
+## explicit
+github.com/google/uuid
+# github.com/pkg/errors v0.9.1
+## explicit
+github.com/pkg/errors
+# github.com/pmezard/go-difflib v1.0.0
+github.com/pmezard/go-difflib/difflib
+# github.com/stretchr/testify v1.7.0
+## explicit
+github.com/stretchr/testify/assert
+# github.ibm.com/IAM/basiclog v0.0.1
+## explicit
+github.ibm.com/IAM/basiclog
+# github.ibm.com/IAM/go-jwks v1.0.2
+## explicit
+github.ibm.com/IAM/go-jwks
+# gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c
+gopkg.in/yaml.v3

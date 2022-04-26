@@ -1,0 +1,12 @@
+coverage-all.out
+coverage.xml
+cover.html
+cover.out
+main
+unittest.out
+unittest.xml
+.DS_Store
+#vendor/
+#Gopkg.toml
+#Gopkg.lock
+#_vendor*/

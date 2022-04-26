@@ -1,0 +1,11 @@
+language: go
+go:
+- 1.15.x
+before_script:
+- curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh
+  | sh -s -- -b $(go env GOPATH)/bin v1.30.0
+script:
+- |
+  export GOPRIVATE="github.ibm.com/IAM"
+  export GOPROXY="https://$ARTIFACTORY_USER:$ARTIFACTORY_PASSWORD@na.artifactory.swg-devops.com/artifactory/api/go/iam-go-virtual"
+  make

@@ -1,0 +1,276 @@
+Magesh Kuppan
+
+Schedule:
+    Commence    : 9:30 AM
+    Tea Break   : 11:00 AM (20 mins)
+    Lunch Break : 1:00 PM (1 Hr)
+    Tea Break   : 3:30 PM (20 mins)
+    Wind up     : 5:30 PM
+
+Methodoly:
+    Hands on driven
+    No powerpoints
+
+About You:
+    Name
+    Total Experience
+    Primary skillset
+    Experience in Golang
+    Any interesting books / shows you read / watched recently
+
+Go ?
+    1. Concurrency
+    2. Implicit implementation of interfaces
+    3. Standard library
+    4. Simplicity (only 25 keywords)
+    5. Easy to unit test, inbuilt testing framework
+    6. Compiling to native code
+    7. Performance compared to C
+    8. Higher Order Functions
+    9. Built in Garbage Collection
+
+Higher Order Functions
+    Functions are treated as data
+        1. Functions can be assigned to variables
+        2. Functions can be passed as arguments to other functions
+        3. Functions can be returned by other functions
+        4. Closures
+
+Goroutines
+    1. Go routines are lightweight threads of execution
+    2. 4KB of stack space
+    3. Go runtine has a builtin scheduler
+    4. 'go' keyword
+
+    Channels
+        ch := make(chan int)
+
+        sending data to the channel
+            ch <- 10
+            blocking operation?
+                it depends...
+                    if a read operation on the channel is not initiated yet, then the write operation will be blocked
+                    If the channel is a buffered channel and the channel is full, then the write operation will be blocked
+
+        receiving data from the channel
+            val := <- ch
+            receiving data from the channel is a blocking operation
+
+    Never assume during Concurrency programming
+        1. Time taken for a goroutine to complete
+        2. Sequence of execution of goroutines
+
+
+RPC
+    Remote Procedure Call
+        .NET Remoting
+        Java RMI
+
+    Web Services
+    REST Services
+
+Read Only
+Read (99%) + Append & Update (1%)
+Analytical 
+Real time
+
+
+Relational Databases are optimized for transactions
+    Maintain the integrity of the data when they are UPDATED
+
+
+Service?
+    Operations?
+    Messages?
+
+protocol buffers
+    Serialization
+
+Raw = 56
+XML = ~5 times
+JSON = 3 times
+
+P101,Pen,10,100,Stationary
+P102,Pencil,20,200,Stationary
+
+GRPC
+    http2 (formerly SPDY)
+
+    Communication Patterns
+        Request & Response
+        Server Streaming (one request & multiple responses)
+        Client Streaming (multiple requests & one response)
+        Bidirectional Streaming (multiple requests & multiple responses)
+
+Steps
+    1. Define the contract (service, operation, message (input & output)) (using protobuf)
+    2. Generate the proxy & stub
+    3. Implement the service & host the server (server-side)
+    4. Use the proxy to call the server (client-side)
+
+Tools:
+    
+    Installation
+        go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
+        go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
+
+        (when the above is installed, executables are created in the gopath/bin folder. Make sure this path is set in environment variables)
+
+    Windows
+        Install the binaries from https://github.com/protocolbuffers/protobuf/releases/
+
+    Mac
+        brew install protoc-gen-go
+        brew install protoc-gen-go-grpc
+
+to generate proxy & stub
+    protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative proto/service.proto
+
+
+Http Services
+    1. Builtin APIs
+    2. Use libraries
+        routing
+        middleware
+    3. Use frameworks
+
+
+
+
+https://github.com/notaryproject/notary
+
+
+Server Sent Events (http)
+    Headers from server
+        content-type : 'text/event-stream'
+        connection : 'keep-alive'
+
+    Messages from the server
+        event:<event_name>\n
+        data:<data>\n\n
+
+Web Sockets (ws) (on http)
+
+Code Generation
+    AST
+        https://yuroyoro.github.io/goast-viewer/index.html
+    Reflection
+    Templates
+
+    go generate ./...
+
+Distributed Tracing
+    Tracing
+        Following the execution flow
+
+    Span
+        Unit of Work
+        Encapsulates Unique Identifier, operation name, start & finish timestamp, and any other contextual information (tags, logs or events)
+        Span can be nested
+            parent span Identifier
+
+    Trace
+        directed graph of spans where edges between the spans are defined as parent/child relationships
+
+    DistributedContext
+        Contains tracing identifiers, tags etc that are propogated from parent to child
+
+Profiling
+    pprof
+
+    Steps:
+        1. Identify the bottlenecks
+        2. Isolate the bottlenecks
+        3. Profile the isolated bottlenecks
+        4. Analyze the profile
+        5. Fix the issues
+
+1. Add the following package
+    _ "net/http/pprof"
+
+2. Subject the application to a load
+    go-wrk -c 10 -d 10s http://localhost:8080/primes
+
+3. Access profile data
+    go tool pprof -seconds 5 http://localhost:8080/debug/pprof/profile
+    use commands to investigate
+        top10
+        top10 -cum
+        list <function name>
+        disasm <function name>
+
+Flamegraph profile analysis
+    go tool pprof -http=":9090" <binary_name> <profile_file>
+
+Memory Allocations
+    go test -bench=.
+    go test -bench=. -benchmem
+
+Creating CPU profile
+    go test -bench=. -cpuprofile=cpu.out
+
+Creating Memory profile
+    go test -bench=. -memprofile=mem.out
+
+To investigate memory allocations
+    go tool pprof -alloc_objects <binary_name> <profile_file>
+
+
+https://www.youtube.com/watch?v=N3PWzBeLX2M&t=2073s
+
+12-profiling
+----------------
+localhost:8080/primes
+go-wrk install
+ 	go get github.com/tsliwowicz/go-wrk
+
+Runs a benchmark for 5 seconds, using 80 go routines (connections)
+    go-wrk -c 80 -d 5 http://localhost:8080/primes
+
+    go-wrk http://localhost:8080/primes
+Running 10s test @ http://localhost:8080/primes
+  10 goroutine(s) running concurrently
+286252 requests in 9.740269356s, 52.14MB read
+Requests/sec:		29388.51
+Transfer/sec:		5.35MB
+Avg Req Time:		340.269µs
+Fastest Request:	78.087µs
+Slowest Request:	55.37093ms
+Number of Errors:	0
+
+pprof
+--------------
+    _ "net/http/pprof" // gathering the profile data and exporting the same through http://localhost:8080/debug/pprof
+    
+    To work with pprof, run series of request for 500ms
+        go-wrk -d 500 http://localhost:8080/primes
+    Web Check the end point
+        http://localhost:8080/debug/pprof
+
+    Command line tool
+        go tool pprof -seconds 5 http://localhost:8080/debug/pprof/profile
+        top10
+        top10 -cum
+
+    List the line of code where it takes time (eg: for syscall.syscall)
+        list syscall.syscall
+
+Benchmark
+--------------
+    go test -bench.
+    go test -bench=. -benchmem
+    Create profile for memory: 
+        go test -bench=. -memprofile=mem.out
+    Create profile for CPU:
+        go test -bench=. -cpuprofile=cpu.out
+
+    Watch profile in web 9090 port:
+        go tool pprof -http=":9090" <binary_name> <profile_file>
+        go tool pprof -http=":9090" profiling-demo.test mem.out
+    For this to work:  
+        brew install graphviz
+    Watch profile in CLI:
+        go tool pprof profiling-demo.test mem.out
+        <pprof> top10
+        list <process name>
+

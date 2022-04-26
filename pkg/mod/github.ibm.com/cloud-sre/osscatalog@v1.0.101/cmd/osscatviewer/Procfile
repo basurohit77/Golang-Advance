@@ -1,0 +1,1 @@
+web: osscatviewer -lenient -users authorized-users.json -check-owner=true

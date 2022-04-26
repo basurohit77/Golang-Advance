@@ -1,0 +1,9 @@
+{
+  "settingsInheritedFrom": "whitesource-config/whitesource-config@master",
+  "remediateSettings": {
+    "enableRenovate": true,
+    "extends": [
+      "config:base"
+    ]
+  }
+}

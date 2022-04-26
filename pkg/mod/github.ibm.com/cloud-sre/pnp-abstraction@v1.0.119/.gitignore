@@ -1,0 +1,12 @@
+**/debug.test
+.vscode
+debug
+.DS_Store
+.project
+.idea
+coverage.out
+coverage-all.out
+unittest.out
+unittest.xml
+coverage.xml
+main

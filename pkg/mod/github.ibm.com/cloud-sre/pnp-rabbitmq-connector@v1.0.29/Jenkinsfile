@@ -1,0 +1,30 @@
+#!/usr/bin/'groovy
+
+/*
+  IBM Confidential OCO Source Materials
+  (C) Copyright and Licensed by IBM Corp. 2018, 2021
+
+  The source code for this program is not published or otherwise
+  divested of its trade secrets  irrespective of what has
+  been deposited with the U.S. Copyright Office.
+*/
+
+@Library(['cloud-platform-sre', 'oss-global-library']) _
+ciPipeline(
+  appName: 'api-pnp-rabbitmq-connector',
+  appSquad: 'api',
+  docker: false,
+  dependentJobs:[
+        '/Pipeline/api-pnp-hooks/master',
+        '/Pipeline/api-pnp-nq2ds/master',
+        '/Pipeline/api-pnp-subscription/master',
+        '/Pipeline/api-pnp-subscription-consumer/master',
+        '/Pipeline/api-pnp-deadletter-consumer/master',
+        '/Pipeline/api-pnp-rest-test/master',
+        '/Pipeline/api-edb-adapter-abstract/master'
+  ],
+  makeEnvVars: [
+    'NR_LICENSE':'123',
+    'NQ_URL':'amqp://guest:guest@127.0.0.1:5672'
+    ]
+)

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>OSS Catalog Environments List</title>
+    <link rel="stylesheet" href="/osscat-styles.css">
+</head>
+
+<body>
+    <div class="osscat-login-info">{{.LoggedInUser}}</div>
+    <h1>OSS Entries - All Environments</h1>
+    <div>
+        <span class="osscat-tab-name"><a href="/">Services/Components</a></span>
+        <span class="osscat-tab-name"><a href="/segments">Segments</a></span>
+        <span class="osscat-tab-name">Environments</span>
+    </div>
+    <div>
+        <form class="osscat-home-form" action="/refresh" method="get">
+            <span class="osscat-home-input-label">Last Refresh: {{.LastRefresh}}</span>
+            <input class="osscat-button" type="submit" value="Refresh">
+        </form>
+    </div>
+    <table class="osscat-table">
+        <thead>
+            <tr>
+                <th class="osscat-th">Environment ID</th>
+                <th class="osscat-th">Display Name</th>
+                <th class="osscat-th">Environment Type</th>
+                <th class="osscat-th">Environment Status</th>
+                <th class="osscat-th">OSS Onboarding Phase</th>
+                <th class="osscat-th">OSS Tags</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{range .Environments}}
+            <tr>
+                <td class="osscat-label">
+                    <a href="/environment/{{.EnvironmentID}}" target="_blank">{{.EnvironmentID}}</a>
+                </td>
+                <td class="osscat-value-nowrap">{{.DisplayName}}</td>
+                <td class="osscat-value-nowrap">{{.Type}}</td>
+                <td class="osscat-value-nowrap">{{.Status}}</td>
+                <td class="osscat-value-nowrap">{{.OSSOnboardingPhase}}</td>
+                <td class="osscat-value-nowrap">{{.OSSTagsString}}
+                    {{if .ProductionDiffID}}
+                    <a class="osscat-difflink" href="/diff/{{.ProductionDiffID}}" target="_blank">[{{.ProductionDiffLabel}}]</a>
+                    {{end}}
+                </td>
+            </tr>
+            {{end}}
+        </tbody>
+    </table>
+</body>

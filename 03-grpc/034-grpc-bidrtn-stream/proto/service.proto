@@ -1,0 +1,26 @@
+syntax="proto3";
+
+package proto;
+
+option go_package="/proto";
+
+/* Bidirectional streaming */
+/* message contract */
+message UserName{
+    string firstName = 1;
+    string lastName = 2;
+}
+
+message GreetRequest{
+    UserName user = 1;
+}
+
+message GreetResponse{
+    string greeting = 1;
+}
+
+/* service contract */
+service AppService{
+    /* operation contract */
+    rpc GreetEveryone(stream GreetRequest) returns (stream GreetResponse);
+}

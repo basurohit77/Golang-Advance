@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>OSS Catalog Diff View</title>
+        <link rel="stylesheet" href="/osscat-styles.css">
+</head>
+
+<body>
+        <div class="osscat-login-info">{{.LoggedInUser}}</div>
+        <h1 class="osscat-title">OSS entry differences between Staging and Production for {{ .EntryName }}</h1>
+        {{if .StagingOnly}}
+        <h2>Entry exists in Staging only</h2>
+        {{else if .ProductionOnly}}
+        <h2>Entry exists in Production only</h2>
+        {{end}}
+        <div class="osscat-page">
+                <div class="osscat-row">
+                        <div class="osscat-widesection">
+                                <table class="osscat-table">
+                                        {{if .StagingOnly}}
+                                        <thead>
+                                                <tr>
+                                                        <th class="osscat-th">Attribute</th>
+                                                        <th class="osscat-th">Staging</th>
+                                                        <th class="osscat-th">---</th>
+                                                </tr>
+                                        </thead>
+                                        {{range .Diffs}}
+                                        <tr>
+                                                <td class="osscat-label">{{.LName}}: </td>
+                                                <td class="osscat-value">{{.LVal}}</td>
+                                                <td class="osscat-value"></td>
+                                        </tr>
+                                        {{end}}
+                                        {{else if .ProductionOnly}}
+                                        <thead>
+                                                <tr>
+                                                        <th class="osscat-th">Attribute</th>
+                                                        <th class="osscat-th">---</th>
+                                                        <th class="osscat-th">Production</th>
+                                                </tr>
+                                        </thead>
+                                        {{range .Diffs}}
+                                        <tr>
+                                                <td class="osscat-label">{{.LName}}: </td>
+                                                <td class="osscat-value"></td>
+                                                <td class="osscat-value">{{.RVal}}</td>
+                                        </tr>
+                                        {{end}}
+                                        {{else}}
+                                        <thead>
+                                                <tr>
+                                                        <th class="osscat-th">Attribute</th>
+                                                        <th class="osscat-th">Staging</th>
+                                                        <th class="osscat-th">Production</th>
+                                                </tr>
+                                        </thead>
+                                        {{range .Diffs}}
+                                        <tr>
+                                                <td class="osscat-label">{{.LName}}: </td>
+                                                <td class="osscat-value">{{.LVal}}</td>
+                                                <td class="osscat-value">{{.RVal}}</td>
+                                        </tr>
+                                        {{end}}
+                                        {{end}}
+                                </table>
+                        </div>
+                </div>
+</body>

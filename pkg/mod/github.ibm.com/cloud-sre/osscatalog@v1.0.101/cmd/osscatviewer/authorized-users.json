@@ -1,0 +1,10 @@
+[
+    {
+        "email": "dpj@us.ibm.com",
+        "write_access": true
+    },
+    {
+        "email": "osscat@us.ibm.com",
+        "write_access": true
+    }
+]

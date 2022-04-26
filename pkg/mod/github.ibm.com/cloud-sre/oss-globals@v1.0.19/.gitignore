@@ -1,0 +1,3 @@
+*.out
+unittest.xml
+coverage.xml

@@ -1,0 +1,367 @@
+[
+    {},
+    {
+      "oss_segment": {
+          "schema_version": "1.0.5",
+          "segment_id": "58eda55b9babda00075a50d5",
+          "display_name": "Watson Data Platform",
+          "owner": {
+              "w3id": "dschoett@us.ibm.com",
+              "name": "Derek Schoettle"
+          },
+          "technical_contact": {
+              "w3id": "",
+              "name": ""
+          }
+      }
+    },
+    {
+      "oss_segment": {
+          "schema_version": "1.0.5",
+          "segment_id": "58eda55b9babda00075a50d6",
+          "display_name": "Cloud Video",
+          "owner": {
+              "w3id": "jbraxton@us.ibm.com",
+              "name": "Braxton Jarratt"
+          },
+          "technical_contact": {
+              "w3id": "",
+              "name": ""
+          }
+      }
+    },
+    {
+        "oss_tribe": {
+            "schema_version": "1.0.5",
+            "tribe_id": "58eda55b9babda00075a50d5-58eda5669babda00075a50f1",
+            "display_name": "Data Science and Analytics",
+            "segment_id": "58eda55b9babda00075a50d5",
+            "owner": {
+                "w3id": "howarth@us.ibm.com",
+                "name": "Rich Howarth"
+            },
+            "change_approvers": []
+        }
+    },
+    {
+        "oss_tribe": {
+            "schema_version": "1.0.5",
+            "tribe_id": "58eda55b9babda00075a50d5-58eda5669babda00075a50f6",
+            "display_name": "Delivery Tools \u0026 Infrastructure",
+            "segment_id": "58eda55b9babda00075a50d5",
+            "owner": {
+                "w3id": "rmayor@ca.ibm.com",
+                "name": "Ryan Mayor"
+            },
+            "change_approvers": []
+        }
+    },
+    {
+        "oss_service": {
+            "schema_version": "1.0.5",
+            "reference_resource_name": "zerto",
+            "reference_display_name": "Zerto on IBM Cloud",
+            "reference_catalog_id": "cf329950-0a3e-11e8-922e-f1366c6e1c83-zerto",
+            "general_info": {
+                "rmc_number": "",
+                "operational_status": "GA",
+                "oss_tags": [
+                    "oss_status_crn_red",
+                    "oss_status_red"
+                ],
+                "client_facing": true,
+                "entry_type": "SERVICE/VMWARE",
+                "oss_description": "",
+                "servicenow_sys_id": "",
+                "service_now_ciurl": "",
+                "parent_resource_name": ""
+            },
+            "ownership": {
+                "offering_manager": {
+                    "w3id": "",
+                    "name": ""
+                },
+                "development_manager": {
+                    "w3id": "",
+                    "name": ""
+                },
+                "technical_contact": {
+                    "w3id": "",
+                    "name": ""
+                },
+                "segment_name": "",
+                "segment_id": "",
+                "segment_owner": {
+                    "w3id": "",
+                    "name": ""
+                },
+                "tribe_name": "",
+                "tribe_id": "",
+                "tribe_owner": {
+                    "w3id": "",
+                    "name": ""
+                },
+                "service_offering": "",
+                "main_repository": ""
+            },
+            "support": {
+                "manager": {
+                    "w3id": "",
+                    "name": ""
+                },
+                "client_experience": "",
+                "special_instructions": "",
+                "tier2_escalation_type": "",
+                "slack": "",
+                "tier2_repository": "",
+                "tier2rtc": ""
+            },
+            "operations": {
+                "manager": {
+                    "w3id": "",
+                    "name": ""
+                },
+                "special_instructions": "",
+                "tip_onboarded": false,
+                "avm_enabled": false,
+                "bypass_production_readiness": "",
+                "runbook_enabled": false,
+                "toc_avm_focal": {
+                    "w3id": "",
+                    "name": ""
+                },
+                "cie_dist_list": "",
+                "tier2_escalation_type": "",
+                "slack": "",
+                "tier2_repository": "",
+                "tier2rtc": "",
+                "euaccess_usam_name": ""
+            },
+            "status_page": {
+                "group": "",
+                "cateogry_id": "",
+                "category_parent": ""
+            },
+            "compliance": {
+                "servicenow_onboarded": false,
+                "servicenow_support_verified": false,
+                "servicenow_operations_verified": false,
+                "bcdr_focal": {
+                    "w3id": "",
+                    "name": ""
+                },
+                "security_focal": {
+                    "w3id": "",
+                    "name": ""
+                },
+                "availability_monitors": {},
+                "consumption_monitors": {},
+                "pagerduty_urls": null
+            },
+            "additional_contacts": "",
+            "service_now_info": {
+                "support_tier1ag": "",
+                "support_tier2ag": "",
+                "operations_tier1ag": "",
+                "operations_tier2ag": "",
+                "rca_approval_group": ""
+            },
+            "catalog_info": {
+                "provider": {
+                    "w3id": "",
+                    "name": "IBM"
+                },
+                "provider_contact": "",
+                "provider_support_email": "",
+                "provider_phone": "",
+                "category_tags": "VMware"
+            },
+            "product_info": {
+                "part_numbers": [
+                    "(none)"
+                ],
+                "part_numbers_refreshed": "2018-12-08T0329Z",
+                "product_ids": [
+                    "(none)"
+                ],
+                "clearinghouse_references": null,
+                "taxonomy": {
+                    "major_unit_utl10": "",
+                    "minor_unit_utl15": "",
+                    "market_utl17": "",
+                    "portfolio_utl20": ""
+                }
+            },
+            "dependency_info": {
+                "outbound_dependencies": null,
+                "inbound_dependencies": null
+            }
+        },
+        "oss_merge_control": {
+            "canonical_name": "zerto",
+            "oss_tags": [],
+            "raw_duplicate_names": null,
+            "do_not_merge_names": null,
+            "notes": "",
+            "overrides": null,
+            "last_update": "",
+            "updated_by": "",
+            "checksum": "1908f148804561ccdd512d9f764fe393ce0edea6"
+        }
+    },
+    {
+        "oss_service": {
+            "schema_version": "1.0.5",
+            "reference_resource_name": "zuznow",
+            "reference_display_name": "Zuznow",
+            "reference_catalog_id": "b08fcf8e-4f19-4bd2-b3be-150f7026ee2d",
+            "general_info": {
+                "rmc_number": "",
+                "operational_status": "THIRDPARTY",
+                "oss_tags": [
+                    "oss_status_crn_red",
+                    "oss_status_red"
+                ],
+                "client_facing": true,
+                "entry_type": "SERVICE",
+                "oss_description": "",
+                "servicenow_sys_id": "",
+                "service_now_ciurl": "",
+                "parent_resource_name": ""
+            },
+            "ownership": {
+                "offering_manager": {
+                    "w3id": "",
+                    "name": ""
+                },
+                "development_manager": {
+                    "w3id": "",
+                    "name": ""
+                },
+                "technical_contact": {
+                    "w3id": "",
+                    "name": ""
+                },
+                "segment_name": "",
+                "segment_id": "",
+                "segment_owner": {
+                    "w3id": "",
+                    "name": ""
+                },
+                "tribe_name": "",
+                "tribe_id": "",
+                "tribe_owner": {
+                    "w3id": "",
+                    "name": ""
+                },
+                "service_offering": "",
+                "main_repository": ""
+            },
+            "support": {
+                "manager": {
+                    "w3id": "",
+                    "name": ""
+                },
+                "client_experience": "",
+                "special_instructions": "",
+                "tier2_escalation_type": "",
+                "slack": "",
+                "tier2_repository": "",
+                "tier2rtc": ""
+            },
+            "operations": {
+                "manager": {
+                    "w3id": "",
+                    "name": ""
+                },
+                "special_instructions": "",
+                "tip_onboarded": false,
+                "avm_enabled": false,
+                "bypass_production_readiness": "",
+                "runbook_enabled": false,
+                "toc_avm_focal": {
+                    "w3id": "",
+                    "name": ""
+                },
+                "cie_dist_list": "",
+                "tier2_escalation_type": "",
+                "slack": "",
+                "tier2_repository": "",
+                "tier2rtc": "",
+                "euaccess_usam_name": ""
+            },
+            "status_page": {
+                "group": "",
+                "cateogry_id": "",
+                "category_parent": ""
+            },
+            "compliance": {
+                "servicenow_onboarded": false,
+                "servicenow_support_verified": false,
+                "servicenow_operations_verified": false,
+                "bcdr_focal": {
+                    "w3id": "",
+                    "name": ""
+                },
+                "security_focal": {
+                    "w3id": "",
+                    "name": ""
+                },
+                "availability_monitors": {},
+                "consumption_monitors": {},
+                "pagerduty_urls": null
+            },
+            "additional_contacts": "",
+            "service_now_info": {
+                "support_tier1ag": "",
+                "support_tier2ag": "",
+                "operations_tier1ag": "",
+                "operations_tier2ag": "",
+                "rca_approval_group": ""
+            },
+            "catalog_info": {
+                "provider": {
+                    "w3id": "",
+                    "name": "Zuznow"
+                },
+                "provider_contact": "",
+                "provider_support_email": "",
+                "provider_phone": "",
+                "category_tags": "Mobile"
+            },
+            "product_info": {
+                "part_numbers": [
+                    "(none)"
+                ],
+                "part_numbers_refreshed": "2018-12-08T0329Z",
+                "product_ids": [
+                    "(none)"
+                ],
+                "clearinghouse_references": null,
+                "taxonomy": {
+                    "major_unit_utl10": "",
+                    "minor_unit_utl15": "",
+                    "market_utl17": "",
+                    "portfolio_utl20": ""
+                }
+            },
+            "dependency_info": {
+                "outbound_dependencies": null,
+                "inbound_dependencies": null
+            }
+        },
+        "oss_merge_control": {
+            "canonical_name": "zuznow",
+            "oss_tags": [],
+            "raw_duplicate_names": null,
+            "do_not_merge_names": null,
+            "notes": "",
+            "overrides": null,
+            "last_update": "",
+            "updated_by": "",
+            "checksum": "1908f148804561ccdd512d9f764fe393ce0edea6"
+        }
+    }
+]
+
+    

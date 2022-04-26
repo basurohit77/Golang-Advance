@@ -1,0 +1,328 @@
+ package main
+
+import (
+	//"encoding/json"
+	"log"
+	"testing"
+	//"time"
+	"os"
+	"fmt"
+	"strconv"
+	"database/sql"
+	//"regexp"
+	//"os/signal"
+	//"errors"
+
+	//"github.ibm.com/cloud-sre/pnp-abstraction/datastore"
+	"github.ibm.com/cloud-sre/pnp-abstraction/db"
+	newrelic "github.com/newrelic/go-agent"
+	producer "github.ibm.com/cloud-sre/pnp-nq2ds/producer"
+	//rabbitmq "github.ibm.com/cloud-sre/pnp-rabbitmq-connector"
+	//"github.ibm.com/cloud-sre/pnp-nq2ds/testutils"
+	"github.ibm.com/cloud-sre/pnp-db/dbcreate"
+	"github.com/streadway/amqp"
+	encryption "github.ibm.com/cloud-sre/pnp-data-encryption"
+	// "github.ibm.com/cloud-sre/pnp-abstraction/ctxt"
+	// "github.ibm.com/cloud-sre/pnp-abstraction/exmon"
+	// "github.ibm.com/cloud-sre/pnp-abstraction/osscatalog"
+	// "github.ibm.com/cloud-sre/osscatalog/catalog"
+	// "github.ibm.com/cloud-sre/osscatalog/ossrecord"
+	// "github.ibm.com/cloud-sre/osscatalog/osstags"
+
+
+)
+
+
+var testMaintenance = `{"info":{"crnFull":["crn:v1:bluemix:public:ml-canvas:us-south::::","crn:v1:bluemix:public:pm-20:us-south::::"],"disruption_description":"During the maintenance period, the service will be unavailable.","disruption_duration":15,"disruption_type":"Existing Service Instances","disruptive":true,"long_description":"The Watson Machine Learning service will undergo scheduled maintenance. This maintenance window is due to a dependent backup and recovery service (Vault) that will be conducting scheduled maintenance during this time.\u003cbr/\u003e\u003cbr/\u003e ","maintenance_duration":60,"notification_channels":"Public","notification_status":"Published - All Updates Completed","notification_type":"Maintenance","planned_end_time":"2018-11-28T07:15:00Z","planned_start_time":"2018-11-28T07:00:00Z","short_description":"Update service dependency (Dallas, London, and Tokyo)","source":"Doctor-RTC","source_creation_time":"2018-11-23T16:17:22Z","source_id":"899135","source_state":"Deployment Approved and Scheduled","source_update_time":"2018-11-26T18:23:16Z","state":"scheduled"},"operation":"update","tags":"km_review_approved"}`
+var testSNMaintenance =`{"result_from_sn":[{"source_id":"234567","disruptive":true,"short_description":"des","long_description":"SNmaintenance long description 1","planned_start_time":null,"planned_end_time":null,"source_creation_time":"2018-06-07T15:28:58Z","source_update_time":"2018-09-07T15:28:58Z","state":"complete","crnFull":["crn:v1:bluemix:public:service-name1:us-east::::"],"source":"%s","regulatory_domain":null,"maintenance_duration":480,"record_hash":"aaa","disruption_type":"Other (specify in Description)","disruption_description":"test","disruption_duration":480}]}`
+var testIncident = `{"operation":"update","sys_id":"e082aa9ddb316784c06b58b8dc9619d0","number":"INC0523251","sys_created_on":"2018-11-18 03:29:05","incident_state":"New","u_disruption_ended":"","u_disruption_began":"","priority":"Sev - 1","u_status":"Confirmed CIE","short_description":"Test COS","description":"","cmdb_ci":"cloud-object-storage","comments":"","sys_updated_on":"2018-11-18 03:29:06","u_environment":"IBM Public US-SOUTH (YP)","u_description_customer_impact":"Test impact","u_current_status":"","u_affected_activity":"Account Management","crn":["crn:v1:bluemix:public:cloud-object-storage:us-south::::"],"instance":"watsontest","new_work_notes":"2018-11-15 03:29:07 - Shane Cartledge (Work notes)\nPagerDuty Trigger disabled in development by IBM COS.\n\n"}`
+var testIncident2 = `{"operation":"update","sys_id":"e082aa9ddb316784c06b58b8dc9619d0","number":"INC0523251","sys_created_on":"2018-11-18 03:29:05","incident_state":"New","u_disruption_ended":"","u_disruption_began":"","priority":"Sev - 1","u_status":"Confirmed CIE","short_description":"Test COS","description":"","cmdb_ci":"testService","comments":"","sys_updated_on":"2018-11-18 03:29:06","u_environment":"IBM Public US-SOUTH (YP)","u_description_customer_impact":"Test impact","u_current_status":"","u_affected_activity":"Account Management","crn":["crn:v1:bluemix:public:testService:us-south::::"],"instance":"watsontest","new_work_notes":"2018-11-15 03:29:07 - Shane Cartledge (Work notes)\nPagerDuty Trigger disabled in development by IBM COS.\n\n"}`
+
+var testCase = `{"number":"123457","sys_id":"000000","operation":"","Process":""}`
+var testResource = `{"id":"samplewdeployments","href":"","recordID":"","kind":"resource","mode":"","categoryId":"categoryidSampleWDeployments","crn":"crn:v1:staging:public:samplewdeployments:::::","tags":["apidocs_enabled","dev_ops","ibm_created","lite","security"],"displayName":[{"language":"en","text":"Sample With Deployments"}],"entry_type":"","servicenow_sys_id":"","service_now_ciurl":"","state":"ok","status":"","operationalStatus":"GA","visibility":["clientFacing"],"source":"globalCatalog","sourceId":"samplewdeployments","creationTime":"2017-09-21T15:02:48.691Z","updateTime":"2018-08-02T10:18:45.167Z","deployments":[{"id":"sample-ys1-eu-gb","active":"true","disabled":"false","href":"","recordID":"","kind":"deployment","categoryId":"categoryidSampleWDeployments","crn":"crn:v1:staging:public:samplewdeployments:eu-gb::::","tags":null,"displayName":[{"language":"en","text":"Sample Deployment in EU"}],"entry_type":"","state":"ok","status":"","operationalStatus":"GA","visibility":["clientFacing"],"source":"globalCatalog","sourceId":"crn:v1:staging:public:samplewdeployments:eu-gb::::","creationTime":"2017-09-21T15:04:12.917Z","updateTime":"2018-01-18T19:28:40.318Z"},{"id":"sample-ys1-us-south","active":"true","disabled":"false","href":"","recordID":"","kind":"deployment","categoryId":"categoryidSampleWDeployments","crn":"crn:v1:staging:public:samplewdeployments:us-south::::","tags":null,"displayName":[{"language":"en","text":"Sample Deploy in US South"}],"entry_type":"","state":"ok","status":"","operationalStatus":"GA","visibility":["clientFacing"],"source":"globalCatalog","sourceId":"crn:v1:staging:public:samplewdeployments:us-south::::","creationTime":"2017-09-21T15:04:33.97Z","updateTime":"2018-01-18T19:28:40.4Z"}],"parent":true}`
+var testStatus =`{"category_id":"test","record_id":"%s","source":"Doctor-RTC","source_id":"123456","status":"complete","crn_full":"%s","pnp_creation_time":"","pnp_update_time":"","source_creation_time":"","source_update_time":"","state":"","operational_status":"","status_update_time":"","regulatory_domain":"","category_id":"","category_parent":false,"record_hash":"","displayName":[{"name":"test status","language":"en"}],"visibility":["test"],"tags":[{"id":"tag1"}]}`
+var recordID = db.CreateRecordIDFromSourceSourceID("Doctor-RTC", "123456")
+var crn_full = "crn:v1:bluemix:public:testService:eu-gb::::"
+var testNotification = `{"source_creation_time":"2018-09-04 14:43:02","source_update_time":"2018-12-05 14:43:02","event_time_start":"2018-09-04 14:43:02","event_time_end":"2018-09-04 14:43:02","source":"doctor","source_id":"123456","type":"testType","category":"testCategory","incident_id":"1234","crn_full":"crn:v1:bluemix:public:testService:eu-gb::::","resource_display_names":[{"name":"resourceName","language":"en"}],"short_description":[{"name":"testt","language":"en"}],"long_description":[{"name":"long desc","language":"en"}]}`
+var txn newrelic.Transaction
+var nrConfig newrelic.Config
+var RECREATED = true
+
+
+// func setupEnv(){
+// 	os.Setenv("KUBE_APP_DEPLOYED_ENV","test")
+// 	os.Setenv("KUBE_CLUSTER_REGION","test")
+// 	os.Setenv("NQ_URL2","")
+	
+//     os.Setenv("NQ_QKEY","incident.nq2ds:incident,maintenance.nq2ds:maintenance,status.nq2ds:status,case.nq2ds:case,resource.nq2ds:resource,notification.nq2ds:notification")
+// 	os.Setenv("NQ_EXCHANGE_NAME","pnp.direct")
+// 	os.Setenv("NQ_CASE_OUT_QKEY","nq2ds.case")
+// 	os.Setenv("NQ_INCIDENT_OUT_QKEY","nq2ds.incident")
+// 	os.Setenv("NQ_INCIDENT_BULK_OUT_QKEY","nq2ds.incident")
+// 	os.Setenv("NQ_MAINTENANCE_OUT_QKEY","nq2ds.maintenance")
+// 	os.Setenv("NQ_RESOURCE_OUT_QKEY","nq2ds.resource")
+// 	os.Setenv("NQ_NOTIFICATION_OUT_QKEY","nq2ds.notification")
+// 	os.Setenv("NR_LICENSE","")
+// 	os.Setenv("NR_APPNAME","nq2ds-test")
+// 	os.Setenv("PG_HOST","localhost")
+// }
+
+// func getEnv(){
+// 	environment         = os.Getenv("KUBE_APP_DEPLOYED_ENV")
+// 	region              = os.Getenv("KUBE_CLUSTER_REGION")
+// 	url                 = os.Getenv("NQ_URL")
+// 	url2                = os.Getenv("NQ_URL2")
+// 	qKey                = os.Getenv("NQ_QKEY")
+// 	exchangeName        = os.Getenv("NQ_EXCHANGE_NAME")
+// 	pgHost              = os.Getenv("PG_HOST")
+// 	pgDB                = os.Getenv("PG_DB")
+// 	pgDBUser            = os.Getenv("PG_DB_USER")
+// 	pgPass              = os.Getenv("PG_DB_PASS")
+// 	caseOutQKey         = os.Getenv("NQ_CASE_OUT_QKEY")
+// 	incidentOutQKey     = os.Getenv("NQ_INCIDENT_OUT_QKEY")
+// 	incidentBulkOutQKey = os.Getenv("NQ_INCIDENT_BULK_OUT_QKEY")
+// 	maintenanceOutQKey  = os.Getenv("NQ_MAINTENANCE_OUT_QKEY")
+// 	resourceOutQKey     = os.Getenv("NQ_RESOURCE_OUT_QKEY")
+// 	notificationOutKey  = os.Getenv("NQ_NOTIFICATION_OUT_QKEY")
+// 	monitoringKey       = os.Getenv("NR_LICENSE")
+// 	monitoringAppName   = os.Getenv("NR_APPNAME")
+// }
+func InitNRApp() {
+	//log.Print("Initializing NewRelic application [" + monitoringAppName + "]")
+	//setupEnv()
+	var (
+	urls =[]string{"amqp://guest:guest@localhost:5672"}
+	exchangeName        = "pnp.direct"
+	//exchangeType := "direct"
+	caseOutQKey         = "nq2ds.case"
+	incidentOutQKey     = "nq2ds.incident" 
+    incidentBulkOutQKey = "nq2ds.incident"
+	maintenanceOutQKey  = "nq2ds.maintenance" 
+	resourceOutQKey     = "nq2ds.resource" 
+	//qKey = "incident.nq2ds:incident,maintenance.nq2ds:maintenance,status.nq2ds:status,case.nq2ds:case,resource.nq2ds:resource,notification.nq2ds:notification" 
+    pgHost              = os.Getenv("PG_DB_IP")
+	pgDB                = os.Getenv("PG_DB")
+	pgDBUser            = os.Getenv("PG_DB_USER")
+	pgPass              = os.Getenv("PG_DB_PASS")
+	pgPort              = os.Getenv("PG_DB_PORT")
+	)
+
+	nrConfig := newrelic.NewConfig("", "")
+    nrConfig.Enabled =false
+    nrApp, _ = newrelic.NewApplication(nrConfig)
+    txn = nrApp.StartTransaction("pnp-resource-adapter-test", nil, nil)
+    defer txn.End()
+
+    var err error
+	messageProducer, err = producer.NewProducer(urls, exchangeName, "direct", "case", nrApp)
+	if err != nil {
+		log.Print(err)
+	}else {
+		messageProducer.CaseRoutingKey = caseOutQKey
+		messageProducer.IncidentRoutingKey = incidentOutQKey
+		messageProducer.IncidentBulkRoutingKey = incidentBulkOutQKey
+		messageProducer.MaintenanceRoutingKey = maintenanceOutQKey
+		messageProducer.ResourceRoutingKey = resourceOutQKey
+		// defer messageProducer.Dispose()
+	}
+	log.Print("db host:",pgHost)
+	pgPortInt, _ := strconv.Atoi(pgPort)
+
+	dbConnection, err = db.Connect(pgHost,pgPortInt, pgDB, pgDBUser, pgPass, "disable")
+	if err != nil {
+		log.Print("connecting db failed:",err)
+	}
+}
+
+func EnsureTablesExist(database *sql.DB) {
+	log.Println("Creating User-defined types, tables and indexes.")
+
+	// Tables have to be in a certain order. All the dependencies have to be dropped first
+	//dbcreate.DropIncidentJunctionTable(database)
+	dbcreate.DropMaintenanceJunctionTable(database)
+	dbcreate.DropDisplayNamesTable(database)
+	dbcreate.DropVisibilityJunctionTable(database)
+	dbcreate.DropVisibilityTable(database)
+	dbcreate.DropTagJunctionTable(database)
+	dbcreate.DropTagTable(database)
+	//dbcreate.DropWatchJunctionTable(database)
+	dbcreate.DropResourceTable(database)
+	//dbcreate.DropIncidentTable(database)
+	dbcreate.DropMaintenanceTable(database)
+	dbcreate.DropCaseTable(database)
+	//dbcreate.DropWatchTable(database)
+	//dbcreate.DropSubscriptionTable(database)
+	dbcreate.DropNotificationDescriptionTable(database)
+	dbcreate.DropNotificationTable(database)
+
+	// All tables being referenced as foreign keys have to be created first
+	dbcreate.CreateResourceTable(database)
+	dbcreate.CreateDisplayNamesTable(database)
+	dbcreate.CreateVisibilityTable(database)
+	dbcreate.CreateVisibilityJunctionTable(database)
+	dbcreate.CreateTagTable(database)
+	dbcreate.CreateTagJunctionTable(database)
+	//dbcreate.CreateIncidentTable(database)
+	//dbcreate.CreateIncidentJunctionTable(database)
+	dbcreate.CreateMaintenanceTable(database)
+	dbcreate.CreateMaintenanceJunctionTable(database)
+	dbcreate.CreateCaseTable(database)
+	//dbcreate.CreateSubscriptionTable(database)
+	//dbcreate.CreateWatchTable(database)
+	//dbcreate.CreateWatchJunctionTable(database)
+	dbcreate.CreateNotificationTable(database)
+	dbcreate.CreateNotificationDescriptionTable(database)
+
+}
+// func TestInit(t *testing.T) {
+// 	setupEnv()
+// 	getEnv()
+// 	var urls []string
+// 	if url != "" {
+// 		urls = append(urls, url)
+// 	}
+// 	if url2 != "" {
+// 		urls = append(urls, url2)
+// 	}
+// 	Init(urls)
+ //}
+
+
+func TestPostTestMsg(t *testing.T) {
+	InitNRApp()
+	defer db.Disconnect(dbConnection)
+
+	var rountingKeys = []string{"case", "maintenance","resource","status","notification"}
+
+   EnsureTablesExist(dbConnection)
+    
+    msg :=amqp.Delivery{}
+    for _, rk := range rountingKeys {
+    	messageToPost := ""
+    	if rk == "case" {
+    		messageToPost = testCase
+    	// }else if rk == "incident" {
+    	// 	messageToPost = testIncident
+    	}else if rk == "resource" {
+    		messageToPost = testResource
+    	} else if rk == "status" {
+    		var msgStatus = fmt.Sprintf(testStatus, recordID, crn_full)
+    		messageToPost = msgStatus
+    	}else if rk == "notification" {
+    		messageToPost = testNotification
+    	}else if rk == "maintenance"{
+    		messageToPost = testMaintenance
+    	}
+
+    	msg.RoutingKey = rk
+    	var err error
+    	var encMsg = []byte("")
+    	if messageToPost != "" {
+    	encMsg, err = encryption.Encrypt(messageToPost) // Encryption
+    	if err != nil {
+			log.Println(err)
+		}
+	    }
+    	msg.Body = encMsg
+    	f(msg)
+	}
+
+}
+
+func TestConsumeSNMsg(t *testing.T) {
+	InitNRApp()
+	defer db.Disconnect(dbConnection)
+	
+
+	msg :=amqp.Delivery{}
+	var err error
+	var encMsg = []byte("")
+	msg.RoutingKey = "maintenance"
+	if testSNMaintenance != "" {
+		var msg = fmt.Sprintf(testSNMaintenance, "servicenow")
+		encMsg, err = encryption.Encrypt(msg) // Encryption
+		if err != nil {
+			log.Println(err)
+		}
+	}
+	msg.Body =encMsg
+	f(msg)
+
+	testmsg := fmt.Sprintf(testSNMaintenance, "servicenow")
+	encMsg, err = encryption.Encrypt(testmsg) // Encryption
+	if err != nil {
+		log.Println(err)
+	}
+
+	msg.Body =encMsg
+	f(msg)
+
+	//DropTables(dbConnection)
+}
+
+// func TestIncident(t *testing.T) {
+// 	InitNRApp()
+// 	defer db.Disconnect(dbConnection)
+
+// 	context :=ctxt.Context{}
+
+// 	mon := new(exmon.Monitor)
+// 	mon.NRConfig = nrConfig
+// 	mon.NRApp = nrApp
+// 	context.NRMon = mon
+// 	context.LogID = "nq2ds.incident"
+
+
+// 	cache, err := osscatalog.NewCache(context, tagNameListingServer)
+// 	if err != nil || cache == nil {
+// 		t.Fatal("Unable to get a cache", err)
+// 	}
+
+//     msg :=amqp.Delivery{}
+// 	var encMsg = []byte("")
+// 	msg.RoutingKey = "incident"
+// 	if testIncident2 != "" {
+// 		encMsg, _ = encryption.Encrypt(testIncident2) // Encryption
+// 	}
+// 	msg.Body =encMsg
+// 	f(msg)
+
+// }
+
+
+// func tagNameListingServer(r *regexp.Regexp, cio catalog.IncludeOptions, myFunc func(r ossrecord.OSSEntry)) error {
+
+// 	o := new(catalog.OSSRecordExtended)
+// 	o.OSS.ReferenceResourceName = "MyServiceParent" //CRNServiceName
+// 	o.OSS.StatusPage.CategoryID = "MyServiceParentCategoryID"
+// 	o.OSS.GeneralInfo.OSSTags = append(o.OSS.GeneralInfo.OSSTags, osstags.PnPEnabled)
+// 	myFunc(o)
+
+// 	o = new(catalog.OSSRecordExtended)
+// 	o.OSS.ReferenceResourceName = "MyService1" //CRNServiceName
+// 	o.OSS.StatusPage.CategoryID = "cloudoe.sop.enum.paratureCategory.literal.l247"
+// 	o.OSS.GeneralInfo.OSSTags = append(o.OSS.GeneralInfo.OSSTags, osstags.PnPEnabledIaaS)
+// 	myFunc(o)
+
+// 	o = new(catalog.OSSRecordExtended)
+// 	o.OSS.ReferenceResourceName = "MyService2" //CRNServiceName
+// 	o.OSS.StatusPage.CategoryID = "MyService2_CategoryID"
+// 	o.OSS.GeneralInfo.OSSTags = append(o.OSS.GeneralInfo.OSSTags, osstags.OneCloud)
+// 	myFunc(o)
+
+// 	o = new(catalog.OSSRecordExtended)
+// 	o.OSS.ReferenceResourceName = "MyService3" //CRNServiceName
+// 	o.OSS.StatusPage.CategoryID = "MyServiceParentCategoryID"
+// 	o.OSS.StatusPage.CategoryParent = "MyServiceParent"
+// 	o.OSS.GeneralInfo.OSSTags = append(o.OSS.GeneralInfo.OSSTags, osstags.OneCloud)
+// 	myFunc(o)
+
+// 	o = new(catalog.OSSRecordExtended)
+// 	o.OSS.ReferenceResourceName = "testService" //CRNServiceName
+// 	o.OSS.StatusPage.CategoryID = "MyServiceParentCategoryID"
+// 	o.OSS.StatusPage.CategoryParent = "MyServiceParent"
+// 	myFunc(o)
+
+// 	return nil
+// }
+

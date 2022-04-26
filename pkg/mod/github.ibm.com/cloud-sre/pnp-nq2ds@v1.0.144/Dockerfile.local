@@ -1,0 +1,5 @@
+FROM postgres:9.6.10-alpine
+
+ENV POSTGRES_DB=pnptest POSTGRES_USER=pnp POSTGRES_PASSWORD=pnp
+
+EXPOSE 5432

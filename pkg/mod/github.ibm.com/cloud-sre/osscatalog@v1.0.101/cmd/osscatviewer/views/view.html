@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>OSS Catalog Entry: {{.Main.ReferenceResourceName}}</title>
+        <link rel="stylesheet" href="/osscat-styles.css">
+</head>
+
+<body>
+        <div class="osscat-login-info">{{.LoggedInUser}}</div>
+        <h1 class="osscat-title">OSS entry for {{ .Main.ReferenceResourceName }}</h1>
+        <div class="osscat-page">
+                <div class="osscat-row">
+                        <div class="osscat-section" id="identification">
+                                <h2 class="osscat-subtitle">OSS Record Identification</h2>
+                                <table class="osscat-table">
+                                        <tr>
+                                                <td class="osscat-label">ReferenceResourceName: </td>
+                                                <td class="osscat-value">{{.Main.ReferenceResourceName}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">ReferenceDisplayName: </td>
+                                                <td class="osscat-value">{{.Main.ReferenceDisplayName}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">ReferenceCatalogID: </td>
+                                                <td class="osscat-value">{{.Main.ReferenceCatalogID}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">ReferenceCatalogPath: </td>
+                                                <td class="osscat-value">{{.Main.ReferenceCatalogPath}}</td>
+                                        </tr>
+                                </table>
+                                <table class="osscat-table" style="margin-top: 10px">
+                                        <tr>
+
+                                                <td class="osscat-label">SchemaVersion: </td>
+                                                <td class="osscat-value">{{.Main.SchemaVersion}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">Record Created: </td>
+                                                <td class="osscat-value">{{.Created}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">Record Updated: </td>
+                                                <td class="osscat-value">{{.Updated}}</td>
+                                        </tr>
+                                </table>
+                                {{if .LinkToOSSRecord}}
+                                <button class="osscat-long-button"
+                                        onclick=" window.open('{{.LinkToOSSRecord}}','_blank')">Go
+                                        to OSS Record in Global Catalog UI</button>
+                                {{end}} {{if .LinkToMainRecord}}
+                                <button class="osscat-long-button"
+                                        onclick=" window.open('{{.LinkToMainRecord}}','_blank')">Go
+                                        to Main Entry Record in Global Catalog UI</button>
+                                {{end}} {{if .Main.GeneralInfo.ServiceNowCIURL}}
+                                <button class="osscat-long-button"
+                                        onclick=" window.open('{{.Main.GeneralInfo.ServiceNowCIURL}}','_blank')">Go
+                                        to CI Record in ServiceNow UI</button>
+                                {{end}}{{if .LinkToCHRecords}}
+                                {{range .LinkToCHRecords}}
+                                <button class="osscat-long-button" onclick=" window.open('{{.Link}}','_blank')">Go
+                                        to ClearingHouse Record</button>
+                                {{end}}
+                                {{end}}
+                                <button class="osscat-long-button"
+                                        onclick=" window.open('/diff/{{.ProductionDiffID}}','_blank')">Check
+                                        for Diffs in Production OSS Record</button>
+                        </div>
+                        <div class="osscat-section" id="merge_control">
+                                {{if .EditMode}}
+                                <form action="/update/{{.Main.ReferenceResourceName}}" method="post">
+                                        <h2 class="osscat-subtitle">OSS Merge Control Information</h2>
+                                        <input class="osscat-edit-button" type="submit" value="Update">
+                                        {{else if .UpdateEnabled}}
+                                        <form action="/edit/{{.Main.ReferenceResourceName}}" method="post">
+                                                <h2 class="osscat-subtitle">OSS Merge Control Information</h2>
+                                                <input class="osscat-edit-button" type="submit" value="Edit">
+                                        </form>
+                                        {{else}}
+                                        <h2 class="osscat-subtitle">OSS Merge Control Information</h2>
+                                        {{end}} {{if .SignatureWarning}}
+                                        <div class="osscat-merge-warning">{{.SignatureWarning}}</div>
+                                        {{else}}
+                                        {{if .OSSMergeControl.LastUpdate}}
+                                        <div class="osscat-merge-timestamp">(Updated: {{.OSSMergeControl.LastUpdate}}{{.OSSMergeControl.UpdatedBy}})</div>
+                                        {{end}}
+                                        {{end}} {{if .DeleteWarning}}
+                                        <div class="osscat-delete-warning">{{.DeleteWarning}}</div>
+                                        {{end}} {{if .EditMode}}
+                                        <table class="osscat-table">
+                                                <tr>
+                                                        <td class="osscat-label">OSS Merge Status: </td>
+                                                        <td class="osscat-value-status">
+                                                                <table width="100%">
+                                                                        <tr>
+                                                                                <td width="50%"
+                                                                                        class="osscat-value-status {{.Main.GeneralInfo.OSSTags.GetCRNStatus}}">
+                                                                                        {{.Main.GeneralInfo.OSSTags.GetCRNStatus.StringStatus}}
+                                                                                </td>
+                                                                                <td width="50%"
+                                                                                        class="osscat-value-status {{.Main.GeneralInfo.OSSTags.GetOverallStatus}}">
+                                                                                        {{.Main.GeneralInfo.OSSTags.GetOverallStatus.StringStatus}}
+                                                                                </td>
+                                                                        </tr>
+                                                                </table>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td class="osscat-label">OSS Merge Control Tags: </td>
+                                                        <td class="osscat-update-td"><input class="osscat-update-input" type="text" name="osstags" value="{{.MergeControlTags}}" /></td>
+                                                </tr>
+                                                {{if .IgnoredMergeControlTags}}
+                                                        <tr>
+                                                                <td class="osscat-label">IGNORED OSS Merge Control Tags: </td>
+                                                                <td class="osscat-value">{{.IgnoredMergeControlTags}}</td>
+                                                        </tr>
+                                                {{end}}
+                                                <tr>
+                                                        <td class="osscat-label">RawDuplicateNames: </td>
+                                                        <td class="osscat-update-td"><input class="osscat-update-input" type="text" name="rawduplicatenames"value="{{.EmitJSONShort .OSSMergeControl.RawDuplicateNames}}" /></td>
+                                                </tr>
+                                                <tr>
+                                                        <td class="osscat-label">DoNotMergeNames: </td>
+                                                        <td class="osscat-update-td"><input class="osscat-update-input" type="text" name="donotmergenames" value="{{.EmitJSONShort .OSSMergeControl.DoNotMergeNames}}" /></td>
+                                                </tr>
+                                                <tr>
+                                                        <td class="osscat-label">Overrides: </td>
+                                                        <td class="osscat-update-td"><textarea class="osscat-update-input" name="overrides" rows="5">{{.EmitJSONLong .OSSMergeControl.Overrides}}</textarea></td>
+                                                </tr>
+                                                {{if .OSSMergeControl.IgnoredOverrides}}
+                                                        <tr>
+                                                                <td class="osscat-label">IGNORED Overrides: </td>
+                                                                <td class="osscat-value">{{.EmitJSONLong .OSSMergeControl.IgnoredOverrides}}</td>
+                                                        </tr>
+                                                {{end}}
+                                                <tr>
+                                                        <td class="osscat-label">Notes: </td>
+                                                        <td class="osscat-update-td"><textarea class="osscat-update-input" name="notes" rows="5">{{.EmitJSONShort .OSSMergeControl.Notes}}</textarea></td>
+                                                </tr>
+                                        </table>
+                                </form>
+                                {{else}}
+                                <table class="osscat-table">
+                                        <tr>
+                                                <td class="osscat-label">OSS Merge Status: </td>
+                                                <td class="osscat-value-status">
+                                                        <table width="100%">
+                                                                <tr>
+                                                                        <td width="50%"
+                                                                                class="osscat-value-status {{.Main.GeneralInfo.OSSTags.GetCRNStatus}}">
+                                                                                {{.Main.GeneralInfo.OSSTags.GetCRNStatus.StringStatus}}
+                                                                        </td>
+                                                                        <td width="50%"
+                                                                                class="osscat-value-status {{.Main.GeneralInfo.OSSTags.GetOverallStatus}}">
+                                                                                {{.Main.GeneralInfo.OSSTags.GetOverallStatus.StringStatus}}
+                                                                        </td>
+                                                                </tr>
+                                                        </table>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">OSS Merge Control Tags: </td>
+                                                <td class="osscat-value">{{.MergeControlTags}}</td>
+                                        </tr>
+                                        {{if .IgnoredMergeControlTags}}
+                                                <tr>
+                                                        <td class="osscat-label">IGNORED OSS Merge Control Tags: </td>
+                                                        <td class="osscat-value">{{.IgnoredMergeControlTags}}</td>
+                                                </tr>
+                                        {{end}}
+                                        <tr>
+                                                <td class="osscat-label">RawDuplicateNames: </td>
+                                                <td class="osscat-value">{{.EmitJSONShort .OSSMergeControl.RawDuplicateNames}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">DoNotMergeNames: </td>
+                                                <td class="osscat-value">{{.EmitJSONShort .OSSMergeControl.DoNotMergeNames}}</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="osscat-label">Overrides: </td>
+                                                <td class="osscat-value">{{.EmitJSONLong .OSSMergeControl.Overrides}}</td>
+                                        </tr>
+                                        {{if .OSSMergeControl.IgnoredOverrides}}
+                                                <tr>
+                                                        <td class="osscat-label">IGNORED Overrides: </td>
+                                                        <td class="osscat-value">{{.EmitJSONLong .OSSMergeControl.IgnoredOverrides}}</td>
+                                                </tr>
+                                        {{end}}
+                                        <tr>
+                                                <td class="osscat-label">Notes: </td>
+                                                <td class="osscat-value">{{.EmitJSONShort .OSSMergeControl.Notes}}</td>
+                                        </tr>
+                                </table>
+                                {{end}}
+                                <table class="osscat-table" style="margin-top: 10px">
+                                        <tr>
+                                                <td class="osscat-label">CanonicalName: </td>
+                                                <td class="osscat-value">"{{.OSSValidation.CanonicalName}}" (found in: {{.OSSValidation.CanonicalNameSources}})</td>
+                                        </tr>
+                                        {{range $index, $element := .OSSValidation.OtherNamesSources}}
+                                        <tr>
+                                                <td class="osscat-label">Other Name Variant: </td>
+                                                <td class="osscat-value">"{{$index}}" (found in: {{$element}})</td>
+                                        </tr>
+                                        {{end}} {{if .CatalogVisibility}}
+                                        <tr>
+                                                <td class="osscat-label">Catalog Visibility: </td>
+                                                <td class="osscat-value">{{.CatalogVisibility}})</td>
+                                        </tr>
+                                        {{end}} {{if .OSSValidation.StatusCategoryCount}}
+                                        <tr>
+                                                <td class="osscat-label">Entries with same Status CategoryID: </td>
+                                                <td class="osscat-value">{{.OSSValidation.StatusCategoryCount}}</td>
+                                        </tr>
+                                        {{end}} {{if .OSSValidation.LastRunActions}}
+                                        {{range $name, $lastRun := .OSSValidation.LastRunActions}}
+                                        <tr>
+                                                <td class="osscat-label">Last run: {{$name}}: </td>
+                                                <td class="osscat-value">{{$lastRun}}</td>
+                                        </tr>
+                                        {{end}}
+                                        {{end}}
+                                </table>
+                                <div class="osscat-counts-title">Number of validation issues:<a href="#validation_issues" style="font-weight: normal">(list)</a>
+                                </div>
+                                <div class="osscat-counts-block">
+                                        {{$counts := .IssuesCounts}}
+                                        <table class="osscat-counts-table">
+                                                <tr>
+                                                        <td class="osscat-counts-label">TOTAL</td>
+                                                        <td class="osscat-counts-value">{{.TotalIssues}}</td>
+                                                </tr>
+                                        </table>
+                                        {{range $index, $label := .IssuesLabels}} {{$value := index $counts $label}}
+                                        {{if $value}}
+                                        <table class="osscat-counts-table">
+                                                <tr>
+                                                        <td class="osscat-counts-label">{{$label}} </td>
+                                                        <td class="osscat-counts-value">{{$value}}</td>
+                                                </tr>
+                                        </table>
+                                        {{end}} {{end}}
+                                </div>
+                        </div>
+                </div>
+                <div class="osscat-row">
+                        <div class="osscat-section" id="general_information">
+                                <h2 class="osscat-subtitle">General Information</h2>
+                                <table class="osscat-table">
+                                        {{range .GeneralInfo}}
+                                        <tr>
+                                                <td class="osscat-label">{{.Name}}: </td>
+                                                {{if eq .Name "ServiceNowCIURL"}} {{if .Value.String}}
+                                                <td class="osscat-ci-link"><a href="{{.Value}}" target="_blank">link</a></td>
+                                                {{else}}
+                                                <td class="osscat-value"></td>
+                                                {{end}} {{else if eq .Name "ParentResourceName"}}
+                                                <td class="osscat-ci-link"><a href="/view/{{.Value}}" target="_blank">{{.Value}}</a></td>
+                                                {{else}}
+                                                <td class="osscat-value">{{.Value}}</td>
+                                                {{end}}
+                                        </tr>
+                                        {{end}}
+                                        {{if .Children}}
+                                        <tr>
+                                                <td class="osscat-label">Children:</td>
+                                                <td class="osscat-value"><span class="osscat-lastrefresh-tag">(LastRefresh: {{.LastRefresh}})</span></td>
+                                        </tr>
+                                        {{range .Children}}
+                                        <tr>
+                                                <td class="osscat-label"></td>
+                                                <td class="osscat-ci-link"><a href="/view/{{.}}" target="_blank">{{.}}</a></td>
+                                        </tr>
+                                        {{end}}
+                                        {{end}}
+                                </table>
+                        </div>
+                        <div class="osscat-section" id="ownership">
+                                <h2 class="osscat-subtitle">Ownership</h2>
+                                <table class="osscat-table">
+                                        {{$SegmentID := .Main.Ownership.SegmentID}}
+                                        {{$TribeID := .Main.Ownership.TribeID}}
+                                        {{range .Ownership}}
+                                        <tr>
+                                                <td class="osscat-label">{{.Name}}: </td>
+                                                {{if eq .Name "SegmentName"}}
+                                                <td class="osscat-ci-link"><a href="/segment/{{$SegmentID}}" target="_blank">{{.Value}}</a></td>
+                                                {{else if eq .Name "TribeName"}}
+                                                <td class="osscat-ci-link"><a href="/tribe/{{$TribeID}}" target="_blank">{{.Value}}</a></td>
+                                                {{else}}
+                                                <td class="osscat-value">{{.Value}}</td>
+                                                {{end}}
+                                        </tr>
+                                        {{end}}
+                                </table>
+                        </div>
+                </div>
+                <div class="osscat-row">
+                        <div class="osscat-section" id="support">
+                                <h2 class="osscat-subtitle">Support</h2>
+                                <table class="osscat-table">
+                                        {{if .Main.ServiceNowInfo.SupportNotApplicable}}
+                                                <tr>
+                                                        <td class="osscat-label">SupportNotApplicable</td>
+                                                </tr>
+                                        {{else}}
+                                                {{range .Support}}
+                                                <tr>
+                                                        <td class="osscat-label">{{.Name}}: </td>
+                                                        <td class="osscat-value">{{.Value}}</td>
+                                                </tr>
+                                                {{end}}
+                                        {{end}}
+                                </table>
+                        </div>
+                        <div class="osscat-section" id="operations">
+                                <h2 class="osscat-subtitle">Operations</h2>
+                                <table class="osscat-table">
+                                        {{if .Main.ServiceNowInfo.OperationsNotApplicable}}
+                                                <tr>
+                                                        <td class="osscat-label">OperationsNotApplicable</td>
+                                                </tr>
+                                        {{else}}
+                                                {{range .Operations}}
+                                                <tr>
+                                                        <td class="osscat-label">{{.Name}}: </td>
+                                                        <td class="osscat-value">{{.Value}}</td>
+                                                </tr>
+                                                {{end}}
+                                        {{end}}
+                                </table>
+                        </div>
+                </div>
+                <div class="osscat-row">
+                        <div class="osscat-section" id="statuspage">
+                                <h2 class="osscat-subtitle">StatusPage</h2>
+                                <table class="osscat-table">
+                                        {{range .StatusPage}}
+                                        <tr>
+                                                <td class="osscat-label">{{.Name}}: </td>
+                                                <td class="osscat-value">{{.Value}}</td>
+                                        </tr>
+                                        {{end}}
+                                </table>
+                        </div>
+                        <div class="osscat-section" id="compliance">
+                                <h2 class="osscat-subtitle">Compliance</h2>
+                                <table class="osscat-table">
+                                        {{range .Compliance}}
+                                        <tr>
+                                                <td class="osscat-label">{{.Name}}: </td>
+                                                <td>{{.Value}}</td>
+                                        </tr>
+                                        {{end}}
+                                </table>
+                        </div>
+                </div>
+                <div class="osscat-row">
+                        <div class="osscat-widesection" id="additional_contacts">
+                                <h2 class="osscat-subtitle">Additional Contacts</h2>
+                                <table class="osscat-table">
+                                        <tr>
+                                                <td class="osscat-label">AdditionalContacts: </td>
+                                                <td class="osscat-value">{{.Main.AdditionalContacts}}</td>
+                                        </tr>
+                                </table>
+                        </div>
+                </div>
+                <div class="osscat-row">
+                        <div class="osscat-section" id="servicenow_info">
+                                <h2 class="osscat-subtitle">ServiceNow Info</h2>
+                                <table class="osscat-table">
+                                        {{range .ServiceNowInfo}}
+                                        <tr>
+                                                <td class="osscat-label">{{.Name}}: </td>
+                                                <td class="osscat-value">{{.Value}}</td>
+                                        </tr>
+                                        {{end}}
+                                </table>
+                        </div>
+                        <div class="osscat-section" id="catalog_info">
+                                <h2 class="osscat-subtitle">Catalog Info</h2>
+                                <table class="osscat-table">
+                                        {{range .CatalogInfo}}
+                                        <tr>
+                                                <td class="osscat-label">{{.Name}}: </td>
+                                                <td class="osscat-value">{{.Value}}</td>
+                                        </tr>
+                                        {{end}}
+                                </table>
+                        </div>
+                </div>
+                <div class="osscat-row">
+                        <div class="osscat-section" id="product_info">
+                                <h2 class="osscat-subtitle">Product Info</h2>
+                                <table class="osscat-table">
+                                        {{range .ProductInfo}}
+                                        {{if eq .Name "Taxonomy"}}
+                                        {{else if eq .Name "ClearingHouseReferences"}}
+                                        {{else}}
+                                        <tr>
+                                                <td class="osscat-label">{{.Name}}: </td>
+                                                <td class="osscat-value">{{.Value}}</td>
+                                        </tr>
+                                        {{end}}
+                                        {{end}}
+                                        {{range .Taxonomy}}
+                                        <tr>
+                                                <td class="osscat-label">Taxonomy: {{.Name}}: </td>
+                                                <td class="osscat-value">{{.Value}}</td>
+                                        </tr>
+                                        {{end}}
+                                        <tr>
+                                        <td colspan="2">
+                                        <table class="osscat-table">
+                                                <thead>
+                                                        <tr>
+                                                                <th class="osscat-th">ClearingHouse References</th>
+                                                                <th class="osscat-th">Tags</th>
+                                                        </tr>
+                                                </thead>
+                                                <tbody>
+                                                        {{range .LinkToCHRecords}}
+                                                        <tr>
+                                                                <td class="osscat-label">
+                                                                <a href="{{.Link}}" target="_blank">{{.Name}}</a></td>
+                                                                <td class="osscat-value">{{.Tags}}</td>
+                                                        </tr>
+                                                        {{end}}
+                                                </tbody>
+                                        </table>
+                                        </td>
+                                        </tr>
+                                </table>
+                        </div>
+                </div>
+                <div class="osscat-row">
+                        <div class="osscat-section" id="monitoring_info">
+                                <h2 class="osscat-subtitle">Monitoring Info</h2>
+                                <table class="osscat-table">
+                                        <tr>
+                                        <td colspan="2">
+                                        <table class="osscat-table">
+                                                <thead>
+                                                        <tr>
+                                                                <th class="osscat-th">Monitor Type</th>
+                                                                <th class="osscat-th">Plan or Label</th>
+                                                                <th class="osscat-th">Environment</th>
+                                                                <th class="osscat-th">Tags</th>
+                                                        </tr>
+                                                </thead>
+                                                <tbody>
+                                                        {{range .Main.MonitoringInfo.Metrics}}
+                                                        <tr>
+                                                                <td class="osscat-value">{{.Type}}</td>
+                                                                <td class="osscat-value">{{.PlanOrLabel}}</td>
+                                                                <td class="osscat-value">{{.Environment}}</td>
+                                                                <td class="osscat-value">{{.Tags}}</td>
+                                                        </tr>
+                                                        {{end}}
+                                                </tbody>
+                                        </table>
+                                        </td>
+                                        </tr>
+                                </table>
+                        </div>
+                </div>
+                <div class="osscat-row" id="dependencies">
+                        <div class="osscat-section" id="dependencies_outbound">
+                                <h2 class="osscat-subtitle">Dependencies - Outbound (this entry is Originator)</h2>
+                                <table class="osscat-table">
+                                        <thead>
+                                                <tr>
+                                                        <th class="osscat-th">Service/Component</th>
+                                                        <th class="osscat-th">Tags</th>
+                                                </tr>
+                                        </thead>
+                                        <tbody>
+                                                {{range .Main.DependencyInfo.OutboundDependencies}}
+                                                <tr>
+                                                        <td class="osscat-label">
+                                                        {{$link := getUniversalLink .Service}}
+                                                        {{if $link}}<a href="{{$link}}" target="_blank">{{.Service}}</a>{{else}}{{.Service}}{{end}}</td>
+                                                        <td class="osscat-value">{{.Tags}}</td>
+                                                </tr>
+                                                {{end}}
+                                        </tbody>
+                                </table>
+                        </div>
+                        <div class="osscat-section" id="dependencies_inbound">
+                                <h2 class="osscat-subtitle">Dependencies - Inbound (this entry is Provider)</h2>
+                                <table class="osscat-table">
+                                        <thead>
+                                                <tr>
+                                                        <th class="osscat-th">Service/Component</th>
+                                                        <th class="osscat-th">Tags</th>
+                                                </tr>
+                                        </thead>
+                                        <tbody>
+                                                {{range .Main.DependencyInfo.InboundDependencies}}
+                                                <tr>
+                                                        <td class="osscat-label">
+                                                        {{$link := getUniversalLink .Service}}
+                                                        {{if $link}}<a href="{{$link}}" target="_blank">{{.Service}}</a>{{else}}{{.Service}}{{end}}</td>
+                                                        <td class="osscat-value">{{.Tags}}</td>
+                                                 </tr>
+                                                {{end}}
+                                        </tbody>
+                                </table>
+                        </div>
+                </div>
+                <div class="osscat-row">
+                        <div class="osscat-widesection" id="validation_issues">
+                                <h2 class="osscat-subtitle">Validation Issues</h2>
+                                <table class="osscat-table">
+                                        {{range .OSSValidation.Issues}}
+                                        <tr>
+                                                <td class="osscat-value-validation-severity">{{.Severity}} </td>
+                                                <td class="osscat-value-validation-tags">{{.Tags}} </td>
+                                                <td class="osscat-value">{{.Title}} {{if .Details}}: {{.Details}}{{end}}</td>
+                                        </tr>
+                                        {{end}}
+                                </table>
+                        </div>
+                </div>
+        </div>
+        {{/*
+        <h2>Raw Data</h2>
+        <pre>{{ .Main }}</pre> */}}
+</body>

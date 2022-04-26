@@ -1,0 +1,13 @@
+---
+
+STACK_VERSION:
+  - 7.16.0-SNAPSHOT
+
+GO_VERSION:
+  - 1-alpine
+
+TEST_SUITE:
+  - free
+  - platinum
+
+exclude: ~

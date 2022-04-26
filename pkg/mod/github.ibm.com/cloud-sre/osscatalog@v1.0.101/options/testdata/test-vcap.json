@@ -1,0 +1,52 @@
+{
+    "user-provided": [
+        {
+            "name": "service1",
+            "instance_name": "service1",
+            "binding_name": null,
+            "credentials": {
+                "apikey": "XXX",
+                "clientId": "YYY"
+            },
+            "syslog_drain_url": "",
+            "volume_mounts": [],
+            "label": "user-provided",
+            "tags": []
+        },
+        {
+            "name": "service2",
+            "instance_name": "service2",
+            "binding_name": null,
+            "credentials": {
+                "key": "AAA",
+                "name": "BBB"
+            },
+            "syslog_drain_url": "",
+            "volume_mounts": [],
+            "label": "user-provided",
+            "tags": []
+        }
+    ],
+    "ServiceType2": [
+        {
+            "name": "service3",
+            "instance_name": "service3",
+            "binding_name": null,
+            "credentials": {
+                "cred_url": "CCC",
+                "token": "DDD"
+            },
+            "syslog_drain_url": null,
+            "volume_mounts": [],
+            "label": "ServiceType2Label",
+            "provider": null,
+            "plan": "Lite",
+            "tags": [
+                "ibm_created",
+                "bluemix_extensions",
+                "dev_ops",
+                "lite"
+            ]
+        }
+    ]
+}
